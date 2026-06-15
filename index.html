@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tema 3 — ROGA · Áreas de Gobierno | ETRIVIUM IAM</title>
+<style>
+:root{
+  --azul:#0055a0; --azul-dark:#003d75; --azul-light:#e8f0f8;
+  --azul-10:rgba(0,85,160,0.10); --azul-05:rgba(0,85,160,0.05);
+  --verde:#2d8659; --verde-bg:#e8f5ee;
+  --rojo:#c8564a; --rojo-bg:#fbeeed;
+  --amber:#c77a1b; --amber-bg:#fdf4e4;
+  --purple:#7b4f9e; --purple-bg:#f2eaf5;
+  --teal:#1d7a7a; --teal-bg:#e3f2f2;
+  --gris-100:#f5f7fa; --gris-200:#e8ecf0; --gris-300:#d1d7df;
+  --gris-400:#9aa5b4; --gris-600:#4a5568; --gris-800:#2d3748;
+  --font:'DM Sans',-apple-system,sans-serif;
+  --radius:8px;
+  --shadow:0 1px 3px rgba(0,0,0,0.08);
+  --shadow-lg:0 4px 12px rgba(0,0,0,0.1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);color:var(--gris-800);background:var(--gris-100);line-height:1.7}
+.tab-nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--gris-200);display:flex;align-items:center;justify-content:center;gap:4px;padding:10px 24px;overflow-x:auto;box-shadow:var(--shadow)}
+.tab-nav .logo{display:flex;align-items:center;gap:10px;margin-right:20px;flex-shrink:0}
+.tab-nav .logo svg{height:48px}
+.tab-btn{padding:8px 18px;border-radius:6px;cursor:pointer;background:transparent;color:var(--gris-600);border:1px solid transparent;font-family:var(--font);font-size:13px;font-weight:600;transition:all .15s;white-space:nowrap}
+.tab-btn:hover{background:var(--azul-05);color:var(--azul)}
+.tab-btn.active{background:var(--azul);color:#fff;border-color:var(--azul)}
+.version-badge{background:var(--verde);color:#fff;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:700;margin-left:6px;letter-spacing:0.5px}
+.tab-content{display:none!important;max-width:980px;margin:0 auto;padding:32px 24px 80px}
+.tab-content.active{display:block!important}
+h1{font-size:28px;font-weight:700;color:var(--azul);margin-bottom:8px}
+h2{font-size:22px;font-weight:700;color:var(--azul-dark);margin:36px 0 14px;padding-bottom:6px;border-bottom:2px solid var(--azul-10)}
+h3{font-size:17px;font-weight:700;color:var(--gris-800);margin:24px 0 8px}
+h4{font-size:15px;font-weight:700;color:var(--gris-600);margin:16px 0 6px}
+p{margin-bottom:12px;font-size:15px}
+ul,ol{padding-left:24px;margin-bottom:12px}
+li{margin-bottom:6px;font-size:14px}
+strong{color:var(--gris-800)}
+code{background:var(--azul-05);padding:2px 6px;border-radius:4px;font-size:13px;font-family:'SF Mono','Fira Code',monospace;color:var(--azul)}
+.subtitle{font-size:14px;color:var(--gris-400);margin-bottom:24px}
+.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em}
+.badge-v1{background:var(--amber-bg);color:var(--amber)}
+.badge-tier1{background:var(--verde-bg);color:var(--verde)}
+.badge-tier2{background:var(--azul-light);color:var(--azul)}
+.badge-pending{background:var(--rojo-bg);color:var(--rojo)}
+.badge-new{background:var(--amber-bg);color:var(--amber)}
+.card{background:#fff;border-radius:var(--radius);border:1px solid var(--gris-200);box-shadow:var(--shadow);padding:24px;margin-bottom:16px}
+.card-header{background:linear-gradient(135deg,var(--azul) 0%,var(--azul-dark) 100%);color:#fff;padding:36px 28px;border-radius:var(--radius);margin-bottom:24px}
+.card-header h1{color:#fff;margin:0}
+.card-header .subtitle{color:rgba(255,255,255,0.75);margin:4px 0 0}
+table{width:100%;border-collapse:collapse;margin:12px 0 20px;font-size:14px}
+th{background:var(--azul);color:#fff;padding:10px 14px;text-align:left;font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:0.05em}
+td{padding:10px 14px;border-bottom:1px solid var(--gris-200);vertical-align:top}
+tr:nth-child(even) td{background:var(--gris-100)}
+tr:hover td{background:var(--azul-05)}
+.callout{padding:14px 18px;border-radius:var(--radius);margin:14px 0;font-size:14px}
+.callout-dato{background:var(--amber-bg);border-left:4px solid var(--amber)}
+.callout-cita{background:var(--teal-bg);border-left:4px solid var(--teal)}
+.callout-ayto{background:var(--azul-light);border-left:4px solid var(--azul)}
+.callout-ref{background:var(--purple-bg);border-left:4px solid var(--purple)}
+.callout .kicker{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px}
+.callout-dato .kicker{color:var(--amber)}
+.callout-cita .kicker{color:var(--teal)}
+.callout-ayto .kicker{color:var(--azul)}
+.callout-ref .kicker{color:var(--purple)}
+.diagram{margin:20px 0 28px;padding:12px;background:#fff;border:1px solid var(--gris-200);border-radius:var(--radius)}
+.diagram svg{width:100%;height:auto;display:block;max-width:100%}
+.diagram-caption{font-size:12px;color:var(--gris-400);text-align:center;margin-top:6px;font-style:italic}
+.diagram-title{font-size:15px;font-weight:700;color:var(--azul-dark);margin:0 0 4px}
+.diagram-sec{font-size:11px;color:var(--gris-400);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.1em}
+.question{margin-bottom:20px;background:#fff;border:1px solid var(--gris-200);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+.q-num{font-size:11px;font-weight:700;color:var(--azul);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px}
+.q-num .new-tag{background:var(--amber);color:#fff;padding:1px 6px;border-radius:3px;font-size:9px;margin-left:6px}
+.q-text{font-size:15px;font-weight:600;color:var(--gris-800);margin-bottom:12px}
+.q-options{display:flex;flex-direction:column;gap:8px;margin-bottom:8px}
+.q-opt{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;border:2px solid var(--gris-200);border-radius:var(--radius);cursor:pointer;font-size:14px;transition:all .15s;background:#fff}
+.q-opt:hover{border-color:var(--azul);background:var(--azul-05)}
+.q-opt.selected{border-color:var(--azul);background:var(--azul-10)}
+.q-opt.correct{border-color:var(--verde);background:var(--verde-bg)}
+.q-opt.wrong{border-color:var(--rojo);background:var(--rojo-bg)}
+.q-letter{width:28px;height:28px;border-radius:50%;background:var(--gris-100);color:var(--gris-600);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0}
+.q-opt.selected .q-letter{background:var(--azul);color:#fff}
+.q-opt.correct .q-letter{background:var(--verde);color:#fff}
+.q-opt.wrong .q-letter{background:var(--rojo);color:#fff}
+.q-answer{display:none;margin-top:8px;padding:12px 16px;border-radius:var(--radius);background:var(--verde-bg);border-left:4px solid var(--verde);font-size:13px}
+.q-answer.show{display:block}
+.q-answer strong{color:var(--verde)}
+.q-ref{font-size:11px;color:var(--gris-400);font-style:italic;margin-top:4px}
+.test-controls{display:flex;gap:12px;margin:24px 0;flex-wrap:wrap;align-items:center}
+.btn{padding:10px 24px;border-radius:var(--radius);font-family:var(--font);font-size:14px;font-weight:600;cursor:pointer;border:none;transition:all .2s}
+.btn-blue{background:var(--azul);color:#fff}
+.btn-blue:hover{background:var(--azul-dark)}
+.btn-outline{background:#fff;color:var(--azul);border:2px solid var(--azul)}
+.btn-outline:hover{background:var(--azul-05)}
+.btn-warn{background:var(--amber);color:#fff}
+.score-bar{display:flex;gap:16px;padding:16px 20px;background:#fff;border-radius:var(--radius);border:1px solid var(--gris-200);margin:16px 0}
+.score-item{text-align:center;flex:1}
+.score-value{font-size:24px;font-weight:700;color:var(--azul)}
+.score-value.good{color:var(--verde)}
+.score-value.bad{color:var(--rojo)}
+.score-label{font-size:11px;color:var(--gris-400);text-transform:uppercase;font-weight:600}
+.check-item{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid var(--gris-100);font-size:14px}
+.check-item input[type="checkbox"]{margin-top:3px;accent-color:var(--azul);width:16px;height:16px}
+.caso-box{background:#fff;border:1px solid var(--gris-200);border-radius:var(--radius);padding:20px;margin-bottom:28px;box-shadow:var(--shadow)}
+.caso-box h3{margin-top:0;color:var(--azul-dark)}
+.caso-scenario{background:var(--azul-light);border-left:4px solid var(--azul);padding:14px 18px;border-radius:var(--radius);margin-bottom:16px;font-size:14px}
+.filter-bar{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;align-items:center;padding:12px;background:#fff;border:1px solid var(--gris-200);border-radius:var(--radius)}
+.filter-bar label{font-size:12px;color:var(--gris-600);font-weight:600;margin-right:6px}
+.filter-chip{padding:4px 12px;border-radius:16px;background:var(--gris-100);color:var(--gris-600);font-size:12px;font-weight:600;cursor:pointer;border:1px solid var(--gris-200)}
+.filter-chip.active{background:var(--azul);color:#fff;border-color:var(--azul)}
+.version-banner{background:linear-gradient(90deg,var(--amber-bg) 0%,#fff 100%);padding:12px 16px;border-radius:var(--radius);margin-bottom:20px;display:flex;align-items:center;gap:12px;border-left:4px solid var(--amber)}
+.version-banner strong{color:var(--gris-800)}
+.version-banner small{color:var(--gris-600);font-size:12px}
+@media print{
+  body{background:#fff}
+  .tab-nav,.test-controls,.filter-bar,.btn{display:none!important}
+  .tab-content{display:block!important;page-break-after:always;padding:0;max-width:100%}
+  .q-answer{display:block!important}
+  .diagram{page-break-inside:avoid}
+  .question{box-shadow:none;border:1px solid #ccc}
+}
+@media (max-width:640px){
+  .tab-nav{padding:8px 12px}
+  .tab-btn{padding:6px 12px;font-size:12px}
+  .tab-content{padding:16px 12px 60px}
+  h1{font-size:22px}
+  h2{font-size:18px}
+  table{font-size:12px}
+  th,td{padding:6px 8px}
+}
+
+</style>
+</head>
+<body>
+
+<nav class="tab-nav">
+  <div class="logo"><strong style="color:#0055a0;font-size:18px">ETRIVIUM</strong><span style="color:#9aa5b4;font-size:12px">· IAM</span></div>
+  <button class="tab-btn active" data-tab="inicio">Inicio</button>
+  <button class="tab-btn" data-tab="contenido">Contenido</button>
+  <button class="tab-btn" data-tab="diagramas">Diagramas</button>
+  <button class="tab-btn" data-tab="test">Test <span class="version-badge">150</span></button>
+  <button class="tab-btn" data-tab="casos">Casos</button>
+  <button class="tab-btn" data-tab="validacion">Validación</button>
+  <button class="tab-btn" data-tab="fuentes">Fuentes</button>
+</nav>
+
+<section id="inicio" class="tab-content active">
+  <div class="card-header">
+    <h1>Tema 3 — El ROGA (I): Las Áreas de Gobierno</h1>
+    <p class="subtitle">Reglamento Orgánico del Gobierno y de la Administración del Ayuntamiento de Madrid (31 de mayo de 2004) · Áreas de Gobierno y su estructura interna · Órganos superiores y centrales directivos · Áreas actuales</p>
+  </div>
+  <div class="version-banner">
+    <span class="badge badge-v1">v1.0</span>
+    <div><strong>Piloto pendiente de validación</strong><br>
+    <small>Bloque I — Administrativo/Jurídico · C1 Técnico Auxiliar TIC · Ayuntamiento de Madrid · 2026-06-15</small></div>
+  </div>
+  <div class="card">
+    <h2 style="margin-top:0">Resumen del tema</h2>
+    <p>El <strong>ROGA</strong> (31 de mayo de 2004) organiza el Ayuntamiento de Madrid sobre dos principios: <strong>división funcional en Áreas de Gobierno</strong> y <strong>gestión territorial en distritos</strong> (art. 5). Distingue <strong>órganos superiores</strong> (dirección política: alcalde y Junta de Gobierno) de <strong>órganos directivos</strong> (ejecución) (art. 7). Las <strong>Áreas de Gobierno</strong> son los niveles esenciales (máximo <strong>15</strong>, las fija el alcalde) y se estructuran en <strong>Secretaría General Técnica</strong> y <strong>Direcciones Generales</strong> (arts. 40-41). Los <strong>órganos centrales directivos</strong> —coordinador general, secretario general técnico y director general— se ordenan jerárquicamente (art. 42) y los nombra la <strong>Junta de Gobierno</strong> entre funcionarios (art. 49). Incluye el <strong>número y denominación de las 7 Áreas de Gobierno actuales</strong>.</p>
+  </div>
+  <div class="card">
+    <h2 style="margin-top:0">Cómo está organizado este material</h2>
+    <table>
+      <thead><tr><th>Pestaña</th><th>Contenido</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Contenido</strong></td><td>13 secciones con texto, tablas y callouts de estudio</td></tr>
+        <tr><td><strong>Diagramas</strong></td><td>12 esquemas visuales (SVG)</td></tr>
+        <tr><td><strong>Test</strong></td><td>150 preguntas tipo examen con corrección automática y penalización 1/3</td></tr>
+        <tr><td><strong>Casos</strong></td><td>6 casos prácticos aplicados al Ayuntamiento de Madrid</td></tr>
+        <tr><td><strong>Validación</strong></td><td>Checklist de revisión para María / Ana (IAM)</td></tr>
+        <tr><td><strong>Fuentes</strong></td><td>Registro normativo y normas de citación</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section id="contenido" class="tab-content">
+  <h1>Contenido teórico</h1>
+  <div id="contenido-body">
+<hr>
+<h2>Convenciones del documento</h2>
+<p>Este tema incluye cuatro tipos de <strong>cajas callout</strong> para facilitar el estudio:</p>
+<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Información de alta densidad memorística: números máximos, órdenes jerárquicos, órganos competentes. Alta probabilidad de aparecer en el test oficial.</div>
+<div class="callout callout-cita"><span class="kicker">Cita normativa</span>Reproducción literal o paráfrasis cercana de un precepto del ROGA o de la LBRL, con referencia al artículo.</div>
+<div class="callout callout-ayto"><span class="kicker">Ejemplo Ayto Madrid</span>Aplicación real al entorno del Ayuntamiento de Madrid (Áreas de Gobierno vigentes, organización interna).</div>
+<div class="callout callout-ref"><span class="kicker">Referencia cruzada</span>Enlace conceptual a otros temas o a otros bloques del propio Tema 3.</div>
+<p>Las citas al articulado se expresan como <code>[ROGA, art. X]</code> o <code>[LBRL, art. X]</code>. El registro completo de fuentes está en <code>tema-3-fuentes.md</code>.</p>
+<hr>
+<h2>1. Introducción: el ROGA 2004 y el régimen de gran ciudad</h2>
+<p>El <strong>Reglamento Orgánico del Gobierno y de la Administración del Ayuntamiento de Madrid</strong>, aprobado por el Pleno el <strong>31 de mayo de 2004</strong> (en adelante, <strong>ROGA</strong>), regula la <strong>estructura organizativa</strong> y el funcionamiento del gobierno y la administración municipales.</p>
+<p>El ROGA se dicta en el marco del <strong>régimen de los municipios de gran población</strong> previsto en el <strong>Título X de la Ley 7/1985 (LBRL)</strong> —introducido por la Ley 57/2003 de Medidas para la Modernización del Gobierno Local— y del <strong>régimen especial de capitalidad</strong> de Madrid.</p>
+<div class="callout callout-ref"><span class="kicker">Referencia cruzada</span>El <strong>municipio de Madrid</strong> es de <strong>régimen especial</strong> por su doble condición de capital del Estado y de gran ciudad, conforme a la <strong>Ley 22/2006 de Capitalidad y de Régimen Especial de Madrid</strong> (estudiada en el <strong>Tema 2</strong>). [LCREM]</div>
+<p>La organización del Ayuntamiento responde a dos principios:</p>
+<div class="callout callout-cita"><span class="kicker">Cita normativa</span><em>"La organización administrativa del Ayuntamiento de Madrid responde a los principios de división funcional en Áreas de Gobierno y de gestión territorial integrada en distritos"</em> [ROGA, art. 5]</div>
+<ul><li><strong>División funcional</strong> → las <strong>Áreas de Gobierno</strong> (objeto de <strong>este tema</strong>, parte I).</li><li><strong>Gestión territorial</strong> → los <strong>Distritos</strong> (objeto del <strong>Tema 4</strong>, parte II del ROGA). [REFERENCIA CRUZADA]</li></ul>
+<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>El ROGA es de <strong>31 de mayo de 2004</strong>. Sus dos principios organizativos son la <strong>división funcional en Áreas de Gobierno</strong> y la <strong>gestión territorial integrada en distritos</strong> [ROGA, art. 5].</div>
+<hr>
+<h2>2. La organización del Ayuntamiento: órganos centrales, territoriales y organismos</h2>
+<p>El art. 6 del ROGA clasifica la organización municipal en tres grandes bloques:</p>
+<div class="callout callout-cita"><span class="kicker">Cita normativa</span><em>"El Ayuntamiento de Madrid se organiza en órganos centrales, territoriales y organismos públicos"</em> [ROGA, art. 6.1]</div>
+<ul><li><strong>Órganos centrales</strong>: ejercen sus competencias sobre <strong>todo el territorio</strong> del municipio (las Áreas de Gobierno y su estructura).</li><li><strong>Órganos territoriales</strong>: ejercen sus competencias <strong>exclusivamente en el ámbito de un distrito</strong> (Tema 4).</li><li><strong>Organismos públicos</strong> (Título VII del ROGA): organismos autónomos y entidades públicas empresariales, para actividades de ejecución o gestión; dependen del Ayuntamiento y se <strong>adscriben</strong> al Área competente por razón de la materia.</li></ul>
+<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Órganos <strong>centrales</strong> = todo el municipio; órganos <strong>territoriales</strong> = un distrito; <strong>organismos públicos</strong> = ejecución/gestión adscritos a un Área. [ROGA, art. 6]</div>
+<hr>
+<h2>3. Órganos superiores y órganos directivos (art. 7)</h2>
+<p>Atendiendo a sus funciones, los órganos del Ayuntamiento se clasifican en <strong>superiores</strong> y <strong>directivos</strong> [ROGA, art. 7.1]. Es una de las distinciones más preguntadas del tema.</p>
+<h3>3.1. Órganos superiores</h3>
+<div class="callout callout-cita"><span class="kicker">Cita normativa</span><em>"Los órganos superiores de gobierno y administración del Ayuntamiento de Madrid son el alcalde y los miembros de la Junta de Gobierno Local"</em> [ROGA, art. 7.2]</div>
+<p>Tienen además la consideración de órganos superiores: la <strong>Junta de Gobierno Local</strong> y los demás <strong>concejales con responsabilidades de gobierno</strong>, así como, en el ámbito de los distritos, los <strong>concejales-presidentes</strong> [ROGA, art. 7.2].</p>
+<h3>3.2. Órganos directivos</h3>
+<p>Son órganos directivos [ROGA, art. 7.3]:</p>
+<ul><li>Los <strong>coordinadores generales</strong>.</li><li>Los <strong>directores generales</strong> u órganos similares.</li><li>El titular de la <strong>Asesoría Jurídica</strong>.</li><li>El titular del <strong>órgano de apoyo a la Junta de Gobierno Local</strong>.</li><li>El <strong>interventor general municipal</strong>.</li><li>El titular del <strong>órgano de gestión tributaria</strong>.</li><li>En el ámbito de los <strong>distritos</strong>, los <strong>gerentes</strong>.</li><li>En los organismos autónomos y entidades públicas empresariales, sus <strong>gerentes</strong>.</li></ul>
+<p>El <strong>secretario general del Pleno</strong> tiene también carácter de órgano directivo y se nombra entre <strong>funcionarios de Administración Local con habilitación de carácter nacional</strong> [ROGA, art. 7.6].</p>
+<h3>3.3. El reparto de funciones</h3>
+<div class="callout callout-cita"><span class="kicker">Cita normativa</span><em>"A los órganos superiores corresponde la dirección, planificación y coordinación política, y a los órganos directivos la ejecución de las decisiones adoptadas por aquellos"</em> [ROGA, art. 7.4]</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave examen</span><strong>Órganos superiores</strong> → dirección/planificación/coordinación <strong>política</strong> (alcalde + Junta de Gobierno Local). <strong>Órganos directivos</strong> → <strong>ejecución</strong> (coordinadores generales, secretarios generales técnicos, directores generales…). Los titulares de ambos quedan sometidos al <strong>régimen de incompatibilidades</strong> de la Ley 53/1984 [ROGA, art. 7.7].</div>
+<hr>
+<h2>4. Las Áreas de Gobierno: concepto y número (art. 40)</h2>
+<div class="callout callout-cita"><span class="kicker">Cita normativa</span><em>"Las Áreas de Gobierno constituyen los niveles esenciales de la organización municipal y comprenden, cada una de ellas, uno o varios sectores funcionalmente homogéneos de la actividad administrativa municipal"</em> [ROGA, art. 40.1]</div>
+<p>De las Áreas de Gobierno podrán depender <strong>Áreas de Coordinación</strong> o <strong>Áreas Delegadas</strong>, a las que corresponderá la dirección de un sector de la actividad administrativa de aquéllas [ROGA, art. 40.1].</p>
+<p><strong>Número y determinación</strong> [ROGA, art. 40.2]:</p>
+<div class="callout callout-cita"><span class="kicker">Cita normativa</span><em>"El número de Áreas de Gobierno no podrá exceder de 15, correspondiendo al alcalde […] determinar el número, denominación y atribuciones de las Áreas"</em> [ROGA, art. 40.2]</div>
+<p>El alcalde actúa al amparo del <strong>art. 123.1.c)</strong> en relación con el <strong>art. 124.4.k)</strong> de la LBRL.</p>
+<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>El número de Áreas de Gobierno <strong>no podrá exceder de 15</strong>. Es el <strong>alcalde</strong> quien determina, por decreto, su <strong>número, denominación y atribuciones</strong> [ROGA, art. 40.2].</div>
+<hr>
+<h2>5. Estructura interna de las Áreas de Gobierno (art. 41)</h2>
+<p>Para ejercer sus competencias, las Áreas de Gobierno [ROGA, art. 41.1]:</p>
+<ul><li>Podrán contar con uno o más <strong>coordinadores generales</strong>.</li><li>Contarán con una <strong>Secretaría General Técnica</strong>.</li><li>Se estructurarán por <strong>bloques de competencias homogéneas</strong> a través de <strong>Direcciones Generales</strong> u órganos similares.</li></ul>
+<p>A su vez, las Secretarías Generales Técnicas y las Direcciones Generales podrán organizarse en <strong>Subdirecciones Generales, Servicios, Departamentos, Secciones</strong> y otras unidades inferiores [ROGA, art. 41.2]. Estas unidades también podrán depender directamente de los coordinadores generales.</p>
+<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Toda Área de Gobierno cuenta con una <strong>Secretaría General Técnica</strong> y se estructura en <strong>Direcciones Generales</strong>; por debajo: Subdirecciones Generales, Servicios, Departamentos y Secciones [ROGA, art. 41].</div>
+<hr>
+<h2>6. Ordenación jerárquica de las Áreas (art. 42)</h2>
+<div class="callout callout-cita"><span class="kicker">Cita normativa</span><em>"Los concejales de Gobierno y consejeros-delegados de Gobierno son los jefes superiores del Área de Gobierno correspondiente"</em> [ROGA, art. 42.1]</div>
+<p>Los <strong>concejales de Coordinación</strong> y los <strong>concejales-delegados</strong> son los <strong>jefes directos</strong> de su Área, sin perjuicio de la superior dirección del titular del Área de Gobierno [ROGA, art. 42.1].</p>
+<p><strong>Orden jerárquico de los órganos directivos</strong> [ROGA, art. 42.2]:</p>
+<div class="callout callout-cita"><span class="kicker">Cita normativa</span><em>"Los órganos directivos […] se ordenan jerárquicamente del siguiente modo: coordinador general, secretario general técnico, director general u órgano asimilado"</em> [ROGA, art. 42.2]</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Orden jerárquico de los directivos: <strong>1.º coordinador general → 2.º secretario general técnico → 3.º director general</strong>. (El art. 42.2 fue <strong>modificado el 30 de septiembre de 2015</strong>.) [ROGA, art. 42.2]</div>
+<hr>
+<h2>7. Órganos de participación en las Áreas (art. 43)</h2>
+<p>En las Áreas de Gobierno podrán crearse <strong>órganos de participación</strong> de los vecinos y de las asociaciones que los representen, conforme a las normas orgánicas de participación ciudadana [ROGA, art. 43].</p>
+<hr>
+<h2>8. Órganos superiores de las Áreas de Gobierno (arts. 44-45)</h2>
+<h3>8.1. Concejales de Gobierno y consejeros-delegados de Gobierno (art. 44)</h3>
+<p>A ellos corresponde la <strong>dirección</strong> de los ámbitos integrados en su Área. Entre sus funciones [ROGA, art. 44]:</p>
+<ul><li><strong>a)</strong> Representación, dirección, gestión e inspección del Área.</li><li><strong>b)</strong> Fijar objetivos, aprobar planes de actuación y asignar recursos.</li><li><strong>c)</strong> Elevar al <strong>Pleno</strong> las propuestas de su competencia.</li><li><strong>d)</strong> Proponer a la <strong>Junta de Gobierno</strong> la aprobación de proyectos de disposiciones de carácter general.</li><li><strong>e)</strong> Proponer al <strong>alcalde</strong> los proyectos de organización y estructura de su Área.</li><li><strong>f)</strong> Evaluar la ejecución de los planes por los órganos directivos (control de eficacia).</li><li><strong>g)</strong> Superior inspección de los organismos públicos adscritos (art. 85 bis LBRL).</li><li><strong>h)</strong> Superior autoridad sobre el personal de su Área.</li><li><strong>i)</strong> Resolver conflictos entre órganos directivos de su Área.</li><li><strong>j)</strong> Proponer a la <strong>Junta de Gobierno</strong> el nombramiento de los titulares de los órganos directivos de su Área.</li></ul>
+<h3>8.2. Concejales de Coordinación y concejales-delegados (art. 45)</h3>
+<p>Tienen las mismas competencias del art. 44, <strong>salvo</strong> las de las letras <strong>b), c), d), e) y j)</strong>, y sin perjuicio de la superior dirección del concejal de Gobierno o consejero-delegado de Gobierno del que dependan [ROGA, art. 45.1]. Responden ante el órgano superior inmediato del que dependan [ROGA, art. 45.2].</p>
+<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Los <strong>concejales de Coordinación y concejales-delegados</strong> ejercen las funciones del art. 44 <strong>excepto</strong> las letras <strong>b, c, d, e y j</strong> (objetivos/planes, elevar al Pleno, proponer disposiciones a la Junta, proponer organización al alcalde y proponer nombramiento de directivos). [ROGA, art. 45]</div>
+<hr>
+<h2>9. Órganos centrales directivos (arts. 46-49)</h2>
+<h3>9.1. Coordinadores generales (art. 46)</h3>
+<p>Les corresponden las funciones de <strong>coordinación y dirección</strong> de las distintas Direcciones Generales dependientes, y las demás que les deleguen o desconcentren el alcalde o la Junta de Gobierno [ROGA, art. 46.1]. (Artículo <strong>modificado el 30/09/2015</strong>.)</p>
+<h3>9.2. Secretarios generales técnicos (art. 47)</h3>
+<p>Con <strong>rango de director general</strong>, les corresponden [ROGA, art. 47.1]:</p>
+<ul><li><strong>a)</strong> La gestión de los <strong>servicios comunes</strong>.</li><li><strong>b)</strong> La coordinación de las Direcciones Generales en el ámbito de los servicios comunes.</li><li><strong>c)</strong> La <strong>asistencia jurídica y técnica</strong> al titular del Área de Gobierno (sin perjuicio de la Asesoría Jurídica).</li><li><strong>d)</strong> La eficiente utilización de los medios y recursos del Área.</li></ul>
+<p>Dependen <strong>directamente del titular del Área de Gobierno</strong> [ROGA, art. 47.3].</p>
+<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>El <strong>secretario general técnico</strong> tiene <strong>rango de director general</strong>, gestiona los <strong>servicios comunes</strong> y presta <strong>asistencia jurídica y técnica</strong> al titular del Área; depende directamente de éste. [ROGA, art. 47]</div>
+<h3>9.3. Directores generales (art. 48)</h3>
+<p>Son los titulares de los órganos directivos a los que corresponde, bajo la dependencia de un coordinador general o de un concejal de Coordinación o delegado, la <strong>dirección y gestión</strong> de uno o varios ámbitos de competencias homogéneos [ROGA, art. 48.1]. Entre sus funciones: dirección y gestión de servicios, jefatura de las unidades adscritas, elaboración de proyectos de disposiciones, y elaboración y control del presupuesto que se les asigne [ROGA, art. 48.2].</p>
+<h3>9.4. Nombramiento de los titulares de los órganos directivos (art. 49)</h3>
+<div class="callout callout-cita"><span class="kicker">Cita normativa</span><em>"Los coordinadores generales, los secretarios generales técnicos y los directores generales serán nombrados y cesados por la Junta de Gobierno"</em> [ROGA, art. 49.1]</div>
+<p>Su nombramiento debe efectuarse, conforme al <strong>art. 130.3 LBRL</strong>, entre <strong>funcionarios de carrera</strong> del Estado, las CCAA, las Entidades Locales o funcionarios de Administración Local con habilitación nacional, con titulación de doctor, licenciado, ingeniero, arquitecto o equivalente, <strong>salvo</strong> que el decreto de estructura del Área prevea, motivadamente, que su titular no reúna la condición de funcionario [ROGA, art. 49.2].</p>
+<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Los órganos directivos los <strong>nombra y cesa la Junta de Gobierno</strong> (art. 49.1), con carácter general <strong>entre funcionarios de carrera</strong> (art. 130.3 LBRL). La excepción de no ser funcionario puede aplicarse a los <strong>coordinadores generales</strong>, pero <strong>no</strong> a los <strong>secretarios generales técnicos</strong>. [ROGA, art. 49]</div>
+<div class="callout callout-ref"><span class="kicker">Referencia cruzada</span>El régimen del personal funcionario y los requisitos de titulación se desarrollan en el <strong>Tema 5</strong> (EBEP). [REFERENCIA CRUZADA]</div>
+<hr>
+<h2>10. Unidades administrativas inferiores</h2>
+<p>Por debajo de las Direcciones Generales y Secretarías Generales Técnicas, la organización se completa con <strong>Subdirecciones Generales, Servicios, Departamentos, Secciones</strong> y demás unidades [ROGA, art. 41.2]. Su creación, modificación y supresión se realiza por decreto del alcalde o a través de la <strong>relación de puestos de trabajo (RPT)</strong>, según el nivel [ROGA, art. 8].</p>
+<div class="callout callout-ayto"><span class="kicker">Ejemplo Ayto Madrid</span>Un Técnico Auxiliar TIC desarrolla su trabajo, normalmente, dentro de una <strong>unidad administrativa</strong> (Servicio, Departamento o Sección) dependiente de una <strong>Dirección General</strong> o <strong>Secretaría General Técnica</strong> de un Área de Gobierno, o de la <strong>Gerencia</strong> de un distrito (Tema 4).</div>
+<hr>
+<h2>11. Relación con el Alcalde y el Pleno</h2>
+<ul><li>El <strong>alcalde</strong> ostenta la máxima representación del municipio, dirige la política y la Administración municipal y <strong>delega</strong> competencias en la Junta de Gobierno, sus miembros, los concejales y, en su caso, en los órganos directivos, así como en las Juntas Municipales de Distrito [ROGA, arts. 9-11].</li><li>Los <strong>concejales de Gobierno</strong> elevan al <strong>Pleno</strong> las propuestas de su competencia y proponen a la <strong>Junta de Gobierno</strong> las disposiciones de carácter general [ROGA, art. 44.c) y d)].</li></ul>
+<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Cadena de decisión: el <strong>alcalde</strong> dirige y delega; la <strong>Junta de Gobierno</strong> nombra a los directivos y aprueba disposiciones; el <strong>Pleno</strong> ejerce las funciones normativas y de control. Los concejales de Gobierno son la bisagra entre la dirección política y la ejecución administrativa.</div>
+<hr>
+<h2>12. Número y denominación de las actuales Áreas de Gobierno</h2>
+<p>El Ayuntamiento de Madrid se organiza <strong>actualmente en siete (7) Áreas de Gobierno</strong> (organigrama vigente, consultado en 2026):</p>
+<ol><li><strong>Área de Gobierno de Vicealcaldía, Portavoz, Seguridad y Emergencias.</strong></li><li><strong>Área de Gobierno de Urbanismo, Medio Ambiente y Movilidad.</strong></li><li><strong>Área de Gobierno de Cultura, Turismo y Deporte.</strong></li><li><strong>Área de Gobierno de Economía, Innovación y Hacienda.</strong></li><li><strong>Área de Gobierno de Obras y Equipamientos.</strong></li><li><strong>Área de Gobierno de Políticas Sociales, Familia e Igualdad.</strong></li><li><strong>Área de Gobierno de Políticas de Vivienda.</strong></li></ol>
+<p>De ellas dependen, además, diversas <strong>Áreas Delegadas</strong>, entre las vigentes: <strong>Limpieza y Zonas Verdes</strong> (de Urbanismo, Medio Ambiente y Movilidad), <strong>Turismo</strong> y <strong>Deporte</strong> (de Cultura, Turismo y Deporte) e <strong>Innovación y Emprendimiento</strong> (de Economía, Innovación y Hacienda). Junto a las Áreas se sitúan la <strong>Alcaldía</strong> y la <strong>Coordinación General de la Alcaldía</strong>.</p>
+<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Actualmente hay <strong>7 Áreas de Gobierno</strong> (máximo legal: 15). Memorizar sus denominaciones. Existen además <strong>Áreas Delegadas</strong> dependientes de algunas de ellas.</div>
+<div class="callout callout-ayto"><span class="kicker">Ejemplo Ayto Madrid</span>Este apartado es <strong>cambiante</strong>: el número y la denominación de las Áreas los fija el alcalde por decreto en cada mandato. Verificar siempre el <strong>organigrama vigente</strong> en <em>transparencia.madrid.es</em> antes del examen.</div>
+<hr>
+<h2>13. Esquema resumen + cómo estudiar el tema</h2>
+<h3>Síntesis</h3>
+<table><thead><tr><th>Bloque</th><th>Artículos ROGA</th><th>Idea fuerza</th></tr></thead><tbody><tr><td>Organización</td><td>5-6</td><td>División funcional (Áreas) + territorial (distritos); órganos centrales, territoriales y organismos</td></tr><tr><td>Órganos superiores/directivos</td><td>7</td><td>Superiores = política (alcalde + Junta de Gobierno) · Directivos = ejecución</td></tr><tr><td>Áreas de Gobierno</td><td>40</td><td>Niveles esenciales · máx. 15 · las fija el alcalde</td></tr><tr><td>Estructura interna</td><td>41</td><td>Secretaría General Técnica + Direcciones Generales + unidades inferiores</td></tr><tr><td>Jerarquía</td><td>42</td><td>Coordinador general → secretario general técnico → director general</td></tr><tr><td>Órganos superiores de las Áreas</td><td>44-45</td><td>Concejales de Gobierno (todas las funciones) vs concejales de Coordinación/delegados (sin b,c,d,e,j)</td></tr><tr><td>Órganos centrales directivos</td><td>46-49</td><td>Coordinador general, secretario general técnico (rango DG), director general; nombra la Junta de Gobierno</td></tr><tr><td>Áreas actuales</td><td>organigrama</td><td>7 Áreas de Gobierno + Áreas Delegadas</td></tr></tbody></table>
+<h3>Cómo estudiarlo</h3>
+<ol><li><strong>Fija la dualidad</strong> órganos superiores (política) / órganos directivos (ejecución) — art. 7.</li><li><strong>Memoriza los números</strong>: máximo <strong>15</strong> Áreas; orden jerárquico <strong>coordinador general → secretario general técnico → director general</strong>.</li><li><strong>Distingue</strong> concejales de Gobierno (art. 44, todas las funciones) de concejales de Coordinación/delegados (art. 45, sin b,c,d,e,j).</li><li><strong>Quién nombra</strong>: los directivos los nombra <strong>la Junta de Gobierno</strong> (art. 49), entre funcionarios (art. 130.3 LBRL).</li><li><strong>Aprende las 7 Áreas de Gobierno</strong> vigentes (apartado 12), recordando que es un dato actualizable.</li></ol>
+  </div>
+</section>
+<section id="diagramas" class="tab-content">
+  <h1>Diagramas</h1>
+  <div id="diagramas-body"></div>
+</section>
+
+<section id="test" class="tab-content">
+  <h1>Test de autoevaluación</h1>
+  <p class="subtitle">150 preguntas tipo examen (A/B/C). Penalización: cada fallo resta 1/3 de un acierto.</p>
+  <div class="test-controls">
+    <button class="btn btn-blue" id="btn-correct">Corregir test</button>
+    <button class="btn btn-outline" id="btn-show-all">Mostrar todas las respuestas</button>
+    <button class="btn btn-warn" id="btn-reset">Reiniciar</button>
+  </div>
+  <div class="score-bar" id="score-bar" style="display:none">
+    <div class="score-item"><div class="score-value" id="sc-total">0</div><div class="score-label">Respondidas</div></div>
+    <div class="score-item"><div class="score-value good" id="sc-ok">0</div><div class="score-label">Aciertos</div></div>
+    <div class="score-item"><div class="score-value bad" id="sc-ko">0</div><div class="score-label">Fallos</div></div>
+    <div class="score-item"><div class="score-value" id="sc-net">0.00</div><div class="score-label">Nota /10</div></div>
+  </div>
+  <div id="test-body"></div>
+</section>
+<section id="casos" class="tab-content">
+  <h1>Casos prácticos</h1>
+  <p class="subtitle">6 casos aplicados al Ayuntamiento y la Comunidad de Madrid. Cada caso suma 10 puntos.</p>
+  <div id="casos-body">
+<div class="caso-box"><h3>CASO PRÁCTICO 1 — Órganos superiores y directivos <span class="badge badge-new" style="margin-left:10px;font-size:10px;vertical-align:middle">NUEVO v1.0</span></h3><p><strong>Escenario</strong>: Un nuevo Técnico Auxiliar TIC se incorpora a una Dirección General de un Área de Gobierno del Ayuntamiento de Madrid. Para situarse, necesita entender quién es órgano superior y quién directivo, y qué hace cada uno.</p>
+<p><strong>Cuestiones</strong>:</p>
+<ol><li><strong>(2,5 pts)</strong> ¿Cómo clasifica el artículo 7 del ROGA los órganos del Ayuntamiento según sus funciones? Cite dos ejemplos de cada tipo.</li><li><strong>(2,5 pts)</strong> ¿Qué función corresponde a los órganos superiores y cuál a los directivos?</li><li><strong>(2,5 pts)</strong> ¿Qué consideración tienen, en el ámbito de los distritos, los concejales-presidentes y los gerentes?</li><li><strong>(2,5 pts)</strong> ¿A qué régimen de incompatibilidades quedan sometidos unos y otros?</li></ol>
+<p><strong>Solución orientativa</strong>:</p>
+<ol><li>En <strong>órganos superiores</strong> y <strong>órganos directivos</strong> [ROGA, art. 7.1]. Superiores: el <strong>alcalde</strong> y los <strong>miembros de la Junta de Gobierno Local</strong>. Directivos: <strong>coordinadores generales</strong>, <strong>directores generales</strong> (también secretarios generales técnicos, interventor general, etc.) [ROGA, art. 7.2 y 7.3].</li><li>A los superiores, la <strong>dirección, planificación y coordinación política</strong>; a los directivos, la <strong>ejecución</strong> de las decisiones de aquéllos [ROGA, art. 7.4].</li><li>Los <strong>concejales-presidentes</strong> son <strong>órganos superiores</strong>; los <strong>gerentes</strong> de distrito son <strong>órganos directivos</strong> [ROGA, art. 7.2 y 7.3].</li><li>Al régimen de incompatibilidades de la <strong>Ley 53/1984</strong> [ROGA, art. 7.7].</li></ol>
+<p><strong>Criterios de evaluación</strong>: distinción correcta superiores/directivos; función política vs ejecución; encuadre de concejal-presidente (superior) y gerente (directivo); cita de la Ley 53/1984.</p>
+<hr></div>
+<div class="caso-box"><h3>CASO PRÁCTICO 2 — Creación de una nueva Área de Gobierno <span class="badge badge-new" style="margin-left:10px;font-size:10px;vertical-align:middle">NUEVO v1.0</span></h3><p><strong>Escenario</strong>: Tras la constitución de la nueva corporación, el alcalde quiere reorganizar la estructura municipal y crear una nueva Área de Gobierno especializada en transformación digital.</p>
+<p><strong>Cuestiones</strong>:</p>
+<ol><li><strong>(2,5 pts)</strong> ¿Quién puede determinar el número, denominación y atribuciones de las Áreas de Gobierno y mediante qué instrumento?</li><li><strong>(2,5 pts)</strong> ¿Existe un límite al número de Áreas de Gobierno? ¿Cuál?</li><li><strong>(2,5 pts)</strong> ¿Qué naturaleza tienen las Áreas de Gobierno dentro de la organización del artículo 6 y qué comprenden?</li><li><strong>(2,5 pts)</strong> ¿Pueden depender de un Área de Gobierno otras unidades de nivel "Área"? ¿Cuáles?</li></ol>
+<p><strong>Solución orientativa</strong>:</p>
+<ol><li>El <strong>alcalde</strong>, mediante <strong>decreto</strong>, al amparo de los arts. 123.1.c) y 124.4.k) de la LBRL [ROGA, art. 40.2].</li><li>Sí: el número de Áreas de Gobierno <strong>no podrá exceder de 15</strong> [ROGA, art. 40.2].</li><li>Son <strong>órganos centrales</strong> (ejercen competencias sobre todo el municipio) y constituyen los <strong>niveles esenciales</strong> de la organización, comprendiendo uno o varios <strong>sectores funcionalmente homogéneos</strong> [ROGA, arts. 6 y 40.1].</li><li>Sí: pueden depender <strong>Áreas de Coordinación</strong> o <strong>Áreas Delegadas</strong>, que dirigen un sector de la actividad del Área de la que dependen [ROGA, art. 40.1].</li></ol>
+<p><strong>Criterios de evaluación</strong>: identificar al alcalde y el decreto; el tope de 15; naturaleza de órgano central y sectores homogéneos; Áreas de Coordinación/Delegadas.</p>
+<hr></div>
+<div class="caso-box"><h3>CASO PRÁCTICO 3 — Estructura interna y jerarquía de un Área <span class="badge badge-new" style="margin-left:10px;font-size:10px;vertical-align:middle">NUEVO v1.0</span></h3><p><strong>Escenario</strong>: El Área de Gobierno de Economía, Innovación y Hacienda revisa su organigrama interno y plantea dudas sobre los niveles directivos y su orden jerárquico.</p>
+<p><strong>Cuestiones</strong>:</p>
+<ol><li><strong>(3 pts)</strong> ¿Con qué órganos cuenta internamente un Área de Gobierno según el artículo 41?</li><li><strong>(3 pts)</strong> Ordene jerárquicamente los órganos directivos del Área conforme al artículo 42.2.</li><li><strong>(2 pts)</strong> ¿En qué unidades pueden organizarse las Secretarías Generales Técnicas y las Direcciones Generales?</li><li><strong>(2 pts)</strong> ¿Quiénes son los jefes superiores y quiénes los jefes directos del Área?</li></ol>
+<p><strong>Solución orientativa</strong>:</p>
+<ol><li>Con uno o más <strong>coordinadores generales</strong>, una <strong>Secretaría General Técnica</strong> y <strong>Direcciones Generales</strong> u órganos similares [ROGA, art. 41.1].</li><li><strong>1.º coordinador general → 2.º secretario general técnico → 3.º director general</strong> u órgano asimilado [ROGA, art. 42.2].</li><li>En <strong>Subdirecciones Generales, Servicios, Departamentos, Secciones</strong> y otras unidades inferiores [ROGA, art. 41.2].</li><li><strong>Jefes superiores</strong>: los concejales de Gobierno y consejeros-delegados de Gobierno. <strong>Jefes directos</strong>: los concejales de Coordinación y concejales-delegados [ROGA, art. 42.1].</li></ol>
+<p><strong>Criterios de evaluación</strong>: estructura del art. 41; orden jerárquico exacto; unidades inferiores; distinción jefes superiores/directos.</p>
+<hr></div>
+<div class="caso-box"><h3>CASO PRÁCTICO 4 — Funciones de los concejales de Gobierno y de Coordinación <span class="badge badge-new" style="margin-left:10px;font-size:10px;vertical-align:middle">NUEVO v1.0</span></h3><p><strong>Escenario</strong>: En un Área de Gobierno con un concejal de Gobierno titular y un concejal-delegado, surge una controversia sobre qué decisiones puede adoptar cada uno.</p>
+<p><strong>Cuestiones</strong>:</p>
+<ol><li><strong>(3 pts)</strong> Enumere tres funciones propias del concejal de Gobierno conforme al artículo 44.</li><li><strong>(3 pts)</strong> ¿Qué funciones del artículo 44 NO pueden ejercer los concejales de Coordinación y concejales-delegados?</li><li><strong>(2 pts)</strong> ¿Ante quién responden los concejales de Coordinación y concejales-delegados?</li><li><strong>(2 pts)</strong> ¿Quién propone a la Junta de Gobierno el nombramiento de los titulares de los órganos directivos del Área?</li></ol>
+<p><strong>Solución orientativa</strong>:</p>
+<ol><li>Por ejemplo: <strong>a)</strong> representación, dirección, gestión e inspección del Área; <strong>b)</strong> fijar objetivos y aprobar planes de actuación; <strong>c)</strong> elevar propuestas al Pleno; <strong>d)</strong> proponer disposiciones a la Junta de Gobierno; <strong>e)</strong> proponer al alcalde la organización del Área (basta citar tres) [ROGA, art. 44].</li><li>Las de las letras <strong>b), c), d), e) y j)</strong> [ROGA, art. 45.1].</li><li>Ante el <strong>órgano superior inmediato</strong> del que dependan [ROGA, art. 45.2].</li><li>El <strong>concejal de Gobierno o consejero-delegado de Gobierno</strong> del Área [ROGA, art. 44.j)].</li></ol>
+<p><strong>Criterios de evaluación</strong>: tres funciones correctas del art. 44; identificación exacta de las letras excluidas (b, c, d, e, j); responsabilidad ante el superior inmediato; propuesta de nombramiento por el concejal de Gobierno.</p>
+<hr></div>
+<div class="caso-box"><h3>CASO PRÁCTICO 5 — Nombramiento de un órgano directivo <span class="badge badge-new" style="margin-left:10px;font-size:10px;vertical-align:middle">NUEVO v1.0</span></h3><p><strong>Escenario</strong>: El Área de Gobierno de Urbanismo, Medio Ambiente y Movilidad debe cubrir una Dirección General y una Secretaría General Técnica. Recursos Humanos consulta los requisitos.</p>
+<p><strong>Cuestiones</strong>:</p>
+<ol><li><strong>(3 pts)</strong> ¿Qué órgano nombra y cesa a los coordinadores generales, secretarios generales técnicos y directores generales?</li><li><strong>(3 pts)</strong> ¿Entre quiénes deben nombrarse, con carácter general, y con qué titulación?</li><li><strong>(2 pts)</strong> ¿A qué órgano directivo puede aplicarse la excepción de no ser funcionario y a cuál no?</li><li><strong>(2 pts)</strong> ¿Qué rango tiene el secretario general técnico y de quién depende?</li></ol>
+<p><strong>Solución orientativa</strong>:</p>
+<ol><li>La <strong>Junta de Gobierno</strong> [ROGA, art. 49.1].</li><li>Con carácter general, entre <strong>funcionarios de carrera</strong> del Estado, las CCAA, las Entidades Locales o funcionarios de Administración Local con habilitación nacional, con titulación de <strong>doctor, licenciado, ingeniero, arquitecto o equivalente</strong> (art. 130.3 LBRL) [ROGA, art. 49.2].</li><li>Puede aplicarse a los <strong>coordinadores generales</strong>; <strong>no</strong> a los <strong>secretarios generales técnicos</strong> [ROGA, art. 49.3].</li><li>Tiene <strong>rango de director general</strong> y depende directamente del <strong>titular del Área de Gobierno</strong> [ROGA, art. 47].</li></ol>
+<p><strong>Criterios de evaluación</strong>: la Junta de Gobierno como órgano competente; requisito de funcionario y titulación (art. 130.3 LBRL); excepción aplicable solo a coordinador general; rango y dependencia del secretario general técnico.</p>
+<hr></div>
+<div class="caso-box"><h3>CASO PRÁCTICO 6 — Las Áreas de Gobierno actuales y la relación con Alcalde y Pleno <span class="badge badge-new" style="margin-left:10px;font-size:10px;vertical-align:middle">NUEVO v1.0</span></h3><p><strong>Escenario</strong>: En una jornada de acogida se explica a los nuevos empleados el organigrama vigente del Ayuntamiento y la cadena de decisión municipal.</p>
+<p><strong>Cuestiones</strong>:</p>
+<ol><li><strong>(3 pts)</strong> ¿En cuántas Áreas de Gobierno se organiza actualmente el Ayuntamiento de Madrid? Cite tres de ellas.</li><li><strong>(2 pts)</strong> ¿Es un dato fijo? ¿Quién y cómo puede modificarlo?</li><li><strong>(3 pts)</strong> Explique el papel del alcalde, de la Junta de Gobierno y del Pleno en relación con las Áreas de Gobierno.</li><li><strong>(2 pts)</strong> ¿Qué son las Áreas Delegadas y de qué dependen?</li></ol>
+<p><strong>Solución orientativa</strong>:</p>
+<ol><li>En <strong>siete (7)</strong> Áreas de Gobierno (organigrama vigente). Por ejemplo: Vicealcaldía, Portavoz, Seguridad y Emergencias; Urbanismo, Medio Ambiente y Movilidad; Economía, Innovación y Hacienda (entre otras) [Organigrama vigente].</li><li><strong>No</strong> es fijo: el <strong>alcalde</strong>, por <strong>decreto</strong>, fija el número (máximo 15), la denominación y las atribuciones en cada mandato [ROGA, art. 40.2].</li><li>El <strong>alcalde</strong> dirige y delega y determina las Áreas; la <strong>Junta de Gobierno</strong> nombra a los directivos y aprueba las disposiciones que proponen las Áreas; el <strong>Pleno</strong> ejerce las funciones normativas y de control, recibiendo las propuestas que elevan los concejales de Gobierno [ROGA, arts. 9-11, 44, 49].</li><li>Son Áreas que <strong>dependen de un Área de Gobierno</strong> y dirigen un sector de su actividad administrativa [ROGA, art. 40.1].</li></ol>
+<p><strong>Criterios de evaluación</strong>: número (7) y ejemplos correctos de Áreas; carácter actualizable y competencia del alcalde; papel diferenciado de alcalde/Junta/Pleno; concepto de Área Delegada.</p>
+<hr></div>
+  </div>
+</section>
+<section id="validacion" class="tab-content">
+  <h1>Validación</h1>
+  <div id="validacion-body">
+<hr>
+<h2>Cómo usar este checklist</h2>
+<ul><li><strong>OK</strong> → el criterio se cumple sin cambios.</li><li><strong>REVISAR</strong> → necesita ajuste o aclaración (indicar qué).</li><li><strong>NO</strong> → no se cumple o es incorrecto. Justificar.</li></ul>
+<hr>
+<h2>1. Fuentes y trazabilidad</h2>
+<ul><li>[ ] La fuente nuclear es el <strong>ROGA 2004</strong> (arts. 5-11 y 40-49), coincidente con el PDF aportado por el cliente y con el texto oficial.</li><li>[ ] El epígrafe "número y denominación de las <strong>actuales</strong> Áreas de Gobierno" se ha actualizado con el <strong>organigrama vigente</strong> (transparencia.madrid.es).</li><li>[ ] Cada afirmación que reproduce el articulado está referenciada con <code>[ROGA, art. X]</code> o <code>[LBRL, art. X]</code>.</li><li>[ ] Cada pregunta del banco y de los casos puede reconducirse a un artículo del ROGA, a la LBRL o al organigrama vigente.</li></ul>
+<h2>2. Estructura del contenido</h2>
+<ul><li>[ ] El <code>tema-3-indice.md</code> refleja fielmente la estructura de <code>tema-3-contenido.md</code>.</li><li>[ ] Las secciones cubren: ROGA y régimen de gran ciudad, órganos (centrales/territoriales/organismos), superiores/directivos, Áreas de Gobierno (concepto y número), estructura interna, jerarquía, órganos superiores de las Áreas, órganos centrales directivos, nombramiento, Áreas actuales y resumen.</li><li>[ ] Los conceptos memorizables aparecen como <code>[DATO CLAVE EXAMEN]</code>.</li><li>[ ] Las reproducciones del articulado aparecen como <code>[CITA NORMATIVA]</code>.</li><li>[ ] Los ejemplos del Ayto de Madrid están marcados como <code>[EJEMPLO AYTO MADRID]</code>.</li><li>[ ] Los enlaces a otros temas se marcan como <code>[REFERENCIA CRUZADA]</code>.</li></ul>
+<h2>3. Rigor jurídico</h2>
+<ul><li>[ ] El ROGA es de <strong>31 de mayo de 2004</strong>.</li><li>[ ] Los dos principios de organización (división funcional / gestión territorial) son correctos [art. 5].</li><li>[ ] La clasificación órganos centrales/territoriales/organismos es correcta [art. 6].</li><li>[ ] La distinción órganos superiores (política) / directivos (ejecución) es correcta [art. 7].</li><li>[ ] El número máximo de Áreas de Gobierno (<strong>15</strong>) y la competencia del alcalde son correctos [art. 40.2].</li><li>[ ] La estructura interna (Secretaría General Técnica + Direcciones Generales) es correcta [art. 41].</li><li>[ ] El orden jerárquico (coordinador general → secretario general técnico → director general) es correcto [art. 42.2].</li><li>[ ] Las funciones excluidas a los concejales de Coordinación (b, c, d, e, j) son correctas [art. 45.1].</li><li>[ ] El rango de director general del secretario general técnico es correcto [art. 47.1].</li><li>[ ] El nombramiento por la Junta de Gobierno entre funcionarios (art. 130.3 LBRL) y la excepción (coordinador general sí, secretario general técnico no) son correctos [art. 49].</li></ul>
+<h2>4. Diagramas SVG</h2>
+<ul><li>[ ] Los 12 diagramas están presentes en <code>tema-3-diagramas.md</code>.</li><li>[ ] Cada diagrama incluye <code>role="img"</code> y <code>aria-label</code> descriptivo.</li><li>[ ] Paleta coherente: Ayto Madrid #0055a0 + #d13c3c + #2d8659 + #e89822.</li><li>[ ] Ningún diagrama depende de CDN, fuentes externas ni scripts.</li></ul>
+<h2>5. Banco de 150 preguntas</h2>
+<ul><li>[ ] Las 150 preguntas tienen 3 opciones y una única respuesta correcta verificable.</li><li>[ ] La distribución A/B/C está equilibrada (~50/50/50) tras el balanceo automático.</li><li>[ ] No hay preguntas ambiguas.</li><li>[ ] La sección pedagógica de 20 preguntas incluye explicación y referencia.</li></ul>
+<h2>6. Casos prácticos</h2>
+<ul><li>[ ] Los 6 casos mantienen escenario del Ayto de Madrid.</li><li>[ ] Las cuestiones de cada caso suman 10 puntos.</li><li>[ ] Cada caso tiene solución orientativa y criterios de evaluación.</li></ul>
+<h2>7. Nivel y adecuación al C1</h2>
+<ul><li>[ ] Nivel de profundidad adecuado para C1.</li><li>[ ] Se prioriza la memorización de artículos, números y órganos.</li><li>[ ] Los ejemplos de Madrid son realistas.</li></ul>
+<h2>8. Entregables HTML</h2>
+<ul><li>[ ] <code>index.html</code> autosuficiente (offline), 7 pestañas, motor de test con penalización 1/3.</li><li>[ ] Imprimible a PDF.</li><li>[ ] Branding Ayuntamiento de Madrid (#0055a0).</li></ul>
+<h2>9. Consistencia inter-temas</h2>
+<ul><li>[ ] Referencias cruzadas al <strong>Tema 2</strong> (régimen especial de Madrid) y al <strong>Tema 4</strong> (Distritos) coherentes.</li><li>[ ] Referencia al <strong>Tema 5</strong> (EBEP) para el régimen de los directivos coherente.</li></ul>
+<hr>
+<h2>Observaciones generales</h2>
+<h3>Decisiones conscientes que conviene confirmar</h3>
+<ol><li><strong>Alcance</strong>: fiel al PDF de cliente (resumen + anexo ROGA arts. 40-49), <strong>ampliado</strong> con el marco general del ROGA (arts. 5-11), la LBRL invocada y la actualización del organigrama vigente.</li><li><strong>"Áreas de Gobierno actuales" actualizadas</strong> con el organigrama oficial vigente (7 Áreas + Áreas Delegadas), por su carácter cambiante. El PDF de cliente coincide en las 7 Áreas.</li><li><strong>150 preguntas + 20 pedagógicas + 6 casos + 12 diagramas + 7 pestañas</strong>, replicando el formato del Tema 1/Tema 2.</li><li><strong>Balanceo automático A/B/C</strong> mediante permutación determinista en <code>build_t3.py</code>.</li></ol>
+<h3>Punto a vigilar</h3>
+<ul><li>El apartado <strong>"número y denominación de las actuales Áreas de Gobierno"</strong> es <strong>volátil</strong>: depende del decreto de organización de cada mandato. Antes de cada convocatoria conviene reverificar el organigrama vigente.</li></ul>
+<hr>
+<h2>Decisión de cierre</h2>
+<ul><li>[ ] Aprobado sin cambios.</li><li>[ ] Aprobado con cambios menores (listarlos).</li><li>[ ] Requiere v2 (listar cambios sustanciales).</li></ul>
+<p><strong>Firmas</strong>:</p>
+<ul><li>María: _______________________________ Fecha: _____________</li><li>Ana: _______________________________ Fecha: _____________</li></ul>
+  </div>
+</section>
+<section id="fuentes" class="tab-content">
+  <h1>Fuentes</h1>
+  <div id="fuentes-body">
+<hr>
+<h2>Naturaleza de las fuentes en este tema</h2>
+<p>El Tema 3 trabaja con <strong>corpus normativo cerrado</strong>: el texto del Reglamento Orgánico del Gobierno y de la Administración del Ayuntamiento de Madrid (ROGA), de 31 de mayo de 2004, en su parte relativa a las Áreas de Gobierno (Título V, Capítulo I, arts. 40-49).</p>
+<ul><li>La fuente nuclear es el <strong>texto oficial del ROGA 2004</strong> (Ayuntamiento de Madrid), aportado por el cliente en el PDF <code>Tema 3.pdf</code> (resumen + anexo del articulado) y <strong>contrastado con el texto oficial completo</strong> publicado por el Ayuntamiento de Madrid.</li><li>Alcance ampliado coherente con el resto de temas admin: se añade el encuadre del <strong>régimen de gran ciudad</strong> (Ley 22/2006 de Capitalidad) y la referencia a la <strong>LBRL</strong> (arts. 123, 124, 130) que el propio ROGA invoca.</li><li>El epígrafe <em>"número y denominación de las actuales Áreas de Gobierno"</em> se ha <strong>actualizado con el organigrama oficial vigente</strong> (transparencia.madrid.es), por su carácter cambiante en cada mandato.</li></ul>
+<hr>
+<h2>Tier 1 — Fuentes primarias (cita directa)</h2>
+<table><thead><tr><th>Ref</th><th>Título</th><th>Publicación / origen</th><th>Uso</th></tr></thead><tbody><tr><td>[ROGA]</td><td>Reglamento Orgánico del Gobierno y de la Administración del Ayuntamiento de Madrid, de 31 de mayo de 2004</td><td>Acuerdo del Pleno 31/05/2004 (texto oficial Ayto. Madrid)</td><td><strong>Fuente nuclear</strong>: arts. 5-11 (organización) y 40-49 (Áreas de Gobierno y órganos directivos)</td></tr><tr><td>[LBRL]</td><td>Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local</td><td>BOE núm. 80 de 03/04/1985</td><td>Título X (régimen de organización de los municipios de gran población): arts. 123, 124, 130. Habilita el ROGA</td></tr><tr><td>[LCREM]</td><td>Ley 22/2006, de 4 de julio, de Capitalidad y de Régimen Especial de Madrid</td><td>BOE núm. 182 de 01/08/2006</td><td>Marco del régimen especial del municipio de Madrid</td></tr><tr><td>[ORG-VIGENTE]</td><td>Organigrama y Áreas de Gobierno vigentes del Ayuntamiento de Madrid</td><td>transparencia.madrid.es / madrid.es (consultado 2026-06-15)</td><td>Número y denominación actuales de las Áreas de Gobierno y Áreas Delegadas</td></tr></tbody></table>
+<h3>Esquema de referencia para el contenido</h3>
+<ul><li><strong>Articulado ROGA</strong>: <code>[ROGA, art. X]</code> o <code>[ROGA, art. X.Y]</code> — p. ej. <code>[ROGA, art. 40.2]</code></li><li><strong>Ley de bases</strong>: <code>[LBRL, art. 123]</code>, <code>[LBRL, art. 130.3]</code></li><li><strong>Régimen especial</strong>: <code>[LCREM]</code></li><li><strong>Modificaciones</strong>: el ROGA fue modificado, entre otras, el <strong>30 de septiembre de 2015</strong> (afectó a los arts. 42.2, 46 y 47). Se indica cuando procede.</li></ul>
+<hr>
+<h2>Tier 2 — Material aportado por el cliente</h2>
+<table><thead><tr><th>Ref</th><th>Archivo</th><th>Aporte</th></tr></thead><tbody><tr><td>[MAT-PDF]</td><td><code>Test_Prompting/temas junio/Tema 3.pdf</code></td><td>Resumen del tema + anexo con el articulado del ROGA (arts. 40-49) + listado de Áreas de Gobierno. Fuente base</td></tr><tr><td>[MAT-DOCX]</td><td><code>Test_Prompting/temas junio/TEMA_03.docx</code></td><td>Índice/esqueleto oficial del tema + URL oficial de las Áreas de Gobierno</td></tr><tr><td>[BOAM-10032]</td><td>Temario oficial BOAM 10.032 (23-dic-2025)</td><td>Enunciado oficial del Tema 3</td></tr></tbody></table>
+<hr>
+<h2>Tier 3 — Descartadas</h2>
+<ul><li><strong>Doctrina académica y academias privadas</strong>: no se usan como fuente de contenido.</li><li><strong>Organigramas de mandatos anteriores</strong>: descartados; solo se usa el vigente para "Áreas actuales".</li><li><strong>Reglamento Orgánico del Pleno y Reglamento Orgánico de los Distritos</strong>: fuera del alcance de este tema (el de Distritos se trata en el <strong>Tema 4</strong>).</li></ul>
+<hr>
+<h2>Normas de citación en el contenido</h2>
+<ol><li>Toda afirmación que reproduzca el articulado del ROGA va acompañada de <code>[ROGA, art. X]</code>.</li><li>Las remisiones a la ley de bases se identifican con <code>[LBRL, art. X]</code>.</li><li>Los datos memorísticos (número máximo de Áreas, orden jerárquico, órgano que nombra) se marcan con <code>[DATO CLAVE EXAMEN]</code>.</li><li>La distinción entre <strong>órganos superiores</strong> y <strong>órganos directivos</strong> se recuerda en <code>[REFERENCIA CRUZADA]</code> cuando reaparece.</li><li>Las menciones a las Áreas de Gobierno vigentes y a la aplicación al puesto se marcan con <code>[EJEMPLO AYTO MADRID]</code>.</li></ol>
+<hr>
+<h2>Trazabilidad fuente → contenido → pregunta</h2>
+<p>Cada pregunta del banco y cada cuestión de los casos prácticos debe poder reconducirse a:</p>
+<ol><li>Un artículo concreto del ROGA (Tier 1), o</li><li>Un precepto de la LBRL que el ROGA invoca (Tier 1), o</li><li>El organigrama oficial vigente (para el número y denominación de Áreas), o</li><li>El material aportado por el cliente (Tier 2) que a su vez apunte a Tier 1.</li></ol>
+  </div>
+</section>
+<script>
+const DIAGRAMAS_HTML = "<div class=\"diagram\"><div class=\"diagram-title\">D1 · Los dos principios de organización del Ayuntamiento</div><div class=\"diagram-sec\">§ 1 — Introducción</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 300\" role=\"img\" aria-label=\"Los dos principios de organización del Ayuntamiento de Madrid: división funcional en Áreas de Gobierno y gestión territorial en distritos\">\n  <style>\n    .a-h{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .a-t{font:13px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}\n    .a-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}\n  </style>\n  <rect x=\"250\" y=\"20\" width=\"200\" height=\"46\" rx=\"8\" fill=\"#003d75\"/>\n  <text x=\"350\" y=\"40\" class=\"a-h\">ROGA 2004</text>\n  <text x=\"350\" y=\"57\" class=\"a-h\" style=\"font-weight:400;font-size:11px\">art. 5 · organización municipal</text>\n  <line x1=\"350\" y1=\"66\" x2=\"350\" y2=\"86\" stroke=\"#0055a0\" stroke-width=\"1.5\"/>\n  <line x1=\"180\" y1=\"104\" x2=\"180\" y2=\"86\" stroke=\"#0055a0\" stroke-width=\"1.5\"/>\n  <line x1=\"520\" y1=\"104\" x2=\"520\" y2=\"86\" stroke=\"#0055a0\" stroke-width=\"1.5\"/>\n  <line x1=\"180\" y1=\"86\" x2=\"520\" y2=\"86\" stroke=\"#0055a0\" stroke-width=\"1.5\"/>\n  <rect x=\"60\" y=\"104\" width=\"240\" height=\"150\" rx=\"8\" fill=\"#e8f0f8\" stroke=\"#0055a0\" stroke-width=\"1.5\"/>\n  <text x=\"180\" y=\"132\" class=\"a-h\" style=\"fill:#003d75\">DIVISIÓN FUNCIONAL</text>\n  <text x=\"180\" y=\"160\" class=\"a-t\">Áreas de Gobierno</text>\n  <text x=\"180\" y=\"184\" class=\"a-s\">sectores homogéneos de</text>\n  <text x=\"180\" y=\"200\" class=\"a-s\">actividad · órganos centrales</text>\n  <text x=\"180\" y=\"228\" class=\"a-s\" style=\"font-weight:700;fill:#0055a0\">→ TEMA 3 (este)</text>\n  <rect x=\"400\" y=\"104\" width=\"240\" height=\"150\" rx=\"8\" fill=\"#e8f5ee\" stroke=\"#2d8659\" stroke-width=\"1.5\"/>\n  <text x=\"520\" y=\"132\" class=\"a-h\" style=\"fill:#1f5e3f\">GESTIÓN TERRITORIAL</text>\n  <text x=\"520\" y=\"160\" class=\"a-t\">Distritos</text>\n  <text x=\"520\" y=\"184\" class=\"a-s\">gestión desconcentrada</text>\n  <text x=\"520\" y=\"200\" class=\"a-s\">por territorio · órganos territoriales</text>\n  <text x=\"520\" y=\"228\" class=\"a-s\" style=\"font-weight:700;fill:#2d8659\">→ TEMA 4</text>\n</svg><div class=\"diagram-caption\">Mostrar la división funcional (Áreas) y territorial (distritos).</div></div>\n<div class=\"diagram\"><div class=\"diagram-title\">D2 · Órganos centrales, territoriales y organismos (art. 6)</div><div class=\"diagram-sec\">§ 2 — La organización del Ayuntamiento</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 320\" role=\"img\" aria-label=\"Organización del Ayuntamiento: órganos centrales, órganos territoriales y organismos públicos según el artículo 6\">\n  <style>\n    .b-root{fill:#0055a0;stroke:#003d75;stroke-width:2}\n    .b-box{fill:#fff;stroke:#0055a0;stroke-width:1.5}\n    .b-t{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .b-h{font:700 13px system-ui,sans-serif;fill:#003d75;text-anchor:middle}\n    .b-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}\n    .b-l{stroke:#0055a0;stroke-width:1.5;fill:none}\n  </style>\n  <rect x=\"250\" y=\"20\" width=\"200\" height=\"46\" rx=\"8\" class=\"b-root\"/>\n  <text x=\"350\" y=\"40\" class=\"b-t\">AYUNTAMIENTO DE MADRID</text>\n  <text x=\"350\" y=\"57\" class=\"b-t\" style=\"font-weight:400;font-size:11px\">ROGA art. 6</text>\n  <line x1=\"350\" y1=\"66\" x2=\"350\" y2=\"92\" class=\"b-l\"/>\n  <line x1=\"130\" y1=\"110\" x2=\"130\" y2=\"92\" class=\"b-l\"/>\n  <line x1=\"350\" y1=\"110\" x2=\"350\" y2=\"92\" class=\"b-l\"/>\n  <line x1=\"570\" y1=\"110\" x2=\"570\" y2=\"92\" class=\"b-l\"/>\n  <line x1=\"130\" y1=\"92\" x2=\"570\" y2=\"92\" class=\"b-l\"/>\n  <rect x=\"30\" y=\"110\" width=\"200\" height=\"120\" rx=\"8\" class=\"b-box\"/>\n  <text x=\"130\" y=\"138\" class=\"b-h\">Órganos CENTRALES</text>\n  <text x=\"130\" y=\"164\" class=\"b-s\">competencias sobre TODO</text>\n  <text x=\"130\" y=\"180\" class=\"b-s\">el municipio</text>\n  <text x=\"130\" y=\"206\" class=\"b-s\" style=\"font-style:italic\">Áreas de Gobierno</text>\n  <rect x=\"250\" y=\"110\" width=\"200\" height=\"120\" rx=\"8\" class=\"b-box\"/>\n  <text x=\"350\" y=\"138\" class=\"b-h\">Órganos TERRITORIALES</text>\n  <text x=\"350\" y=\"164\" class=\"b-s\">competencias en EL ÁMBITO</text>\n  <text x=\"350\" y=\"180\" class=\"b-s\">de un distrito</text>\n  <text x=\"350\" y=\"206\" class=\"b-s\" style=\"font-style:italic\">distritos (Tema 4)</text>\n  <rect x=\"470\" y=\"110\" width=\"200\" height=\"120\" rx=\"8\" class=\"b-box\"/>\n  <text x=\"570\" y=\"138\" class=\"b-h\">ORGANISMOS PÚBLICOS</text>\n  <text x=\"570\" y=\"164\" class=\"b-s\">ejecución / gestión</text>\n  <text x=\"570\" y=\"180\" class=\"b-s\">adscritos a un Área</text>\n  <text x=\"570\" y=\"206\" class=\"b-s\" style=\"font-style:italic\">autónomos y EPE</text>\n</svg><div class=\"diagram-caption\">Clasificar la organización municipal en tres bloques.</div></div>\n<div class=\"diagram\"><div class=\"diagram-title\">D3 · Órganos superiores vs órganos directivos (art. 7)</div><div class=\"diagram-sec\">§ 3 — Órganos superiores y directivos</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 320\" role=\"img\" aria-label=\"Órganos superiores frente a órganos directivos según el artículo 7: los superiores dirigen políticamente y los directivos ejecutan\">\n  <style>\n    .c-hb{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .c-s{font:11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}\n  </style>\n  <rect x=\"30\" y=\"20\" width=\"310\" height=\"270\" rx=\"10\" fill=\"#fff\" stroke=\"#0055a0\" stroke-width=\"1.5\"/>\n  <rect x=\"30\" y=\"20\" width=\"310\" height=\"44\" rx=\"10\" fill=\"#0055a0\"/>\n  <text x=\"185\" y=\"48\" class=\"c-hb\">ÓRGANOS SUPERIORES</text>\n  <text x=\"50\" y=\"92\" class=\"c-s\" style=\"font-weight:700;fill:#003d75\">Función: dirección política</text>\n  <text x=\"50\" y=\"120\" class=\"c-s\">• El alcalde</text>\n  <text x=\"50\" y=\"144\" class=\"c-s\">• Miembros de la Junta de Gobierno Local</text>\n  <text x=\"50\" y=\"168\" class=\"c-s\">• Junta de Gobierno Local (órgano)</text>\n  <text x=\"50\" y=\"192\" class=\"c-s\">• Concejales con responsabilidades</text>\n  <text x=\"62\" y=\"208\" class=\"c-s\">de gobierno</text>\n  <text x=\"50\" y=\"232\" class=\"c-s\">• Concejales-presidentes de distrito</text>\n  <text x=\"50\" y=\"266\" class=\"c-s\" style=\"font-style:italic;fill:#777\">dirección · planificación · coordinación</text>\n  <rect x=\"360\" y=\"20\" width=\"310\" height=\"270\" rx=\"10\" fill=\"#fff\" stroke=\"#2d8659\" stroke-width=\"1.5\"/>\n  <rect x=\"360\" y=\"20\" width=\"310\" height=\"44\" rx=\"10\" fill=\"#2d8659\"/>\n  <text x=\"515\" y=\"48\" class=\"c-hb\">ÓRGANOS DIRECTIVOS</text>\n  <text x=\"380\" y=\"92\" class=\"c-s\" style=\"font-weight:700;fill:#1f5e3f\">Función: ejecución</text>\n  <text x=\"380\" y=\"120\" class=\"c-s\">• Coordinadores generales</text>\n  <text x=\"380\" y=\"144\" class=\"c-s\">• Secretarios generales técnicos</text>\n  <text x=\"380\" y=\"168\" class=\"c-s\">• Directores generales</text>\n  <text x=\"380\" y=\"192\" class=\"c-s\">• Asesoría Jurídica · interventor general</text>\n  <text x=\"380\" y=\"216\" class=\"c-s\">• Gerentes (distritos y organismos)</text>\n  <text x=\"380\" y=\"240\" class=\"c-s\">• Secretario general del Pleno</text>\n  <text x=\"380\" y=\"266\" class=\"c-s\" style=\"font-style:italic;fill:#777\">ejecutan las decisiones</text>\n</svg><div class=\"diagram-caption\">Contraponer las dos categorías y sus funciones.</div></div>\n<div class=\"diagram\"><div class=\"diagram-title\">D4 · Las Áreas de Gobierno: concepto y número (art. 40)</div><div class=\"diagram-sec\">§ 4 — Las Áreas de Gobierno</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 280\" role=\"img\" aria-label=\"Las Áreas de Gobierno: niveles esenciales, número máximo de 15 y determinación por el alcalde, según el artículo 40\">\n  <style>\n    .d-c{fill:#0055a0;stroke:#003d75;stroke-width:2}\n    .d-b{fill:#fff;stroke:#0055a0;stroke-width:1.5}\n    .d-t{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .d-h{font:700 12px system-ui,sans-serif;fill:#003d75;text-anchor:middle}\n    .d-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}\n  </style>\n  <ellipse cx=\"350\" cy=\"80\" rx=\"160\" ry=\"48\" class=\"d-c\"/>\n  <text x=\"350\" y=\"74\" class=\"d-t\">ÁREAS DE GOBIERNO</text>\n  <text x=\"350\" y=\"94\" class=\"d-t\" style=\"font-weight:400;font-size:11px\">niveles esenciales · sectores homogéneos</text>\n  <rect x=\"40\" y=\"170\" width=\"190\" height=\"80\" rx=\"8\" fill=\"#fdf4e4\" stroke=\"#e89822\" stroke-width=\"1.5\"/>\n  <text x=\"135\" y=\"200\" class=\"d-h\" style=\"fill:#a8650f\">Número máximo</text>\n  <text x=\"135\" y=\"226\" class=\"d-t\" style=\"fill:#a8650f;font-size:24px\">15</text>\n  <rect x=\"255\" y=\"170\" width=\"190\" height=\"80\" rx=\"8\" class=\"d-b\"/>\n  <text x=\"350\" y=\"198\" class=\"d-h\">Las determina</text>\n  <text x=\"350\" y=\"220\" class=\"d-h\" style=\"font-size:14px\">EL ALCALDE</text>\n  <text x=\"350\" y=\"238\" class=\"d-s\">nº, denominación y atribuciones</text>\n  <rect x=\"470\" y=\"170\" width=\"190\" height=\"80\" rx=\"8\" class=\"d-b\"/>\n  <text x=\"565\" y=\"198\" class=\"d-h\">Pueden depender</text>\n  <text x=\"565\" y=\"220\" class=\"d-s\">Áreas de Coordinación</text>\n  <text x=\"565\" y=\"236\" class=\"d-s\">o Áreas Delegadas</text>\n  <line x1=\"250\" y1=\"120\" x2=\"135\" y2=\"170\" stroke=\"#0055a0\" stroke-width=\"1.2\"/>\n  <line x1=\"350\" y1=\"128\" x2=\"350\" y2=\"170\" stroke=\"#0055a0\" stroke-width=\"1.2\"/>\n  <line x1=\"450\" y1=\"120\" x2=\"565\" y2=\"170\" stroke=\"#0055a0\" stroke-width=\"1.2\"/>\n</svg><div class=\"diagram-caption\">Fijar el concepto, el máximo de 15 y quién las determina.</div></div>\n<div class=\"diagram\"><div class=\"diagram-title\">D5 · Estructura interna de un Área de Gobierno (art. 41)</div><div class=\"diagram-sec\">§ 5 — Estructura interna</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 360\" role=\"img\" aria-label=\"Estructura interna de un Área de Gobierno: Secretaría General Técnica y Direcciones Generales, con Subdirecciones, Servicios, Departamentos y Secciones, según el artículo 41\">\n  <style>\n    .e-root{fill:#0055a0;stroke:#003d75;stroke-width:2}\n    .e-box{fill:#fff;stroke:#0055a0;stroke-width:1.5}\n    .e-low{fill:#e8f0f8;stroke:#0055a0;stroke-width:1}\n    .e-t{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .e-h{font:700 12px system-ui,sans-serif;fill:#003d75;text-anchor:middle}\n    .e-s{font:10.5px system-ui,sans-serif;fill:#444;text-anchor:middle}\n    .e-l{stroke:#0055a0;stroke-width:1.3;fill:none}\n  </style>\n  <rect x=\"260\" y=\"16\" width=\"180\" height=\"42\" rx=\"8\" class=\"e-root\"/>\n  <text x=\"350\" y=\"42\" class=\"e-t\">ÁREA DE GOBIERNO</text>\n  <line x1=\"350\" y1=\"58\" x2=\"350\" y2=\"78\" class=\"e-l\"/>\n  <line x1=\"160\" y1=\"96\" x2=\"160\" y2=\"78\" class=\"e-l\"/>\n  <line x1=\"350\" y1=\"96\" x2=\"350\" y2=\"78\" class=\"e-l\"/>\n  <line x1=\"540\" y1=\"96\" x2=\"540\" y2=\"78\" class=\"e-l\"/>\n  <line x1=\"160\" y1=\"78\" x2=\"540\" y2=\"78\" class=\"e-l\"/>\n  <rect x=\"60\" y=\"96\" width=\"200\" height=\"52\" rx=\"8\" class=\"e-box\"/>\n  <text x=\"160\" y=\"118\" class=\"e-h\">Coordinador/es</text>\n  <text x=\"160\" y=\"135\" class=\"e-h\">general/es</text>\n  <rect x=\"260\" y=\"96\" width=\"180\" height=\"52\" rx=\"8\" class=\"e-box\"/>\n  <text x=\"350\" y=\"118\" class=\"e-h\">Secretaría</text>\n  <text x=\"350\" y=\"135\" class=\"e-h\">General Técnica</text>\n  <rect x=\"450\" y=\"96\" width=\"200\" height=\"52\" rx=\"8\" class=\"e-box\"/>\n  <text x=\"550\" y=\"118\" class=\"e-h\">Direcciones</text>\n  <text x=\"550\" y=\"135\" class=\"e-h\">Generales</text>\n  <line x1=\"450\" y1=\"180\" x2=\"450\" y2=\"148\" class=\"e-l\"/>\n  <line x1=\"450\" y1=\"148\" x2=\"350\" y2=\"148\" class=\"e-l\" style=\"stroke-dasharray:3\"/>\n  <rect x=\"190\" y=\"210\" width=\"320\" height=\"120\" rx=\"8\" class=\"e-low\"/>\n  <text x=\"350\" y=\"236\" class=\"e-h\">Unidades inferiores</text>\n  <text x=\"350\" y=\"262\" class=\"e-s\">Subdirecciones Generales</text>\n  <text x=\"350\" y=\"282\" class=\"e-s\">Servicios · Departamentos</text>\n  <text x=\"350\" y=\"302\" class=\"e-s\">Secciones y otras unidades</text>\n  <text x=\"350\" y=\"322\" class=\"e-s\" style=\"font-style:italic;fill:#777\">art. 41.2</text>\n  <line x1=\"350\" y1=\"148\" x2=\"350\" y2=\"210\" class=\"e-l\"/>\n</svg><div class=\"diagram-caption\">Árbol de la estructura de un Área.</div></div>\n<div class=\"diagram\"><div class=\"diagram-title\">D6 · Ordenación jerárquica de los directivos (art. 42)</div><div class=\"diagram-sec\">§ 6 — Ordenación jerárquica</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 300\" role=\"img\" aria-label=\"Orden jerárquico de los órganos directivos: coordinador general, secretario general técnico y director general, según el artículo 42\">\n  <style>\n    .f-t{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .f-n{font:700 12px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .f-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}\n  </style>\n  <polygon points=\"350,30 250,110 450,110\" fill=\"#003d75\"/>\n  <text x=\"350\" y=\"86\" class=\"f-n\">1.º</text>\n  <text x=\"350\" y=\"102\" class=\"f-t\" style=\"font-size:11px\">Coordinador general</text>\n  <rect x=\"210\" y=\"118\" width=\"280\" height=\"58\" fill=\"#0055a0\"/>\n  <text x=\"350\" y=\"142\" class=\"f-n\">2.º</text>\n  <text x=\"350\" y=\"160\" class=\"f-t\">Secretario general técnico</text>\n  <rect x=\"150\" y=\"184\" width=\"400\" height=\"62\" fill=\"#5a8fc0\"/>\n  <text x=\"350\" y=\"208\" class=\"f-n\">3.º</text>\n  <text x=\"350\" y=\"226\" class=\"f-t\">Director general u órgano asimilado</text>\n  <text x=\"350\" y=\"276\" class=\"f-s\" style=\"font-style:italic\">ROGA art. 42.2 (modif. 30/09/2015) · de mayor a menor rango</text>\n</svg><div class=\"diagram-caption\">Pirámide del orden jerárquico de los órganos directivos.</div></div>\n<div class=\"diagram\"><div class=\"diagram-title\">D7 · Concejales de Gobierno vs de Coordinación (arts. 44-45)</div><div class=\"diagram-sec\">§ 8 — Órganos superiores de las Áreas</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 320\" role=\"img\" aria-label=\"Comparación entre concejales de Gobierno y concejales de Coordinación: estos últimos ejercen las funciones del artículo 44 salvo las letras b, c, d, e y j\">\n  <style>\n    .g-hb{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .g-s{font:11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}\n    .g-x{font:700 11px system-ui,sans-serif;fill:#a3271c;text-anchor:start}\n  </style>\n  <rect x=\"30\" y=\"20\" width=\"310\" height=\"280\" rx=\"10\" fill=\"#fff\" stroke=\"#0055a0\" stroke-width=\"1.5\"/>\n  <rect x=\"30\" y=\"20\" width=\"310\" height=\"58\" rx=\"10\" fill=\"#0055a0\"/>\n  <text x=\"185\" y=\"44\" class=\"g-hb\">Concejales de GOBIERNO</text>\n  <text x=\"185\" y=\"64\" class=\"g-hb\" style=\"font-weight:400;font-size:11px\">y consejeros-delegados de Gobierno</text>\n  <text x=\"50\" y=\"104\" class=\"g-s\" style=\"font-weight:700;fill:#003d75\">Jefes SUPERIORES del Área (art. 44)</text>\n  <text x=\"50\" y=\"130\" class=\"g-s\">a) Representación, dirección, gestión</text>\n  <text x=\"50\" y=\"152\" class=\"g-s\">b) Fijar objetivos y planes</text>\n  <text x=\"50\" y=\"174\" class=\"g-s\">c) Elevar propuestas al Pleno</text>\n  <text x=\"50\" y=\"196\" class=\"g-s\">d) Proponer disposiciones a la Junta</text>\n  <text x=\"50\" y=\"218\" class=\"g-s\">e) Proponer organización al alcalde</text>\n  <text x=\"50\" y=\"240\" class=\"g-s\">f-i) Control, personal, conflictos…</text>\n  <text x=\"50\" y=\"262\" class=\"g-s\">j) Proponer nombramiento directivos</text>\n  <text x=\"50\" y=\"288\" class=\"g-s\" style=\"font-style:italic;fill:#777\">ejercen TODAS las funciones</text>\n  <rect x=\"360\" y=\"20\" width=\"310\" height=\"280\" rx=\"10\" fill=\"#fff\" stroke=\"#e89822\" stroke-width=\"1.5\"/>\n  <rect x=\"360\" y=\"20\" width=\"310\" height=\"58\" rx=\"10\" fill=\"#e89822\"/>\n  <text x=\"515\" y=\"44\" class=\"g-hb\">Concejales de COORDINACIÓN</text>\n  <text x=\"515\" y=\"64\" class=\"g-hb\" style=\"font-weight:400;font-size:11px\">y concejales-delegados</text>\n  <text x=\"380\" y=\"104\" class=\"g-s\" style=\"font-weight:700;fill:#a8650f\">Jefes DIRECTOS del Área (art. 45)</text>\n  <text x=\"380\" y=\"132\" class=\"g-s\">Mismas funciones del art. 44…</text>\n  <text x=\"380\" y=\"160\" class=\"g-x\">EXCEPTO las letras:</text>\n  <text x=\"380\" y=\"184\" class=\"g-x\">b) objetivos y planes</text>\n  <text x=\"380\" y=\"206\" class=\"g-x\">c) elevar al Pleno</text>\n  <text x=\"380\" y=\"228\" class=\"g-x\">d) proponer disposiciones a la Junta</text>\n  <text x=\"380\" y=\"250\" class=\"g-x\">e) proponer organización al alcalde</text>\n  <text x=\"380\" y=\"272\" class=\"g-x\">j) proponer nombramiento directivos</text>\n  <text x=\"380\" y=\"294\" class=\"g-s\" style=\"font-style:italic;fill:#777\">dependen del concejal de Gobierno</text>\n</svg><div class=\"diagram-caption\">Distinguir las funciones de unos y otros.</div></div>\n<div class=\"diagram\"><div class=\"diagram-title\">D8 · Órganos centrales directivos (arts. 46-48)</div><div class=\"diagram-sec\">§ 9 — Órganos centrales directivos</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 280\" role=\"img\" aria-label=\"Órganos centrales directivos: coordinador general, secretario general técnico y director general, con sus funciones según los artículos 46 a 48\">\n  <style>\n    .h-box{fill:#fff;stroke:#0055a0;stroke-width:1.5}\n    .h-head{fill:#0055a0}\n    .h-h{font:700 12px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .h-s{font:11px system-ui,sans-serif;fill:#444;text-anchor:middle}\n    .h-a{font:700 11px system-ui,sans-serif;fill:#003d75;text-anchor:middle}\n  </style>\n  <rect x=\"20\" y=\"30\" width=\"210\" height=\"210\" rx=\"8\" class=\"h-box\"/>\n  <rect x=\"20\" y=\"30\" width=\"210\" height=\"38\" rx=\"8\" class=\"h-head\"/>\n  <text x=\"125\" y=\"54\" class=\"h-h\">Coordinador general</text>\n  <text x=\"125\" y=\"92\" class=\"h-a\">art. 46</text>\n  <text x=\"125\" y=\"120\" class=\"h-s\">Coordinación y dirección</text>\n  <text x=\"125\" y=\"138\" class=\"h-s\">de las Direcciones</text>\n  <text x=\"125\" y=\"156\" class=\"h-s\">Generales dependientes</text>\n  <text x=\"125\" y=\"196\" class=\"h-s\" style=\"font-style:italic\">puede no ser funcionario</text>\n  <text x=\"125\" y=\"212\" class=\"h-s\" style=\"font-style:italic\">(excepción art. 49)</text>\n  <rect x=\"245\" y=\"30\" width=\"210\" height=\"210\" rx=\"8\" class=\"h-box\"/>\n  <rect x=\"245\" y=\"30\" width=\"210\" height=\"38\" rx=\"8\" class=\"h-head\"/>\n  <text x=\"350\" y=\"54\" class=\"h-h\">Secretario general técnico</text>\n  <text x=\"350\" y=\"92\" class=\"h-a\">art. 47 · rango de director general</text>\n  <text x=\"350\" y=\"120\" class=\"h-s\">Servicios comunes</text>\n  <text x=\"350\" y=\"138\" class=\"h-s\">Asistencia jurídica y</text>\n  <text x=\"350\" y=\"156\" class=\"h-s\">técnica al titular del Área</text>\n  <text x=\"350\" y=\"196\" class=\"h-s\" style=\"font-style:italic\">depende del titular</text>\n  <text x=\"350\" y=\"212\" class=\"h-s\" style=\"font-style:italic\">del Área (siempre funcionario)</text>\n  <rect x=\"470\" y=\"30\" width=\"210\" height=\"210\" rx=\"8\" class=\"h-box\"/>\n  <rect x=\"470\" y=\"30\" width=\"210\" height=\"38\" rx=\"8\" class=\"h-head\"/>\n  <text x=\"575\" y=\"54\" class=\"h-h\">Director general</text>\n  <text x=\"575\" y=\"92\" class=\"h-a\">art. 48</text>\n  <text x=\"575\" y=\"120\" class=\"h-s\">Dirección y gestión de</text>\n  <text x=\"575\" y=\"138\" class=\"h-s\">ámbitos homogéneos</text>\n  <text x=\"575\" y=\"156\" class=\"h-s\">de competencia</text>\n  <text x=\"575\" y=\"196\" class=\"h-s\" style=\"font-style:italic\">jefatura de las unidades</text>\n  <text x=\"575\" y=\"212\" class=\"h-s\" style=\"font-style:italic\">adscritas</text>\n</svg><div class=\"diagram-caption\">Resumir los tres órganos directivos y su función.</div></div>\n<div class=\"diagram\"><div class=\"diagram-title\">D9 · Nombramiento de los órganos directivos (art. 49)</div><div class=\"diagram-sec\">§ 9.4 — Nombramiento</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 280\" role=\"img\" aria-label=\"Nombramiento de los órganos directivos por la Junta de Gobierno, con carácter general entre funcionarios de carrera, según el artículo 49\">\n  <style>\n    .i-c{fill:#0055a0;stroke:#003d75;stroke-width:2}\n    .i-b{fill:#fff;stroke:#0055a0;stroke-width:1.5}\n    .i-t{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .i-h{font:700 12px system-ui,sans-serif;fill:#003d75;text-anchor:middle}\n    .i-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}\n    .i-l{stroke:#0055a0;stroke-width:1.5;fill:none}\n  </style>\n  <rect x=\"260\" y=\"20\" width=\"180\" height=\"48\" rx=\"8\" class=\"i-c\"/>\n  <text x=\"350\" y=\"42\" class=\"i-t\">JUNTA DE GOBIERNO</text>\n  <text x=\"350\" y=\"60\" class=\"i-t\" style=\"font-weight:400;font-size:11px\">nombra y cesa (art. 49.1)</text>\n  <line x1=\"350\" y1=\"68\" x2=\"350\" y2=\"92\" class=\"i-l\"/>\n  <rect x=\"200\" y=\"92\" width=\"300\" height=\"50\" rx=\"8\" class=\"i-b\"/>\n  <text x=\"350\" y=\"113\" class=\"i-h\">Coordinadores grales. · Secretarios grales.</text>\n  <text x=\"350\" y=\"131\" class=\"i-h\">técnicos · Directores generales</text>\n  <line x1=\"350\" y1=\"142\" x2=\"350\" y2=\"166\" class=\"i-l\"/>\n  <rect x=\"90\" y=\"166\" width=\"240\" height=\"86\" rx=\"8\" fill=\"#e8f5ee\" stroke=\"#2d8659\" stroke-width=\"1.5\"/>\n  <text x=\"210\" y=\"190\" class=\"i-h\" style=\"fill:#1f5e3f\">REGLA GENERAL</text>\n  <text x=\"210\" y=\"214\" class=\"i-s\">entre funcionarios de carrera</text>\n  <text x=\"210\" y=\"232\" class=\"i-s\">(art. 130.3 LBRL) · titulación</text>\n  <text x=\"210\" y=\"248\" class=\"i-s\">superior</text>\n  <rect x=\"370\" y=\"166\" width=\"240\" height=\"86\" rx=\"8\" fill=\"#fdf4e4\" stroke=\"#e89822\" stroke-width=\"1.5\"/>\n  <text x=\"490\" y=\"190\" class=\"i-h\" style=\"fill:#a8650f\">EXCEPCIÓN</text>\n  <text x=\"490\" y=\"214\" class=\"i-s\">puede no ser funcionario:</text>\n  <text x=\"490\" y=\"232\" class=\"i-s\">coordinador general SÍ</text>\n  <text x=\"490\" y=\"248\" class=\"i-s\">secretario gral. técnico NO</text>\n  <line x1=\"350\" y1=\"166\" x2=\"210\" y2=\"166\" class=\"i-l\"/>\n  <line x1=\"350\" y1=\"166\" x2=\"490\" y2=\"166\" class=\"i-l\"/>\n</svg><div class=\"diagram-caption\">Quién nombra y entre quién.</div></div>\n<div class=\"diagram\"><div class=\"diagram-title\">D10 · Alcalde, Junta de Gobierno y Pleno</div><div class=\"diagram-sec\">§ 11 — Relación con el Alcalde y el Pleno</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 300\" role=\"img\" aria-label=\"Relación entre el alcalde, la Junta de Gobierno y el Pleno en la cadena de decisión municipal\">\n  <style>\n    .j-box{stroke-width:1.5}\n    .j-h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .j-s{font:11px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .j-n{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}\n  </style>\n  <rect x=\"250\" y=\"24\" width=\"200\" height=\"60\" rx=\"8\" fill=\"#003d75\" class=\"j-box\"/>\n  <text x=\"350\" y=\"50\" class=\"j-h\">ALCALDE</text>\n  <text x=\"350\" y=\"70\" class=\"j-s\">dirige y delega · máxima representación</text>\n  <rect x=\"60\" y=\"150\" width=\"260\" height=\"60\" rx=\"8\" fill=\"#0055a0\" class=\"j-box\"/>\n  <text x=\"190\" y=\"176\" class=\"j-h\">JUNTA DE GOBIERNO LOCAL</text>\n  <text x=\"190\" y=\"196\" class=\"j-s\">nombra directivos · aprueba disposiciones</text>\n  <rect x=\"380\" y=\"150\" width=\"260\" height=\"60\" rx=\"8\" fill=\"#2d8659\" class=\"j-box\"/>\n  <text x=\"510\" y=\"176\" class=\"j-h\">PLENO</text>\n  <text x=\"510\" y=\"196\" class=\"j-s\">funciones normativas y de control</text>\n  <line x1=\"300\" y1=\"84\" x2=\"190\" y2=\"150\" stroke=\"#0055a0\" stroke-width=\"1.5\"/>\n  <line x1=\"400\" y1=\"84\" x2=\"510\" y2=\"150\" stroke=\"#2d8659\" stroke-width=\"1.5\"/>\n  <text x=\"350\" y=\"252\" class=\"j-n\">Los concejales de Gobierno son la bisagra: elevan propuestas al Pleno (44.c)</text>\n  <text x=\"350\" y=\"270\" class=\"j-n\">y proponen disposiciones y nombramientos a la Junta de Gobierno (44.d, 44.j)</text>\n</svg><div class=\"diagram-caption\">Situar los tres órganos de gobierno y su papel.</div></div>\n<div class=\"diagram\"><div class=\"diagram-title\">D11 · Las 7 Áreas de Gobierno actuales</div><div class=\"diagram-sec\">§ 12 — Áreas de Gobierno actuales</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 360\" role=\"img\" aria-label=\"Las siete Áreas de Gobierno actuales del Ayuntamiento de Madrid\">\n  <style>\n    .k-h{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .k-b{fill:#e8f0f8;stroke:#0055a0;stroke-width:1.2}\n    .k-t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}\n    .k-n{font:700 12px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}\n  </style>\n  <rect x=\"120\" y=\"16\" width=\"460\" height=\"40\" rx=\"8\" fill=\"#0055a0\"/>\n  <text x=\"350\" y=\"41\" class=\"k-h\">7 ÁREAS DE GOBIERNO (vigentes)</text>\n  <rect x=\"40\" y=\"70\" width=\"620\" height=\"32\" rx=\"6\" class=\"k-b\"/>\n  <text x=\"58\" y=\"91\" class=\"k-n\">1</text><text x=\"80\" y=\"91\" class=\"k-t\">Vicealcaldía, Portavoz, Seguridad y Emergencias</text>\n  <rect x=\"40\" y=\"108\" width=\"620\" height=\"32\" rx=\"6\" class=\"k-b\"/>\n  <text x=\"58\" y=\"129\" class=\"k-n\">2</text><text x=\"80\" y=\"129\" class=\"k-t\">Urbanismo, Medio Ambiente y Movilidad</text>\n  <rect x=\"40\" y=\"146\" width=\"620\" height=\"32\" rx=\"6\" class=\"k-b\"/>\n  <text x=\"58\" y=\"167\" class=\"k-n\">3</text><text x=\"80\" y=\"167\" class=\"k-t\">Cultura, Turismo y Deporte</text>\n  <rect x=\"40\" y=\"184\" width=\"620\" height=\"32\" rx=\"6\" class=\"k-b\"/>\n  <text x=\"58\" y=\"205\" class=\"k-n\">4</text><text x=\"80\" y=\"205\" class=\"k-t\">Economía, Innovación y Hacienda</text>\n  <rect x=\"40\" y=\"222\" width=\"620\" height=\"32\" rx=\"6\" class=\"k-b\"/>\n  <text x=\"58\" y=\"243\" class=\"k-n\">5</text><text x=\"80\" y=\"243\" class=\"k-t\">Obras y Equipamientos</text>\n  <rect x=\"40\" y=\"260\" width=\"620\" height=\"32\" rx=\"6\" class=\"k-b\"/>\n  <text x=\"58\" y=\"281\" class=\"k-n\">6</text><text x=\"80\" y=\"281\" class=\"k-t\">Políticas Sociales, Familia e Igualdad</text>\n  <rect x=\"40\" y=\"298\" width=\"620\" height=\"32\" rx=\"6\" class=\"k-b\"/>\n  <text x=\"58\" y=\"319\" class=\"k-n\">7</text><text x=\"80\" y=\"319\" class=\"k-t\">Políticas de Vivienda</text>\n  <text x=\"350\" y=\"350\" class=\"k-t\" text-anchor=\"middle\" style=\"font-style:italic;fill:#777\">Dato actualizable: el alcalde fija el número (máx. 15) y la denominación cada mandato</text>\n</svg><div class=\"diagram-caption\">Listar las 7 Áreas vigentes.</div></div>\n<div class=\"diagram\"><div class=\"diagram-title\">D12 · Mapa-resumen del Tema 3</div><div class=\"diagram-sec\">§ 13 — Resumen</div><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 320\" role=\"img\" aria-label=\"Mapa resumen del Tema 3: ROGA, Áreas de Gobierno, estructura, órganos superiores y directivos\">\n  <style>\n    .l-c{fill:#0055a0;stroke:#003d75;stroke-width:2}\n    .l-n{fill:#fff;stroke:#0055a0;stroke-width:1.5}\n    .l-ct{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}\n    .l-h{font:700 12px system-ui,sans-serif;fill:#003d75;text-anchor:middle}\n    .l-s{font:10.5px system-ui,sans-serif;fill:#555;text-anchor:middle}\n    .l-l{stroke:#0055a0;stroke-width:1;fill:none}\n  </style>\n  <line x1=\"350\" y1=\"160\" x2=\"160\" y2=\"70\" class=\"l-l\"/>\n  <line x1=\"350\" y1=\"160\" x2=\"540\" y2=\"70\" class=\"l-l\"/>\n  <line x1=\"350\" y1=\"160\" x2=\"160\" y2=\"255\" class=\"l-l\"/>\n  <line x1=\"350\" y1=\"160\" x2=\"540\" y2=\"255\" class=\"l-l\"/>\n  <ellipse cx=\"350\" cy=\"160\" rx=\"90\" ry=\"44\" class=\"l-c\"/>\n  <text x=\"350\" y=\"156\" class=\"l-ct\">ROGA 2004</text>\n  <text x=\"350\" y=\"174\" class=\"l-ct\" style=\"font-weight:400;font-size:11px\">Áreas de Gobierno</text>\n  <rect x=\"40\" y=\"42\" width=\"240\" height=\"56\" rx=\"8\" class=\"l-n\"/>\n  <text x=\"160\" y=\"66\" class=\"l-h\">Concepto y número</text>\n  <text x=\"160\" y=\"84\" class=\"l-s\">niveles esenciales · máx. 15 · las fija el alcalde</text>\n  <rect x=\"420\" y=\"42\" width=\"240\" height=\"56\" rx=\"8\" class=\"l-n\"/>\n  <text x=\"540\" y=\"66\" class=\"l-h\">Estructura interna</text>\n  <text x=\"540\" y=\"84\" class=\"l-s\">SGT + Direcciones Generales + unidades</text>\n  <rect x=\"40\" y=\"228\" width=\"240\" height=\"56\" rx=\"8\" class=\"l-n\"/>\n  <text x=\"160\" y=\"252\" class=\"l-h\">Órganos superiores</text>\n  <text x=\"160\" y=\"270\" class=\"l-s\">concejales de Gobierno / de Coordinación</text>\n  <rect x=\"420\" y=\"228\" width=\"240\" height=\"56\" rx=\"8\" class=\"l-n\"/>\n  <text x=\"540\" y=\"252\" class=\"l-h\">Órganos directivos</text>\n  <text x=\"540\" y=\"270\" class=\"l-s\">coord. gral. → SGT → director general</text>\n</svg><div class=\"diagram-caption\">Mapa conceptual de cierre.</div></div>";
+const QUESTIONS = [
+{t:"El Reglamento Orgánico del Gobierno y de la Administración del Ayuntamiento de Madrid fue aprobado:",a:"El 4 de julio de 2006.",b:"El 31 de mayo de 2004.",c:"El 2 de abril de 1985.",ok:"b",ref:"ROGA"},
+{t:"Según el artículo 5 del ROGA, la organización administrativa del Ayuntamiento de Madrid responde a los principios de:",a:"Jerarquía y desconcentración exclusivamente.",b:"División funcional en Áreas de Gobierno y gestión territorial integrada en distritos.",c:"Centralización en la Alcaldía.",ok:"b",ref:"ROGA art. 5"},
+{t:"La \"división funcional\" de la organización municipal se materializa en:",a:"Los distritos.",b:"Las Áreas de Gobierno.",c:"Los organismos autónomos.",ok:"b",ref:"ROGA art. 5"},
+{t:"La \"gestión territorial integrada\" se materializa en:",a:"Los distritos.",b:"Las Áreas de Gobierno.",c:"Las entidades públicas empresariales.",ok:"a",ref:"ROGA art. 5"},
+{t:"Conforme al artículo 6 del ROGA, el Ayuntamiento de Madrid se organiza en:",a:"Órganos centrales, territoriales y organismos públicos.",b:"Órganos centrales y territoriales únicamente.",c:"Órganos legislativos, ejecutivos y judiciales.",ok:"a",ref:"ROGA art. 6.1"},
+{t:"Los órganos centrales del Ayuntamiento de Madrid ejercen sus competencias:",a:"Exclusivamente en el ámbito de un distrito.",b:"Sobre todo el territorio del municipio.",c:"Solo sobre los organismos públicos.",ok:"b",ref:"ROGA art. 6.1"},
+{t:"Los órganos territoriales del Ayuntamiento de Madrid ejercen sus competencias:",a:"Sobre todo el municipio.",b:"Sobre las Áreas de Gobierno.",c:"Exclusivamente en el ámbito de un distrito.",ok:"c",ref:"ROGA art. 6.1"},
+{t:"Los organismos públicos previstos en el ROGA:",a:"Son independientes del Ayuntamiento.",b:"Tienen rango de Área de Gobierno.",c:"Dependen del Ayuntamiento y se adscriben al Área competente por razón de la materia.",ok:"c",ref:"ROGA art. 6"},
+{t:"La materia del Tema 3 corresponde a la parte del ROGA relativa a:",a:"Las Áreas de Gobierno y su estructura interna.",b:"Los distritos.",c:"El Reglamento Orgánico del Pleno.",ok:"a",ref:"ROGA Tít. V Cap. I"},
+{t:"El régimen de los municipios de gran población que sirve de marco al ROGA se contiene en:",a:"La Ley 39/2015 (LPAC).",b:"La Constitución, artículo 140.",c:"El Título X de la Ley 7/1985 (LBRL).",ok:"c",ref:"LBRL Tít. X"},
+{t:"El municipio de Madrid tiene además un régimen especial regulado por:",a:"El Estatuto de Autonomía de la Comunidad de Madrid.",b:"La Ley Orgánica del Régimen Electoral General.",c:"La Ley 22/2006 de Capitalidad y de Régimen Especial de Madrid.",ok:"c",ref:"LCREM"},
+{t:"La creación, modificación o supresión de los órganos directivos se realiza, según el ROGA, mediante:",a:"Decreto del alcalde, a propuesta del titular del Área y previo informe del Área competente en organización.",b:"Acuerdo del Pleno por mayoría absoluta.",c:"Resolución del director general afectado.",ok:"a",ref:"ROGA art. 8.1"},
+{t:"Las unidades administrativas de nivel inferior a Departamento se crean, modifican y suprimen:",a:"Por ley de la Comunidad de Madrid.",b:"Por acuerdo del Consejo Social de la Ciudad.",c:"A través de la relación de puestos de trabajo (RPT).",ok:"c",ref:"ROGA art. 8.2"},
+{t:"Según el ROGA, los organismos públicos se adscriben:",a:"Siempre directamente al Pleno.",b:"A los distritos.",c:"Directamente o a través de otro organismo, al Área competente por razón de la materia.",ok:"c",ref:"ROGA art. 6"},
+{t:"La organización del Ayuntamiento de Madrid prevista en el ROGA persigue:",a:"La supresión de los distritos.",b:"La eficacia en la prestación de los servicios públicos y la capacidad directiva y gerencial.",c:"La asunción de competencias autonómicas.",ok:"b",ref:"ROGA Preámbulo"},
+{t:"El artículo 7 del ROGA clasifica los órganos del Ayuntamiento, según sus funciones, en:",a:"Superiores y directivos.",b:"Centrales y territoriales.",c:"Unipersonales y colegiados.",ok:"a",ref:"ROGA art. 7.1"},
+{t:"Son órganos superiores de gobierno y administración del Ayuntamiento de Madrid:",a:"Los directores generales.",b:"Los secretarios generales técnicos.",c:"El alcalde y los miembros de la Junta de Gobierno Local.",ok:"c",ref:"ROGA art. 7.2"},
+{t:"Tienen además la consideración de órganos superiores, en el ámbito de los distritos:",a:"Los gerentes de distrito.",b:"Los concejales-presidentes.",c:"Los directores generales.",ok:"b",ref:"ROGA art. 7.2"},
+{t:"Son órganos directivos del Ayuntamiento de Madrid, entre otros:",a:"Los coordinadores generales, los directores generales y el interventor general municipal.",b:"El alcalde y los tenientes de alcalde.",c:"Los concejales con responsabilidades de gobierno.",ok:"a",ref:"ROGA art. 7.3"},
+{t:"En el ámbito de los distritos, son órganos directivos:",a:"Los concejales-presidentes.",b:"Los vicepresidentes.",c:"Los gerentes.",ok:"c",ref:"ROGA art. 7.3"},
+{t:"El secretario general del Pleno, según el ROGA:",a:"Es un órgano superior de naturaleza política.",b:"Tiene carácter de órgano directivo y se nombra entre funcionarios de Administración Local con habilitación de carácter nacional.",c:"Es nombrado libremente entre cargos de confianza.",ok:"b",ref:"ROGA art. 7.6"},
+{t:"A los órganos superiores corresponde, conforme al artículo 7.4:",a:"La ejecución de las decisiones.",b:"La gestión ordinaria de los servicios.",c:"La dirección, planificación y coordinación política.",ok:"c",ref:"ROGA art. 7.4"},
+{t:"A los órganos directivos corresponde, conforme al artículo 7.4:",a:"La dirección política.",b:"La ejecución de las decisiones adoptadas por los órganos superiores.",c:"La aprobación de las ordenanzas.",ok:"b",ref:"ROGA art. 7.4"},
+{t:"Los titulares de los órganos superiores y directivos quedan sometidos al régimen de incompatibilidades de:",a:"La Ley 39/2015.",b:"La Ley 53/1984, de Incompatibilidades del Personal al Servicio de las Administraciones Públicas.",c:"La Ley 7/1985, en exclusiva.",ok:"b",ref:"ROGA art. 7.7"},
+{t:"El interventor general municipal es, a efectos del ROGA, un órgano:",a:"Superior.",b:"Directivo.",c:"De participación.",ok:"b",ref:"ROGA art. 7.3"},
+{t:"El titular de la Asesoría Jurídica es, según el ROGA, un órgano:",a:"Superior.",b:"Colegiado.",c:"Directivo.",ok:"c",ref:"ROGA art. 7.3"},
+{t:"La distinción esencial entre órganos superiores y directivos es que:",a:"Los superiores dirigen políticamente y los directivos ejecutan.",b:"Los superiores ejecutan y los directivos dirigen políticamente.",c:"Ambos ejercen idénticas funciones.",ok:"a",ref:"ROGA art. 7.4"},
+{t:"La Junta de Gobierno Local, a efectos del ROGA, tiene la consideración de órgano:",a:"Superior.",b:"Directivo.",c:"De participación ciudadana.",ok:"a",ref:"ROGA art. 7.2"},
+{t:"Según el artículo 40.1, las Áreas de Gobierno constituyen:",a:"Los niveles esenciales de la organización municipal.",b:"Órganos de participación ciudadana.",c:"Divisiones territoriales del municipio.",ok:"a",ref:"ROGA art. 40.1"},
+{t:"Cada Área de Gobierno comprende:",a:"Un único distrito del municipio.",b:"Uno o varios sectores funcionalmente homogéneos de la actividad administrativa municipal.",c:"La totalidad de los servicios municipales.",ok:"b",ref:"ROGA art. 40.1"},
+{t:"De las Áreas de Gobierno podrán depender:",a:"Otros municipios.",b:"Las Juntas Municipales de Distrito.",c:"Áreas de Coordinación o Áreas Delegadas.",ok:"c",ref:"ROGA art. 40.1"},
+{t:"Según el artículo 40.2, el número de Áreas de Gobierno no podrá exceder de:",a:"10.",b:"21.",c:"15.",ok:"c",ref:"ROGA art. 40.2"},
+{t:"Corresponde determinar el número, denominación y atribuciones de las Áreas de Gobierno a:",a:"El Pleno por mayoría absoluta.",b:"El alcalde.",c:"La Junta de Gobierno Local.",ok:"b",ref:"ROGA art. 40.2"},
+{t:"El alcalde determina el número y denominación de las Áreas al amparo de los artículos de la LBRL:",a:"123.1.c) en relación con el 124.4.k).",b:"140 y 141.",c:"25 y 26.",ok:"a",ref:"ROGA art. 40.2 · LBRL"},
+{t:"Las Áreas de Gobierno son, dentro de la clasificación del artículo 6, órganos:",a:"Territoriales.",b:"Centrales.",c:"De participación.",ok:"b",ref:"ROGA arts. 6 y 40"},
+{t:"La forma que adopta la decisión del alcalde sobre el número y denominación de las Áreas es:",a:"Una ley.",b:"Un decreto.",c:"Un acuerdo plenario.",ok:"b",ref:"ROGA art. 40.2"},
+{t:"Las Áreas de Coordinación o Delegadas tienen por función:",a:"La gestión de un distrito.",b:"El control económico del Ayuntamiento.",c:"La dirección de un sector de la actividad administrativa de la responsabilidad del Área de la que dependen.",ok:"c",ref:"ROGA art. 40.1"},
+{t:"El número de Áreas de Gobierno vigente en el Ayuntamiento de Madrid es de:",a:"7.",b:"15.",c:"21.",ok:"a",ref:"Organigrama vigente"},
+{t:"El límite de 15 Áreas de Gobierno es:",a:"Un número fijo e invariable.",b:"Un máximo que no puede superarse.",c:"Un mínimo obligatorio.",ok:"b",ref:"ROGA art. 40.2"},
+{t:"La determinación de las atribuciones de cada Área de Gobierno corresponde:",a:"Al alcalde.",b:"A cada concejal de Gobierno por sí mismo.",c:"Al Tribunal de Cuentas.",ok:"a",ref:"ROGA art. 40.2"},
+{t:"Las Áreas de Gobierno se caracterizan por agrupar:",a:"Territorios contiguos.",b:"Sectores funcionalmente homogéneos.",c:"Organismos públicos exclusivamente.",ok:"b",ref:"ROGA art. 40.1"},
+{t:"La capacidad de reorganizar las Áreas para adaptarse a las necesidades de la ciudad refleja el principio de:",a:"Inamovilidad de la estructura.",b:"Reserva de ley.",c:"Flexibilidad organizativa.",ok:"c",ref:"ROGA art. 40"},
+{t:"Según el artículo 41.1, para ejercer sus competencias las Áreas de Gobierno contarán con:",a:"Una Diputación Provincial.",b:"Un Consejo de Gobierno.",c:"Una Secretaría General Técnica y se estructurarán a través de Direcciones Generales.",ok:"c",ref:"ROGA art. 41.1"},
+{t:"En las Áreas de Gobierno podrá existir, según el artículo 41.1:",a:"Un único concejal-presidente.",b:"Un gerente de distrito.",c:"Uno o más coordinadores generales.",ok:"c",ref:"ROGA art. 41.1"},
+{t:"Las Secretarías Generales Técnicas y las Direcciones Generales podrán organizarse, a su vez, en:",a:"Subdirecciones Generales, Servicios, Departamentos, Secciones y otras unidades.",b:"Distritos y barrios.",c:"Organismos autónomos.",ok:"a",ref:"ROGA art. 41.2"},
+{t:"Las unidades administrativas inferiores podrán depender directamente de:",a:"Los coordinadores generales.",b:"El Pleno.",c:"El Tribunal de Cuentas.",ok:"a",ref:"ROGA art. 41.2"},
+{t:"Según el artículo 42.1, los jefes superiores del Área de Gobierno son:",a:"Los directores generales.",b:"Los gerentes.",c:"Los concejales de Gobierno y los consejeros-delegados de Gobierno.",ok:"c",ref:"ROGA art. 42.1"},
+{t:"Los concejales de Coordinación y los concejales-delegados son, según el artículo 42.1:",a:"Los jefes directos de su Área.",b:"Los jefes superiores del Área.",c:"Órganos directivos.",ok:"a",ref:"ROGA art. 42.1"},
+{t:"El orden jerárquico de los órganos directivos, conforme al artículo 42.2, es:",a:"Director general, secretario general técnico, coordinador general.",b:"Coordinador general, secretario general técnico, director general u órgano asimilado.",c:"Secretario general técnico, coordinador general, director general.",ok:"b",ref:"ROGA art. 42.2"},
+{t:"El artículo 42.2 del ROGA fue modificado:",a:"El 31 de mayo de 2004.",b:"El 4 de julio de 2006.",c:"El 30 de septiembre de 2015.",ok:"c",ref:"ROGA art. 42.2"},
+{t:"Excepcionalmente, cuando así lo prevean los acuerdos de la Junta de Gobierno, un órgano directivo podrá depender:",a:"Directamente del Pleno.",b:"De otro órgano directivo del mismo rango.",c:"De un distrito.",ok:"b",ref:"ROGA art. 42.2"},
+{t:"En las Áreas de Gobierno podrán crearse, según el artículo 43:",a:"Nuevas Áreas de Gobierno.",b:"Órganos de participación de los vecinos y de las asociaciones que los representen.",c:"Juntas Municipales de Distrito.",ok:"b",ref:"ROGA art. 43"},
+{t:"El órgano que aglutina los servicios comunes del Área de Gobierno es:",a:"La Gerencia del distrito.",b:"El coordinador general.",c:"La Secretaría General Técnica.",ok:"c",ref:"ROGA art. 47"},
+{t:"La estructura de las Áreas de Gobierno se organiza por:",a:"Distritos.",b:"Grupos políticos municipales.",c:"Bloques de competencias de naturaleza homogénea, a través de Direcciones Generales.",ok:"c",ref:"ROGA art. 41.1"},
+{t:"Por debajo de la Dirección General, el siguiente nivel de unidad administrativa suele ser:",a:"El Área de Gobierno.",b:"La Junta de Gobierno.",c:"La Subdirección General.",ok:"c",ref:"ROGA art. 41.2"},
+{t:"La superior dirección de los concejales de Coordinación corresponde:",a:"Al titular del Área de Gobierno del que dependan.",b:"Al Pleno.",c:"Al secretario general del Pleno.",ok:"a",ref:"ROGA art. 42.1"},
+{t:"Las funciones de los concejales de Gobierno y consejeros-delegados de Gobierno se regulan en:",a:"El artículo 44 del ROGA.",b:"El artículo 61 del ROGA.",c:"El artículo 140 de la Constitución.",ok:"a",ref:"ROGA art. 44"},
+{t:"Entre las funciones del concejal de Gobierno está:",a:"Nombrar a los directores generales.",b:"Sancionar las ordenanzas.",c:"Ejercer la representación, dirección, gestión e inspección del Área del que sea titular.",ok:"c",ref:"ROGA art. 44.a)"},
+{t:"Corresponde al concejal de Gobierno, respecto del Pleno:",a:"Elevar las propuestas que les correspondan en el ámbito de las competencias de su Área.",b:"Presidir sus sesiones.",c:"Disolverlo.",ok:"a",ref:"ROGA art. 44.c)"},
+{t:"Proponer a la Junta de Gobierno la aprobación de los proyectos de disposiciones de carácter general es función:",a:"Del concejal de Gobierno o consejero-delegado de Gobierno.",b:"Del director general.",c:"Del gerente del distrito.",ok:"a",ref:"ROGA art. 44.d)"},
+{t:"Proponer al alcalde la aprobación de los proyectos de organización y estructura de su Área corresponde:",a:"Al concejal de Gobierno o consejero-delegado de Gobierno.",b:"Al secretario general técnico.",c:"Al Pleno.",ok:"a",ref:"ROGA art. 44.e)"},
+{t:"Proponer a la Junta de Gobierno el nombramiento de los titulares de los órganos directivos de su Área es función:",a:"Del concejal de Gobierno o consejero-delegado de Gobierno.",b:"Del coordinador general.",c:"Del interventor general.",ok:"a",ref:"ROGA art. 44.j)"},
+{t:"El ejercicio de la superior autoridad sobre el personal del Área corresponde al concejal de Gobierno:",a:"Con exclusión total del alcalde.",b:"Solo respecto del personal directivo.",c:"Sin perjuicio de las competencias del alcalde respecto de todo el personal del Ayuntamiento.",ok:"c",ref:"ROGA art. 44.h)"},
+{t:"Los concejales de Coordinación y concejales-delegados ejercen las funciones del artículo 44:",a:"En su totalidad y sin excepción.",b:"Solo la letra a).",c:"Con excepción de las señaladas en las letras b), c), d), e) y j).",ok:"c",ref:"ROGA art. 45.1"},
+{t:"Los concejales de Coordinación y los concejales-delegados responden:",a:"Únicamente ante el Pleno.",b:"Ante el Tribunal de Cuentas.",c:"Ante el órgano superior inmediato del que dependan.",ok:"c",ref:"ROGA art. 45.2"},
+{t:"La función de \"fijar los objetivos del Área, aprobar los planes de actuación y asignar recursos\" corresponde:",a:"Al director general.",b:"Al concejal de Gobierno (es una de las excluidas a los concejales-delegados).",c:"Al secretario general del Pleno.",ok:"b",ref:"ROGA arts. 44.b) y 45.1"},
+{t:"Resolver los conflictos entre los órganos directivos dependientes de su Área corresponde:",a:"Al concejal de Gobierno o consejero-delegado de Gobierno.",b:"Al alcalde en exclusiva.",c:"Al coordinador general.",ok:"a",ref:"ROGA art. 44.i)"},
+{t:"La superior inspección de los organismos públicos adscritos al Área corresponde al concejal de Gobierno conforme al:",a:"Artículo 85 bis de la LBRL.",b:"Artículo 140 de la Constitución.",c:"Artículo 49 del ROGA.",ok:"a",ref:"ROGA art. 44.g)"},
+{t:"El concejal de Coordinación, a diferencia del concejal de Gobierno, NO puede:",a:"Elevar propuestas al Pleno.",b:"Dirigir e inspeccionar su Área.",c:"Ejercer la superior autoridad sobre el personal de su Área.",ok:"a",ref:"ROGA art. 45.1"},
+{t:"Evaluar la ejecución de los planes de actuación por los órganos directivos (control de eficacia) es función:",a:"Del Pleno.",b:"Del Consejo Social de la Ciudad.",c:"Del concejal de Gobierno o consejero-delegado de Gobierno.",ok:"c",ref:"ROGA art. 44.f)"},
+{t:"Las funciones de coordinación y dirección de las distintas Direcciones Generales dependientes corresponden:",a:"A los secretarios generales técnicos.",b:"A los coordinadores generales.",c:"A los gerentes de distrito.",ok:"b",ref:"ROGA art. 46.1"},
+{t:"El artículo 46 del ROGA (coordinadores generales) fue modificado:",a:"El 31 de mayo de 2004.",b:"Nunca.",c:"El 30 de septiembre de 2015.",ok:"c",ref:"ROGA art. 46"},
+{t:"Cuando se nombre más de un coordinador general en una misma Área de Gobierno:",a:"Se nombrará un único responsable por el Pleno.",b:"El acuerdo de la Junta de Gobierno de Organización Administrativa delimitará los sectores sobre los que actuará cada uno.",c:"Cesarán automáticamente los directores generales.",ok:"b",ref:"ROGA art. 46.2"},
+{t:"El secretario general técnico tiene, según el artículo 47.1, rango de:",a:"Coordinador general.",b:"Director general.",c:"Concejal-delegado.",ok:"b",ref:"ROGA art. 47.1"},
+{t:"Corresponde al secretario general técnico, entre otras funciones:",a:"La presidencia de la Junta de Gobierno.",b:"La dirección política del Área.",c:"La gestión de los servicios comunes.",ok:"c",ref:"ROGA art. 47.1.a)"},
+{t:"La asistencia jurídica y técnica al titular del Área de Gobierno corresponde:",a:"Al coordinador general en exclusiva.",b:"Al secretario general técnico, sin perjuicio de las competencias de la Asesoría Jurídica.",c:"Al interventor general.",ok:"b",ref:"ROGA art. 47.1.c)"},
+{t:"El secretario general técnico depende, con carácter general:",a:"Directamente del titular del Área de Gobierno correspondiente.",b:"Del Pleno.",c:"Del alcalde directamente y en todo caso.",ok:"a",ref:"ROGA art. 47.3"},
+{t:"Los directores generales son los titulares de los órganos directivos a los que corresponde:",a:"La dirección y gestión de uno o varios ámbitos de competencias funcionalmente homogéneos.",b:"La dirección política del Área.",c:"La coordinación de las Direcciones Generales.",ok:"a",ref:"ROGA art. 48.1"},
+{t:"Los directores generales actúan bajo la dependencia directa de:",a:"El Pleno.",b:"El Tribunal de Cuentas.",c:"Un coordinador general o de un concejal de Coordinación o delegado.",ok:"c",ref:"ROGA art. 48.1"},
+{t:"Entre las funciones de los directores generales está:",a:"La aprobación de las ordenanzas fiscales.",b:"El nombramiento de los coordinadores generales.",c:"La elaboración, seguimiento y control del presupuesto anual que se les asigne.",ok:"c",ref:"ROGA art. 48.2.d)"},
+{t:"La jefatura inmediata de las unidades orgánicas adscritas corresponde:",a:"Al alcalde.",b:"Al secretario general del Pleno.",c:"Al director general.",ok:"c",ref:"ROGA art. 48.2.b)"},
+{t:"La elaboración de proyectos de disposiciones, acuerdos y convenios en su ámbito corresponde:",a:"Al concejal-presidente del distrito.",b:"Al director general.",c:"Al Pleno.",ok:"b",ref:"ROGA art. 48.2.c)"},
+{t:"La coordinación de las Direcciones Generales en el ámbito de los servicios comunes corresponde:",a:"Al secretario general técnico.",b:"Al director general.",c:"Al gerente.",ok:"a",ref:"ROGA art. 47.1.b)"},
+{t:"Para el ejercicio de sus funciones, el secretario general técnico podrá recabar informes, datos y documentos de:",a:"Otros Ayuntamientos.",b:"La Comunidad de Madrid.",c:"Los coordinadores generales, Direcciones Generales y organismos públicos de su Área.",ok:"c",ref:"ROGA art. 47.2"},
+{t:"La eficiente utilización de los medios y recursos materiales, económicos y personales del Área corresponde:",a:"Al coordinador general en exclusiva.",b:"Al secretario general técnico.",c:"Al Pleno.",ok:"b",ref:"ROGA art. 47.1.d)"},
+{t:"Los coordinadores generales ejercen, además, las funciones que:",a:"Les deleguen o desconcentren el alcalde o la Junta de Gobierno.",b:"Les atribuya el Tribunal Constitucional.",c:"Les transfiera la Comunidad de Madrid.",ok:"a",ref:"ROGA art. 46.1"},
+{t:"La evaluación de los servicios de su competencia corresponde:",a:"Al alcalde.",b:"Al Consejo Social de la Ciudad.",c:"Al director general.",ok:"c",ref:"ROGA art. 48.2.e)"},
+{t:"El órgano directivo encargado de los servicios comunes del Área de Gobierno es:",a:"El coordinador general.",b:"El director general.",c:"El secretario general técnico.",ok:"c",ref:"ROGA art. 47"},
+{t:"Los coordinadores generales, secretarios generales técnicos y directores generales son nombrados y cesados por:",a:"La Junta de Gobierno.",b:"El Pleno.",c:"El alcalde directamente y en exclusiva.",ok:"a",ref:"ROGA art. 49.1"},
+{t:"El nombramiento de los órganos directivos debe efectuarse, con carácter general, entre:",a:"Funcionarios de carrera del Estado, las CCAA, las Entidades Locales o funcionarios con habilitación nacional.",b:"Cualquier ciudadano mayor de edad.",c:"Miembros del Pleno.",ok:"a",ref:"ROGA art. 49.2 · LBRL art. 130.3"},
+{t:"La titulación exigida con carácter general a los órganos directivos es:",a:"Graduado escolar.",b:"Doctor, licenciado, ingeniero, arquitecto o equivalente.",c:"No se exige titulación.",ok:"b",ref:"ROGA art. 49.2"},
+{t:"La excepción de no ser funcionario para ocupar un puesto directivo puede aplicarse:",a:"A los secretarios generales técnicos.",b:"A todos los órganos directivos sin excepción.",c:"A los coordinadores generales.",ok:"c",ref:"ROGA art. 49.3"},
+{t:"La excepción de no ostentar la condición de funcionario NO es aplicable a:",a:"Los coordinadores generales.",b:"Los secretarios generales técnicos.",c:"Los gerentes de organismos.",ok:"b",ref:"ROGA art. 49.3"},
+{t:"El nombramiento de un directivo que no sea funcionario habrá de efectuarse:",a:"Libremente y sin motivación.",b:"Motivadamente y de acuerdo con criterios de competencia profesional y experiencia.",c:"Por sorteo.",ok:"b",ref:"ROGA art. 49.2"},
+{t:"El precepto de la LBRL al que remite el ROGA para el nombramiento de directivos es:",a:"El artículo 130.3.",b:"El artículo 25.",c:"El artículo 140.",ok:"a",ref:"LBRL art. 130.3"},
+{t:"El cese de los órganos directivos corresponde a:",a:"El Pleno.",b:"El secretario general del Pleno.",c:"La Junta de Gobierno.",ok:"c",ref:"ROGA art. 49.1"},
+{t:"El secretario general del Pleno, a diferencia de otros órganos directivos, se nombra entre:",a:"Cargos de confianza del alcalde.",b:"Concejales del Pleno.",c:"Funcionarios de Administración Local con habilitación de carácter nacional.",ok:"c",ref:"ROGA art. 7.6"},
+{t:"La condición de funcionario de carrera exigida a los órganos directivos responde al principio de:",a:"Profesionalización de la dirección pública.",b:"Libre designación política sin requisitos.",c:"Representación territorial.",ok:"a",ref:"ROGA art. 49 · LBRL"},
+{t:"El nombramiento de los directivos se efectúa, por tanto, mediante:",a:"Acuerdo de la Junta de Gobierno.",b:"Ley de la Comunidad de Madrid.",c:"Acuerdo del Pleno por mayoría absoluta.",ok:"a",ref:"ROGA art. 49.1"},
+{t:"La propuesta del nombramiento de los titulares de los órganos directivos de un Área corresponde:",a:"Al propio candidato.",b:"Al Pleno.",c:"Al concejal de Gobierno o consejero-delegado de Gobierno del Área.",ok:"c",ref:"ROGA art. 44.j)"},
+{t:"El Ayuntamiento de Madrid se organiza actualmente en:",a:"Siete Áreas de Gobierno.",b:"Quince Áreas de Gobierno.",c:"Veintiuna Áreas de Gobierno.",ok:"a",ref:"Organigrama vigente"},
+{t:"Es una de las Áreas de Gobierno vigentes del Ayuntamiento de Madrid:",a:"Área de Gobierno de Asuntos Exteriores.",b:"Área de Gobierno de Defensa.",c:"Área de Gobierno de Vicealcaldía, Portavoz, Seguridad y Emergencias.",ok:"c",ref:"Organigrama vigente"},
+{t:"Forma parte de las Áreas de Gobierno vigentes:",a:"Área de Gobierno de Justicia.",b:"Área de Gobierno de Sanidad Nacional.",c:"Área de Gobierno de Urbanismo, Medio Ambiente y Movilidad.",ok:"c",ref:"Organigrama vigente"},
+{t:"Pertenece a la estructura vigente de Áreas de Gobierno:",a:"Área de Gobierno de Industria.",b:"Área de Gobierno de Cultura, Turismo y Deporte.",c:"Área de Gobierno de Agricultura.",ok:"b",ref:"Organigrama vigente"},
+{t:"Es, entre las siguientes, un Área de Gobierno actual:",a:"Área de Gobierno de Trabajo y Seguridad Social.",b:"Área de Gobierno de Economía, Innovación y Hacienda.",c:"Área de Gobierno de Exteriores.",ok:"b",ref:"Organigrama vigente"},
+{t:"Constituye una de las Áreas de Gobierno en vigor:",a:"Área de Gobierno de Obras y Equipamientos.",b:"Área de Gobierno de Telecomunicaciones.",c:"Área de Gobierno de Pesca.",ok:"a",ref:"Organigrama vigente"},
+{t:"Figura entre las Áreas de Gobierno actuales del Ayuntamiento:",a:"Área de Gobierno de Políticas Sociales, Familia e Igualdad.",b:"Área de Gobierno de Educación Universitaria.",c:"Área de Gobierno de Energía.",ok:"a",ref:"Organigrama vigente"},
+{t:"Se corresponde con un Área de Gobierno vigente:",a:"Área de Gobierno de Políticas de Vivienda.",b:"Área de Gobierno de Comercio Exterior.",c:"Área de Gobierno de Minas.",ok:"a",ref:"Organigrama vigente"},
+{t:"Las Áreas Delegadas dependen:",a:"Directamente del Pleno.",b:"De un Área de Gobierno.",c:"De la Comunidad de Madrid.",ok:"b",ref:"ROGA art. 40.1 · organigrama"},
+{t:"El número y la denominación de las Áreas de Gobierno son un dato:",a:"Actualizable, que fija el alcalde en cada mandato (con el máximo de 15).",b:"Fijo e inmodificable desde 2004.",c:"Determinado por la Comunidad de Madrid.",ok:"a",ref:"ROGA art. 40.2"},
+{t:"El alcalde, según el ROGA, ostenta:",a:"La máxima representación del municipio.",b:"La presidencia del Tribunal Superior de Justicia.",c:"La representación del Estado.",ok:"a",ref:"ROGA art. 9.1"},
+{t:"El alcalde podrá delegar sus competencias, entre otros, en:",a:"El Tribunal de Cuentas.",b:"La Junta de Gobierno Local, sus miembros, los concejales y las Juntas Municipales de Distrito.",c:"La Comunidad de Madrid.",ok:"b",ref:"ROGA art. 11"},
+{t:"El alcalde responde de su gestión política ante:",a:"La Junta de Gobierno.",b:"El Pleno.",c:"El Delegado del Gobierno.",ok:"b",ref:"ROGA art. 9.2"},
+{t:"La aprobación de las disposiciones de carácter general propuestas por las Áreas corresponde:",a:"A la Junta de Gobierno.",b:"Al director general.",c:"Al secretario general técnico.",ok:"a",ref:"ROGA art. 44.d)"},
+{t:"El órgano que nombra a los titulares de los órganos directivos es:",a:"El Pleno.",b:"La Junta de Gobierno.",c:"El concejal-delegado.",ok:"b",ref:"ROGA art. 49.1"},
+{t:"La división funcional del Ayuntamiento corresponde a las Áreas de Gobierno y la territorial a:",a:"Las Diputaciones.",b:"Las Comunidades Autónomas.",c:"Los distritos.",ok:"c",ref:"ROGA art. 5"},
+{t:"El tratamiento que el ROGA reconoce al alcalde es el de:",a:"Excelencia.",b:"Señoría.",c:"Ilustrísima.",ok:"a",ref:"ROGA art. 9.3"},
+{t:"La superior dirección y representación de un Área de Gobierno corresponde:",a:"Al concejal de Gobierno o consejero-delegado de Gobierno titular del Área.",b:"Al secretario general técnico.",c:"Al gerente.",ok:"a",ref:"ROGA arts. 42 y 44"},
+{t:"La relación de puestos de trabajo (RPT) es el instrumento para:",a:"La creación, modificación y supresión de unidades administrativas inferiores y puestos de trabajo.",b:"La aprobación de las ordenanzas fiscales.",c:"El nombramiento de los concejales.",ok:"a",ref:"ROGA art. 8"},
+{t:"El secretario general técnico, excepcionalmente, podrá depender funcionalmente:",a:"De un Área de Coordinación o Delegada, si así lo establece el acuerdo de Organización Administrativa del Área.",b:"Del Pleno.",c:"De la Comunidad de Madrid.",ok:"a",ref:"ROGA art. 47.3"},
+{t:"Las Áreas de Gobierno se incardinan dentro de los órganos:",a:"Territoriales.",b:"De participación.",c:"Centrales.",ok:"c",ref:"ROGA art. 6"},
+{t:"La coordinación de las distintas Direcciones Generales de un Área de Gobierno corresponde:",a:"Al coordinador general.",b:"Al gerente del distrito.",c:"Al interventor.",ok:"a",ref:"ROGA art. 46.1"},
+{t:"La gestión de los servicios comunes del Área de Gobierno corresponde:",a:"Al director general.",b:"Al secretario general técnico.",c:"Al concejal-presidente.",ok:"b",ref:"ROGA art. 47.1.a)"},
+{t:"La dirección y gestión de un ámbito homogéneo de competencias corresponde:",a:"Al coordinador general.",b:"Al director general.",c:"Al Pleno.",ok:"b",ref:"ROGA art. 48.1"},
+{t:"Los concejales de Gobierno proponen al alcalde:",a:"El nombramiento de los concejales-presidentes.",b:"La aprobación de los presupuestos generales del Estado.",c:"Los proyectos de organización y estructura de su Área.",ok:"c",ref:"ROGA art. 44.e)"},
+{t:"El control de eficacia respecto de la actuación de los órganos directivos lo ejerce:",a:"El Tribunal de Cuentas.",b:"El Pleno.",c:"El concejal de Gobierno o consejero-delegado de Gobierno.",ok:"c",ref:"ROGA art. 44.f)"},
+{t:"La aprobación de los proyectos de organización del Área corresponde aprobarla a:",a:"El Pleno.",b:"La Comunidad de Madrid.",c:"El alcalde, a propuesta del concejal de Gobierno.",ok:"c",ref:"ROGA art. 44.e)"},
+{t:"El órgano directivo con rango de director general que presta asistencia jurídica y técnica al titular del Área es:",a:"El coordinador general.",b:"El secretario general técnico.",c:"El interventor general.",ok:"b",ref:"ROGA art. 47"},
+{t:"La dependencia jerárquica habitual de un director general es:",a:"Un coordinador general o un concejal de Coordinación o delegado.",b:"El alcalde directamente y en todo caso.",c:"El Pleno.",ok:"a",ref:"ROGA art. 48.1"},
+{t:"La existencia de más de un coordinador general en un Área exige delimitar sus sectores mediante:",a:"Una ley autonómica.",b:"El acuerdo de la Junta de Gobierno de Organización Administrativa del Área.",c:"Un acuerdo del Pleno.",ok:"b",ref:"ROGA art. 46.2"},
+{t:"Las Áreas de Gobierno comprenden sectores funcionalmente:",a:"Homogéneos.",b:"Heterogéneos por definición.",c:"Territoriales.",ok:"a",ref:"ROGA art. 40.1"},
+{t:"La capacidad del alcalde para fijar el número de Áreas tiene como tope:",a:"Diez Áreas de Gobierno.",b:"Quince Áreas de Gobierno.",c:"No tiene tope.",ok:"b",ref:"ROGA art. 40.2"},
+{t:"El órgano de apoyo a la Junta de Gobierno Local es, a efectos del ROGA, un órgano:",a:"Superior.",b:"Directivo.",c:"De participación.",ok:"b",ref:"ROGA art. 7.3"},
+{t:"El órgano de gestión tributaria del Ayuntamiento es, a efectos del ROGA, un órgano:",a:"Directivo.",b:"Superior.",c:"Colegiado de participación.",ok:"a",ref:"ROGA art. 7.3"},
+{t:"La condición común a coordinadores generales, secretarios generales técnicos y directores generales es que:",a:"Son órganos directivos nombrados por la Junta de Gobierno.",b:"Son órganos superiores de naturaleza política.",c:"Son elegidos por los vecinos.",ok:"a",ref:"ROGA arts. 7 y 49"},
+{t:"La diferencia entre concejal de Gobierno y director general es que:",a:"Ambos son órganos superiores.",b:"El primero es órgano superior (dirección política) y el segundo órgano directivo (ejecución).",c:"El director general es superior y el concejal directivo.",ok:"b",ref:"ROGA art. 7"},
+{t:"La denominación \"consejero-delegado de Gobierno\" se refiere a:",a:"Un órgano directivo de ejecución.",b:"Un órgano superior que puede ser titular de un Área de Gobierno.",c:"Un cargo de los organismos autónomos.",ok:"b",ref:"ROGA arts. 42 y 44"},
+{t:"El ROGA atribuye al alcalde la facultad de delegar competencias en las Juntas Municipales de Distrito, en sus concejales-presidentes y en:",a:"El Pleno.",b:"Sus gerentes.",c:"El Tribunal de Cuentas.",ok:"b",ref:"ROGA art. 11"},
+{t:"El principio de profesionalización de la función directiva se manifiesta en que los directivos:",a:"Se eligen por sufragio.",b:"Se nombran, con carácter general, entre funcionarios de carrera.",c:"Son cargos de confianza sin requisitos.",ok:"b",ref:"ROGA art. 49"},
+{t:"La materia del Tema 4 del temario, complementaria de este tema, es:",a:"Los distritos, el concejal-presidente y la estructura administrativa territorial.",b:"La Constitución Española.",c:"Las Haciendas locales.",ok:"a",ref:"REFERENCIA CRUZADA Tema 4"},
+{t:"El instrumento normativo que regula la organización de las Áreas de Gobierno es:",a:"La Ley 39/2015.",b:"El Reglamento Orgánico del Gobierno y de la Administración del Ayuntamiento de Madrid.",c:"El Estatuto de Autonomía de Madrid.",ok:"b",ref:"ROGA"},
+{t:"La Secretaría General Técnica existe:",a:"Solo en los distritos.",b:"En cada Área de Gobierno.",c:"Únicamente en la Alcaldía.",ok:"b",ref:"ROGA art. 41.1"},
+{t:"Las funciones de los concejales de Coordinación se ejercen sin perjuicio de:",a:"La superior dirección del concejal de Gobierno o consejero-delegado de Gobierno del que dependan.",b:"Las competencias del Tribunal Constitucional.",c:"Las competencias de la Comunidad de Madrid.",ok:"a",ref:"ROGA art. 45.1"},
+{t:"Los órganos de participación de las Áreas de Gobierno se rigen por:",a:"La LBRL exclusivamente.",b:"El Reglamento del Pleno.",c:"Las normas orgánicas de participación ciudadana.",ok:"c",ref:"ROGA art. 43"},
+{t:"La adscripción de un organismo autónomo se realiza a:",a:"Un distrito.",b:"Un Área de Gobierno competente por razón de la materia.",c:"El Pleno.",ok:"b",ref:"ROGA arts. 6 y 78"},
+{t:"El régimen de incompatibilidades aplicable a los órganos superiores y directivos es el de:",a:"La Ley 7/1985.",b:"La Ley 53/1984.",c:"La Ley 39/2015.",ok:"b",ref:"ROGA art. 7.7"},
+{t:"La afirmación correcta sobre el número máximo de Áreas de Gobierno es:",a:"Es siempre de 7.",b:"No podrá exceder de 15, siendo el alcalde quien fija el número concreto.",c:"Lo fija el Pleno por ley.",ok:"b",ref:"ROGA art. 40.2"},
+{t:"La afirmación correcta sobre la jerarquía directiva es:",a:"Director general, coordinador general y secretario general técnico.",b:"Coordinador general, secretario general técnico y director general, por ese orden.",c:"Todos tienen el mismo rango.",ok:"b",ref:"ROGA art. 42.2"},
+{t:"La afirmación correcta sobre el nombramiento de directivos es:",a:"Los nombra el Pleno entre cualquier ciudadano.",b:"Los elige la ciudadanía.",c:"Los nombra la Junta de Gobierno, con carácter general entre funcionarios de carrera.",ok:"c",ref:"ROGA art. 49"},
+{t:"La afirmación correcta sobre los órganos del Ayuntamiento es:",a:"Todos los órganos son directivos.",b:"Los directivos ejercen la dirección política.",c:"Los superiores ejercen dirección política y los directivos la ejecución.",ok:"c",ref:"ROGA art. 7.4"}
+];
+
+function showTab(id){
+  document.querySelectorAll('.tab-content').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelector('.tab-btn[data-tab="'+id+'"]').classList.add('active');
+  window.scrollTo(0,0);
+}
+function renderTest(){
+  const body = document.getElementById('test-body'); body.innerHTML='';
+  QUESTIONS.forEach((q, idx) => {
+    const div = document.createElement('div');
+    div.className='question'; div.dataset.num=idx+1; div.dataset.correct=q.ok;
+    const opts = ['a','b','c'].map(l =>
+      `<div class="q-opt" data-opt="${l}"><div class="q-letter">${l.toUpperCase()}</div><div>${q[l]}</div></div>`).join('');
+    div.innerHTML = `<div class="q-num">Pregunta ${idx+1}</div>
+      <div class="q-text">${q.t}</div>
+      <div class="q-options">${opts}</div>
+      <div class="q-answer"><strong>Correcta: ${q.ok.toUpperCase()})</strong> ${q[q.ok]}
+        ${q.ref ? `<div class="q-ref">Ref: ${q.ref}</div>` : ''}</div>`;
+    body.appendChild(div);
+  });
+  body.querySelectorAll('.q-opt').forEach(opt => opt.addEventListener('click', () => {
+    const p = opt.closest('.q-options'); p.querySelectorAll('.q-opt').forEach(o=>o.classList.remove('selected'));
+    opt.classList.add('selected');
+  }));
+}
+function correctTest(){
+  let ok=0,ko=0,total=0;
+  document.querySelectorAll('#test-body .question').forEach(q => {
+    const sel = q.querySelector('.q-opt.selected'); if(!sel) return; total++;
+    const c=q.dataset.correct;
+    q.querySelectorAll('.q-opt').forEach(o=>{if(o.dataset.opt===c)o.classList.add('correct');});
+    if(sel.dataset.opt===c){ok++;}else{ko++;sel.classList.add('wrong');}
+    q.querySelector('.q-answer').classList.add('show');
+  });
+  const rendered=document.querySelectorAll('#test-body .question').length;
+  const net=Math.max(0, ok-ko/3);
+  const note=rendered?(net*10/rendered).toFixed(2):'0.00';
+  document.getElementById('score-bar').style.display='flex';
+  document.getElementById('sc-total').textContent=total;
+  document.getElementById('sc-ok').textContent=ok;
+  document.getElementById('sc-ko').textContent=ko;
+  document.getElementById('sc-net').textContent=note;
+}
+function showAllAnswers(){
+  document.querySelectorAll('#test-body .question').forEach(q=>{
+    const c=q.dataset.correct;
+    q.querySelectorAll('.q-opt').forEach(o=>{if(o.dataset.opt===c)o.classList.add('correct');});
+    q.querySelector('.q-answer').classList.add('show');
+  });
+}
+function resetTest(){
+  document.querySelectorAll('#test-body .question').forEach(q=>{
+    q.querySelectorAll('.q-opt').forEach(o=>o.classList.remove('selected','correct','wrong'));
+    q.querySelector('.q-answer').classList.remove('show');
+  });
+  document.getElementById('score-bar').style.display='none';
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('diagramas-body').innerHTML = DIAGRAMAS_HTML;
+  renderTest();
+  document.querySelectorAll('.tab-btn').forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.tab)));
+  document.getElementById('btn-correct').addEventListener('click', correctTest);
+  document.getElementById('btn-show-all').addEventListener('click', showAllAnswers);
+  document.getElementById('btn-reset').addEventListener('click', resetTest);
+});
+
+</script>
+</body>
+</html>
