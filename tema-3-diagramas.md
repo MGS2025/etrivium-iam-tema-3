@@ -137,7 +137,7 @@
   <text x="380" y="144" class="c-s">• Secretarios generales técnicos</text>
   <text x="380" y="168" class="c-s">• Directores generales</text>
   <text x="380" y="192" class="c-s">• Asesoría Jurídica · interventor general</text>
-  <text x="380" y="216" class="c-s">• Gerentes (distritos y organismos)</text>
+  <text x="380" y="216" class="c-s">• Coord. de Distrito · gerentes de organismos</text>
   <text x="380" y="240" class="c-s">• Secretario general del Pleno</text>
   <text x="380" y="266" class="c-s" style="font-style:italic;fill:#777">ejecutan las decisiones</text>
 </svg>
@@ -248,7 +248,7 @@
   <rect x="150" y="184" width="400" height="62" fill="#5a8fc0"/>
   <text x="350" y="208" class="f-n">3.º</text>
   <text x="350" y="226" class="f-t">Director general u órgano asimilado</text>
-  <text x="350" y="276" class="f-s" style="font-style:italic">ROGA art. 42.2 (modif. 30/09/2015) · de mayor a menor rango</text>
+  <text x="350" y="276" class="f-s" style="font-style:italic">ROGA art. 42.2 · de mayor a menor rango</text>
 </svg>
 ```
 
@@ -396,7 +396,7 @@
     .j-s{font:11px system-ui,sans-serif;fill:#fff;text-anchor:middle}
     .j-n{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
   </style>
-  <rect x="250" y="24" width="200" height="60" rx="8" fill="#003d75" class="j-box"/>
+  <rect x="190" y="24" width="320" height="60" rx="8" fill="#003d75" class="j-box"/>
   <text x="350" y="50" class="j-h">ALCALDE</text>
   <text x="350" y="70" class="j-s">dirige y delega · máxima representación</text>
   <rect x="60" y="150" width="260" height="60" rx="8" fill="#0055a0" class="j-box"/>
@@ -407,7 +407,7 @@
   <text x="510" y="196" class="j-s">funciones normativas y de control</text>
   <line x1="300" y1="84" x2="190" y2="150" stroke="#0055a0" stroke-width="1.5"/>
   <line x1="400" y1="84" x2="510" y2="150" stroke="#2d8659" stroke-width="1.5"/>
-  <text x="350" y="252" class="j-n">Los concejales de Gobierno son la bisagra: elevan propuestas al Pleno (44.c)</text>
+  <text x="350" y="252" class="j-n">Los concejales de Gobierno elevan propuestas al Pleno (44.c)</text>
   <text x="350" y="270" class="j-n">y proponen disposiciones y nombramientos a la Junta de Gobierno (44.d, 44.j)</text>
 </svg>
 ```
@@ -443,7 +443,7 @@
   <text x="58" y="281" class="k-n">6</text><text x="80" y="281" class="k-t">Políticas Sociales, Familia e Igualdad</text>
   <rect x="40" y="298" width="620" height="32" rx="6" class="k-b"/>
   <text x="58" y="319" class="k-n">7</text><text x="80" y="319" class="k-t">Políticas de Vivienda</text>
-  <text x="350" y="350" class="k-t" text-anchor="middle" style="font-style:italic;fill:#777">Dato actualizable: el alcalde fija el número (máx. 15) y la denominación cada mandato</text>
+  <text x="350" y="350" class="k-t" text-anchor="middle" style="font-style:italic;fill:#777;text-anchor:middle">Dato actualizable: el alcalde fija el número (máx. 15) y la denominación cada mandato</text>
 </svg>
 ```
 

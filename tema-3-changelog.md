@@ -4,6 +4,29 @@
 
 ---
 
+## v1.2 — 2026-10-01 — Revisión jurídica
+
+**Estado**: aplicada la revisión jurídica de los temas 1-10 y contrastado el articulado con el **texto consolidado vigente del ROGA** (Código «Normativa del Ayuntamiento de Madrid» del BOE, última modificación del ROGA: 15-02-2023), la LBRL y la Ley 22/2006 en el BOE consolidado.
+
+### Cambios de la revisión
+- Fuentes: eliminada la referencia al material de origen del texto del ROGA.
+
+### Correcciones contra el texto vigente del ROGA
+- Art. 7.3: en el ámbito de los Distritos los órganos directivos son los **coordinadores de Distrito** (no los gerentes). Corregido en contenido, índice, diagrama D3, caso 1 y test.
+- Art. 8: los órganos directivos y las Subdirecciones Generales los crea, modifica o suprime la **Junta de Gobierno** mediante acuerdos de organización administrativa; servicios, departamentos y unidades inferiores, por la RPT (antes: «decreto del alcalde»). Corregido en contenido y test.
+- Art. 11.1: el alcalde puede delegar en los **coordinadores de Distrito** (antes: «gerentes»).
+- Retirada la fecha de modificación «30-09-2015» de los arts. 42.2, 46 y 47 (contenido, diagrama D6, test y fuentes): no figura en el texto consolidado consultado.
+- Fuentes: corregido el BOE de la Ley 22/2006 (núm. 159, de 05/07/2006) y añadida la publicación del ROGA (BOCM núm. 148, BOAM núm. 5610).
+
+### Reglas generales
+- Cajas renombradas: «Dato clave», «Cita normativa», «Ejemplo de aplicación en el Ayto», «Relación con otros temas» (HTML, `.md` y `build_t3.py`). Leyenda sin promesas sobre el examen; marcas sueltas `[REFERENCIA CRUZADA]` eliminadas.
+- Citas de artículos: «artículo» completo cuando forma parte de la oración (arts. 6, 123.1.c)/124.4.k) y 130.3 LBRL; caso 2).
+- Eliminadas reflexiones y promesas fuera de las cajas («Es una de las distinciones más preguntadas del tema», «la bisagra» en D10) y el encuadre del ROGA en el régimen de capitalidad (la Ley 22/2006 es posterior al ROGA).
+- Eliminadas las referencias al material aportado por el cliente (tabla Tier 2, `Test_Prompting/…`, `[MAT-…]`, fila de trazabilidad, observaciones de validación); `[BOAM-10032]` pasa a Tier 1.
+- Test: 22 preguntas sustituidas por preguntas literales del ROGA (9, 12, 13, 15, 20, 27, 42, 50, 53, 55, 72, 93, 98, 99, 110, 114, 119, 129, 137, 138, 139, 140); referencias precisadas en 1, 8, 11, 14, 36, 118 y 141; respuestas repartidas 50/50/50 en el `.md`. Los distractores con «gerente de distrito» (figura que el art. 7.3 vigente ya no recoge) pasan a «coordinador de Distrito». Pedagógicas P6, P9, P11, P15, P18, P19 y P20 ajustadas al texto literal.
+
+---
+
 ## v1.1 — 2026-09-06 — Ficha de extensión y tiempo de estudio
 
 **Estado**: sin cambios de contenido. Solo se añade información sobre el propio tema.
@@ -27,8 +50,8 @@
 
 ### Alcance y decisiones
 
-- **Fuente nuclear**: ROGA 2004, arts. 5-11 y 40-49, a partir del PDF aportado por el cliente (`Tema 3.pdf`, resumen + anexo del articulado) y **contrastado con el texto oficial completo** del Ayuntamiento de Madrid (guardado en `Documentacion/fuentes-oficiales/`).
-- **Áreas de Gobierno actuales** actualizadas con el **organigrama oficial vigente** (transparencia.madrid.es, consultado 2026-06-15): **7 Áreas de Gobierno** + Áreas Delegadas. Coincide con el PDF de cliente en las 7 Áreas.
+- **Fuente nuclear**: ROGA 2004, arts. 5-11 y 40-49, contrastado con el **texto oficial completo** del Ayuntamiento de Madrid.
+- **Áreas de Gobierno actuales** actualizadas con el **organigrama oficial vigente** (transparencia.madrid.es, consultado 2026-06-15): **7 Áreas de Gobierno** + Áreas Delegadas.
 - **Alcance ampliado** coherente con el resto de temas admin: marco general del ROGA (arts. 5-11), LBRL invocada (arts. 123, 124, 130) y régimen de capitalidad (Ley 22/2006).
 - **Formato de referencia**: Tema 1 / Tema 2 (admin): 150 preguntas + 20 pedagógicas + 6 casos + 12 diagramas + 7 pestañas.
 

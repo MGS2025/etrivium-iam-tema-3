@@ -17,7 +17,7 @@
 
 ## 1. Fuentes y trazabilidad
 
-- [ ] La fuente nuclear es el **ROGA 2004** (arts. 5-11 y 40-49), coincidente con el PDF aportado por el cliente y con el texto oficial.
+- [ ] La fuente nuclear es el **ROGA 2004** (arts. 5-11 y 40-49), en su texto oficial consolidado.
 - [ ] El epígrafe "número y denominación de las **actuales** Áreas de Gobierno" se ha actualizado con el **organigrama vigente** (transparencia.madrid.es).
 - [ ] Cada afirmación que reproduce el articulado está referenciada con `[ROGA, art. X]` o `[LBRL, art. X]`.
 - [ ] Cada pregunta del banco y de los casos puede reconducirse a un artículo del ROGA, a la LBRL o al organigrama vigente.
@@ -26,10 +26,10 @@
 
 - [ ] El `tema-3-indice.md` refleja fielmente la estructura de `tema-3-contenido.md`.
 - [ ] Las secciones cubren: ROGA y régimen de gran ciudad, órganos (centrales/territoriales/organismos), superiores/directivos, Áreas de Gobierno (concepto y número), estructura interna, jerarquía, órganos superiores de las Áreas, órganos centrales directivos, nombramiento, Áreas actuales y resumen.
-- [ ] Los conceptos memorizables aparecen como `[DATO CLAVE EXAMEN]`.
+- [ ] Los conceptos memorizables aparecen como `[DATO CLAVE]`.
 - [ ] Las reproducciones del articulado aparecen como `[CITA NORMATIVA]`.
-- [ ] Los ejemplos del Ayto de Madrid están marcados como `[EJEMPLO AYTO MADRID]`.
-- [ ] Los enlaces a otros temas se marcan como `[REFERENCIA CRUZADA]`.
+- [ ] Los ejemplos del Ayto de Madrid están marcados como `[EJEMPLO DE APLICACIÓN EN EL AYTO]`.
+- [ ] Los enlaces a otros temas se marcan como `[RELACIÓN CON OTROS TEMAS]`.
 
 ## 3. Rigor jurídico
 
@@ -87,8 +87,8 @@
 
 ### Decisiones conscientes que conviene confirmar
 
-1. **Alcance**: fiel al PDF de cliente (resumen + anexo ROGA arts. 40-49), **ampliado** con el marco general del ROGA (arts. 5-11), la LBRL invocada y la actualización del organigrama vigente.
-2. **"Áreas de Gobierno actuales" actualizadas** con el organigrama oficial vigente (7 Áreas + Áreas Delegadas), por su carácter cambiante. El PDF de cliente coincide en las 7 Áreas.
+1. **Alcance**: ROGA arts. 40-49, **ampliado** con el marco general del ROGA (arts. 5-11), la LBRL invocada y la actualización del organigrama vigente.
+2. **"Áreas de Gobierno actuales" actualizadas** con el organigrama oficial vigente (7 Áreas + Áreas Delegadas), por su carácter cambiante.
 3. **150 preguntas + 20 pedagógicas + 6 casos + 12 diagramas + 7 pestañas**, replicando el formato del Tema 1/Tema 2.
 4. **Balanceo automático A/B/C** mediante permutación determinista en `build_t3.py`.
 

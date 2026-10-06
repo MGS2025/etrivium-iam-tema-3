@@ -13,7 +13,7 @@
 
 | Sección | Título | Artículos ROGA | Diagrama |
 |---|---|---|---|
-| 1 | Introducción: el ROGA 2004 y el régimen de gran ciudad | Preámbulo · LCREM | D1 |
+| 1 | Introducción: el ROGA 2004 y el régimen de gran ciudad | Art. 1 · exposición de motivos · LCREM | D1 |
 | 2 | La organización del Ayuntamiento: órganos centrales, territoriales y organismos | Arts. 5-6 | D2 |
 | 3 | Órganos superiores y órganos directivos | Art. 7 | D3 |
 | 4 | Las Áreas de Gobierno: concepto y número | Art. 40 | D4 |
@@ -28,7 +28,7 @@
 | 9.2 | Secretarios generales técnicos | Art. 47 | D8 |
 | 9.3 | Directores generales | Art. 48 | D8 |
 | 9.4 | Nombramiento de los titulares de los órganos directivos | Art. 49 | D9 |
-| 10 | Unidades administrativas inferiores | Arts. 41, 48 | D5 |
+| 10 | Unidades administrativas inferiores | Arts. 8, 41 | D5 |
 | 11 | Relación con el Alcalde y el Pleno | Arts. 9-11, 44 | D10 |
 | 12 | Número y denominación de las actuales Áreas de Gobierno | Organigrama vigente | D11 |
 | 13 | Esquema resumen + cómo estudiar el tema | Memorización | D12 |
@@ -37,7 +37,7 @@
 
 ## Conceptos clave por sección
 
-### Datos memorísticos de alto valor (DATO CLAVE EXAMEN)
+### Datos memorísticos de alto valor (DATO CLAVE)
 
 | Concepto | Dato | Artículo |
 |---|---|---|
@@ -45,7 +45,7 @@
 | Principios de organización | División funcional en Áreas de Gobierno + gestión territorial en distritos | Art. 5 |
 | Tipos de órganos | Centrales, territoriales y organismos públicos | Art. 6 |
 | Órganos superiores | Alcalde y miembros de la Junta de Gobierno Local (+ concejales-presidentes en distritos) | Art. 7.2 |
-| Órganos directivos | Coordinadores generales, secretarios generales técnicos, directores generales… (gerentes en distritos) | Art. 7.3 |
+| Órganos directivos | Coordinadores generales, secretarios generales técnicos, directores generales… (coordinadores de Distrito en distritos) | Art. 7.3 |
 | Nº máximo de Áreas de Gobierno | No podrán exceder de **15** | Art. 40.2 |
 | Quién fija nº, denominación y atribuciones | El **alcalde** (por decreto) | Art. 40.2 |
 | Estructura del Área | Coordinadores generales + Secretaría General Técnica + Direcciones Generales | Art. 41 |
@@ -58,7 +58,7 @@
 
 | | Órganos superiores | Órganos directivos |
 |---|---|---|
-| Quiénes | Alcalde y miembros de la Junta de Gobierno Local; concejales con responsabilidades de gobierno; concejales-presidentes de distrito | Coordinadores generales, secretarios generales técnicos, directores generales, titular Asesoría Jurídica, interventor, gerentes de distrito y de organismos |
+| Quiénes | Alcalde y miembros de la Junta de Gobierno Local; concejales con responsabilidades de gobierno; concejales-presidentes de distrito | Coordinadores generales, secretarios generales técnicos, directores generales, titular Asesoría Jurídica, interventor, coordinadores de Distrito y gerentes de organismos |
 | Función | Dirección, planificación y coordinación **política** | **Ejecución** de las decisiones de los órganos superiores |
 
 ### Tabla — Órganos centrales directivos de las Áreas de Gobierno
@@ -73,7 +73,7 @@
 
 ## Dependencias con otros temas
 
-- **Tema 2**: Organización territorial del Estado y régimen especial de Madrid (Ley 22/2006 de Capitalidad). [REFERENCIA CRUZADA]
+- **Tema 2**: Organización territorial del Estado y régimen especial de Madrid (Ley 22/2006 de Capitalidad).
 - **Tema 4**: El ROGA (II) — Los Distritos, el Concejal-Presidente y la estructura administrativa territorial (continuación de este tema).
 - **Tema 5**: El personal al servicio de la Administración (EBEP) — nombramiento de órganos directivos entre funcionarios (art. 130.3 LBRL).
 - **Temas 6-7**: Ley 39/2015 LPAC — forma de los actos administrativos (decretos, resoluciones) y procedimiento.

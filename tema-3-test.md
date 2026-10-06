@@ -23,10 +23,10 @@
 ### Bloque 1 — El ROGA y la organización del Ayuntamiento (arts. 5-6)
 
 1. El Reglamento Orgánico del Gobierno y de la Administración del Ayuntamiento de Madrid fue aprobado:
-   - a) El 31 de mayo de 2004.
-   - b) El 4 de julio de 2006.
+   - a) El 4 de julio de 2006.
+   - b) El 31 de mayo de 2004.
    - c) El 2 de abril de 1985.
-   - **Respuesta: a** · *ROGA*
+   - **Respuesta: b** · *ROGA, título*
 
 2. Según el artículo 5 del ROGA, la organización administrativa del Ayuntamiento de Madrid responde a los principios de:
    - a) Jerarquía y desconcentración exclusivamente.
@@ -41,10 +41,10 @@
    - **Respuesta: c** · *ROGA art. 5*
 
 4. La "gestión territorial integrada" se materializa en:
-   - a) Los distritos.
-   - b) Las Áreas de Gobierno.
+   - a) Las Áreas de Gobierno.
+   - b) Los distritos.
    - c) Las entidades públicas empresariales.
-   - **Respuesta: a** · *ROGA art. 5*
+   - **Respuesta: b** · *ROGA art. 5*
 
 5. Conforme al artículo 6 del ROGA, el Ayuntamiento de Madrid se organiza en:
    - a) Órganos centrales y territoriales únicamente.
@@ -65,16 +65,16 @@
    - **Respuesta: b** · *ROGA art. 6.1*
 
 8. Los organismos públicos previstos en el ROGA:
-   - a) Dependen del Ayuntamiento y se adscriben al Área competente por razón de la materia.
+   - a) Tienen rango de Área de Gobierno.
    - b) Son independientes del Ayuntamiento.
-   - c) Tienen rango de Área de Gobierno.
-   - **Respuesta: a** · *ROGA art. 6*
+   - c) Dependen del Ayuntamiento y se adscriben al Área competente por razón de la materia.
+   - **Respuesta: c** · *ROGA art. 6.3*
 
-9. La materia del Tema 3 corresponde a la parte del ROGA relativa a:
-   - a) Los distritos.
-   - b) Las Áreas de Gobierno y su estructura interna.
-   - c) El Reglamento Orgánico del Pleno.
-   - **Respuesta: b** · *ROGA Tít. V Cap. I*
+9. Según el artículo 6.2 del ROGA, de los órganos centrales dependerán:
+   - a) Los organismos públicos que se creen de acuerdo con las disposiciones vigentes en materia de régimen local y con las previsiones del Reglamento.
+   - b) Las Juntas Municipales de Distrito.
+   - c) Los órganos territoriales de cada distrito.
+   - **Respuesta: a** · *ROGA art. 6.2*
 
 10. El régimen de los municipios de gran población que sirve de marco al ROGA se contiene en:
     - a) El Título X de la Ley 7/1985 (LBRL).
@@ -83,34 +83,34 @@
     - **Respuesta: a** · *LBRL Tít. X*
 
 11. El municipio de Madrid tiene además un régimen especial regulado por:
-    - a) La Ley 22/2006 de Capitalidad y de Régimen Especial de Madrid.
+    - a) La Ley Orgánica del Régimen Electoral General.
     - b) El Estatuto de Autonomía de la Comunidad de Madrid.
-    - c) La Ley Orgánica del Régimen Electoral General.
-    - **Respuesta: a** · *LCREM*
+    - c) La Ley 22/2006 de Capitalidad y de Régimen Especial de Madrid.
+    - **Respuesta: c** · *Ley 22/2006, art. 1.1*
 
-12. La creación, modificación o supresión de los órganos directivos se realiza, según el ROGA, mediante:
-    - a) Decreto del alcalde, a propuesta del titular del Área y previo informe del Área competente en organización.
-    - b) Acuerdo del Pleno por mayoría absoluta.
-    - c) Resolución del director general afectado.
-    - **Respuesta: a** · *ROGA art. 8.1*
+12. Según el artículo 8.1 del ROGA, los órganos directivos y las Subdirecciones Generales se crean, modifican o suprimen:
+    - a) Por resolución del director general afectado.
+    - b) Por acuerdo del Pleno por mayoría absoluta.
+    - c) Por la Junta de Gobierno, a través de los acuerdos de organización administrativa.
+    - **Respuesta: c** · *ROGA art. 8.1*
 
-13. Las unidades administrativas de nivel inferior a Departamento se crean, modifican y suprimen:
-    - a) A través de la relación de puestos de trabajo (RPT).
+13. Según el artículo 8.1 del ROGA, los servicios, departamentos y las unidades administrativas de nivel inferior a éstos, así como los demás puestos de trabajo, se crean, modifican y suprimen:
+    - a) A través de la relación de puestos de trabajo.
     - b) Por ley de la Comunidad de Madrid.
     - c) Por acuerdo del Consejo Social de la Ciudad.
-    - **Respuesta: a** · *ROGA art. 8.2*
+    - **Respuesta: a** · *ROGA art. 8.1*
 
 14. Según el ROGA, los organismos públicos se adscriben:
-    - a) Directamente o a través de otro organismo, al Área competente por razón de la materia.
-    - b) Siempre directamente al Pleno.
+    - a) Siempre directamente al Pleno.
+    - b) Directamente o a través de otro organismo, al Área competente por razón de la materia.
     - c) A los distritos.
-    - **Respuesta: a** · *ROGA art. 6*
+    - **Respuesta: b** · *ROGA art. 6.3*
 
-15. La organización del Ayuntamiento de Madrid prevista en el ROGA persigue:
-    - a) La eficacia en la prestación de los servicios públicos y la capacidad directiva y gerencial.
-    - b) La supresión de los distritos.
-    - c) La asunción de competencias autonómicas.
-    - **Respuesta: a** · *ROGA Preámbulo*
+15. Según el artículo 6.3 del ROGA, los organismos públicos previstos en su título VII tienen por objeto:
+    - a) La realización de actividades de ejecución o gestión tanto administrativas de fomento o prestación, como de contenido económico reservadas al Ayuntamiento de Madrid.
+    - b) La dirección, planificación y coordinación política del municipio.
+    - c) El ejercicio de competencias exclusivamente en el ámbito de un distrito.
+    - **Respuesta: a** · *ROGA art. 6.3*
 
 ### Bloque 2 — Órganos superiores y órganos directivos (art. 7)
 
@@ -121,13 +121,13 @@
     - **Respuesta: b** · *ROGA art. 7.1*
 
 17. Son órganos superiores de gobierno y administración del Ayuntamiento de Madrid:
-    - a) El alcalde y los miembros de la Junta de Gobierno Local.
-    - b) Los directores generales.
+    - a) Los directores generales.
+    - b) El alcalde y los miembros de la Junta de Gobierno Local.
     - c) Los secretarios generales técnicos.
-    - **Respuesta: a** · *ROGA art. 7.2*
+    - **Respuesta: b** · *ROGA art. 7.2*
 
 18. Tienen además la consideración de órganos superiores, en el ámbito de los distritos:
-    - a) Los gerentes de distrito.
+    - a) Los coordinadores de Distrito.
     - b) Los concejales-presidentes.
     - c) Los directores generales.
     - **Respuesta: b** · *ROGA art. 7.2*
@@ -138,17 +138,17 @@
     - c) Los concejales con responsabilidades de gobierno.
     - **Respuesta: b** · *ROGA art. 7.3*
 
-20. En el ámbito de los distritos, son órganos directivos:
-    - a) Los gerentes.
-    - b) Los concejales-presidentes.
+20. Según el artículo 7.3 del ROGA, en el ámbito de los Distritos son órganos directivos:
+    - a) Los concejales-presidentes.
+    - b) Los coordinadores de Distrito.
     - c) Los vicepresidentes.
-    - **Respuesta: a** · *ROGA art. 7.3*
+    - **Respuesta: b** · *ROGA art. 7.3*
 
 21. El secretario general del Pleno, según el ROGA:
-    - a) Tiene carácter de órgano directivo y se nombra entre funcionarios de Administración Local con habilitación de carácter nacional.
+    - a) Es nombrado libremente entre cargos de confianza.
     - b) Es un órgano superior de naturaleza política.
-    - c) Es nombrado libremente entre cargos de confianza.
-    - **Respuesta: a** · *ROGA art. 7.6*
+    - c) Tiene carácter de órgano directivo y se nombra entre funcionarios de Administración Local con habilitación de carácter nacional.
+    - **Respuesta: c** · *ROGA art. 7.6*
 
 22. A los órganos superiores corresponde, conforme al artículo 7.4:
     - a) La ejecución de las decisiones.
@@ -175,16 +175,16 @@
     - **Respuesta: b** · *ROGA art. 7.3*
 
 26. El titular de la Asesoría Jurídica es, según el ROGA, un órgano:
-    - a) Directivo.
-    - b) Superior.
+    - a) Superior.
+    - b) Directivo.
     - c) Colegiado.
-    - **Respuesta: a** · *ROGA art. 7.3*
+    - **Respuesta: b** · *ROGA art. 7.3*
 
-27. La distinción esencial entre órganos superiores y directivos es que:
-    - a) Los superiores ejecutan y los directivos dirigen políticamente.
-    - b) Los superiores dirigen políticamente y los directivos ejecutan.
-    - c) Ambos ejercen idénticas funciones.
-    - **Respuesta: b** · *ROGA art. 7.4*
+27. Según el artículo 7.5 del ROGA, los demás órganos y unidades del Ayuntamiento de Madrid se hallan:
+    - a) Bajo la dependencia de alguno de los órganos superiores o directivos en el ámbito de sus competencias.
+    - b) Bajo la dependencia directa del Pleno.
+    - c) Bajo la dependencia exclusiva del secretario general del Pleno.
+    - **Respuesta: a** · *ROGA art. 7.5*
 
 28. La Junta de Gobierno Local, a efectos del ROGA, tiene la consideración de órgano:
     - a) Directivo.
@@ -201,10 +201,10 @@
     - **Respuesta: b** · *ROGA art. 40.1*
 
 30. Cada Área de Gobierno comprende:
-    - a) Uno o varios sectores funcionalmente homogéneos de la actividad administrativa municipal.
+    - a) La totalidad de los servicios municipales.
     - b) Un único distrito del municipio.
-    - c) La totalidad de los servicios municipales.
-    - **Respuesta: a** · *ROGA art. 40.1*
+    - c) Uno o varios sectores funcionalmente homogéneos de la actividad administrativa municipal.
+    - **Respuesta: c** · *ROGA art. 40.1*
 
 31. De las Áreas de Gobierno podrán depender:
     - a) Otros municipios.
@@ -225,40 +225,40 @@
     - **Respuesta: a** · *ROGA art. 40.2*
 
 34. El alcalde determina el número y denominación de las Áreas al amparo de los artículos de la LBRL:
-    - a) 123.1.c) en relación con el 124.4.k).
-    - b) 140 y 141.
+    - a) 140 y 141.
+    - b) 123.1.c) en relación con el 124.4.k).
     - c) 25 y 26.
-    - **Respuesta: a** · *ROGA art. 40.2 · LBRL*
+    - **Respuesta: b** · *ROGA art. 40.2 · LBRL*
 
 35. Las Áreas de Gobierno son, dentro de la clasificación del artículo 6, órganos:
-    - a) Centrales.
-    - b) Territoriales.
+    - a) Territoriales.
+    - b) Centrales.
     - c) De participación.
-    - **Respuesta: a** · *ROGA arts. 6 y 40*
+    - **Respuesta: b** · *ROGA arts. 6 y 40*
 
 36. La forma que adopta la decisión del alcalde sobre el número y denominación de las Áreas es:
     - a) Una ley.
     - b) Un decreto.
     - c) Un acuerdo plenario.
-    - **Respuesta: b** · *ROGA art. 40.2*
+    - **Respuesta: b** · *ROGA arts. 14.2 y 40.2*
 
 37. Las Áreas de Coordinación o Delegadas tienen por función:
-    - a) La dirección de un sector de la actividad administrativa de la responsabilidad del Área de la que dependen.
+    - a) El control económico del Ayuntamiento.
     - b) La gestión de un distrito.
-    - c) El control económico del Ayuntamiento.
-    - **Respuesta: a** · *ROGA art. 40.1*
+    - c) La dirección de un sector de la actividad administrativa de la responsabilidad del Área de la que dependen.
+    - **Respuesta: c** · *ROGA art. 40.1*
 
 38. El número de Áreas de Gobierno vigente en el Ayuntamiento de Madrid es de:
-    - a) 7.
+    - a) 21.
     - b) 15.
-    - c) 21.
-    - **Respuesta: a** · *Organigrama vigente*
+    - c) 7.
+    - **Respuesta: c** · *Organigrama vigente*
 
 39. El límite de 15 Áreas de Gobierno es:
-    - a) Un máximo que no puede superarse.
+    - a) Un mínimo obligatorio.
     - b) Un número fijo e invariable.
-    - c) Un mínimo obligatorio.
-    - **Respuesta: a** · *ROGA art. 40.2*
+    - c) Un máximo que no puede superarse.
+    - **Respuesta: c** · *ROGA art. 40.2*
 
 40. La determinación de las atribuciones de cada Área de Gobierno corresponde:
     - a) Al alcalde.
@@ -272,11 +272,11 @@
     - c) Organismos públicos exclusivamente.
     - **Respuesta: a** · *ROGA art. 40.1*
 
-42. La capacidad de reorganizar las Áreas para adaptarse a las necesidades de la ciudad refleja el principio de:
-    - a) Flexibilidad organizativa.
-    - b) Inamovilidad de la estructura.
-    - c) Reserva de ley.
-    - **Respuesta: a** · *ROGA art. 40*
+42. Según el artículo 40.2 del ROGA, la determinación por el alcalde del número, denominación y atribuciones de las Áreas se entiende:
+    - a) Previa autorización de la Comunidad de Madrid.
+    - b) Sin perjuicio de las competencias que le puedan delegar otros órganos municipales.
+    - c) Previo dictamen favorable del Consejo Social de la Ciudad.
+    - **Respuesta: b** · *ROGA art. 40.2*
 
 ### Bloque 4 — Estructura interna y ordenación jerárquica (arts. 41-43)
 
@@ -289,14 +289,14 @@
 44. En las Áreas de Gobierno podrá existir, según el artículo 41.1:
     - a) Uno o más coordinadores generales.
     - b) Un único concejal-presidente.
-    - c) Un gerente de distrito.
+    - c) Un coordinador de Distrito.
     - **Respuesta: a** · *ROGA art. 41.1*
 
 45. Las Secretarías Generales Técnicas y las Direcciones Generales podrán organizarse, a su vez, en:
-    - a) Subdirecciones Generales, Servicios, Departamentos, Secciones y otras unidades.
+    - a) Organismos autónomos.
     - b) Distritos y barrios.
-    - c) Organismos autónomos.
-    - **Respuesta: a** · *ROGA art. 41.2*
+    - c) Subdirecciones Generales, Servicios, Departamentos, Secciones y otras unidades.
+    - **Respuesta: c** · *ROGA art. 41.2*
 
 46. Las unidades administrativas inferiores podrán depender directamente de:
     - a) Los coordinadores generales.
@@ -305,10 +305,10 @@
     - **Respuesta: a** · *ROGA art. 41.2*
 
 47. Según el artículo 42.1, los jefes superiores del Área de Gobierno son:
-    - a) Los concejales de Gobierno y los consejeros-delegados de Gobierno.
+    - a) Los coordinadores de Distrito.
     - b) Los directores generales.
-    - c) Los gerentes.
-    - **Respuesta: a** · *ROGA art. 42.1*
+    - c) Los concejales de Gobierno y los consejeros-delegados de Gobierno.
+    - **Respuesta: c** · *ROGA art. 42.1*
 
 48. Los concejales de Coordinación y los concejales-delegados son, según el artículo 42.1:
     - a) Los jefes directos de su Área.
@@ -322,10 +322,10 @@
     - c) Secretario general técnico, coordinador general, director general.
     - **Respuesta: b** · *ROGA art. 42.2*
 
-50. El artículo 42.2 del ROGA fue modificado:
-    - a) El 30 de septiembre de 2015.
-    - b) El 31 de mayo de 2004.
-    - c) El 4 de julio de 2006.
+50. Según el artículo 42.2 del ROGA, cuando así lo prevean los acuerdos de la Junta de Gobierno de Organización Administrativa, los órganos directivos podrán depender directamente:
+    - a) Del alcalde.
+    - b) Del Pleno.
+    - c) Del secretario general del Pleno.
     - **Respuesta: a** · *ROGA art. 42.2*
 
 51. Excepcionalmente, cuando así lo prevean los acuerdos de la Junta de Gobierno, un órgano directivo podrá depender:
@@ -340,23 +340,23 @@
     - c) Juntas Municipales de Distrito.
     - **Respuesta: a** · *ROGA art. 43*
 
-53. El órgano que aglutina los servicios comunes del Área de Gobierno es:
-    - a) La Secretaría General Técnica.
-    - b) La Gerencia del distrito.
-    - c) El coordinador general.
-    - **Respuesta: a** · *ROGA art. 47*
+53. Según el artículo 47.1.e) del ROGA, corresponden también a los secretarios generales técnicos:
+    - a) Las funciones que les deleguen los concejales-presidentes de distrito.
+    - b) Las funciones que les atribuya el Pleno por mayoría simple.
+    - c) Las demás funciones que les deleguen o desconcentren el alcalde o la Junta de Gobierno.
+    - **Respuesta: c** · *ROGA art. 47.1.e)*
 
 54. La estructura de las Áreas de Gobierno se organiza por:
-    - a) Bloques de competencias de naturaleza homogénea, a través de Direcciones Generales.
+    - a) Grupos políticos municipales.
     - b) Distritos.
-    - c) Grupos políticos municipales.
-    - **Respuesta: a** · *ROGA art. 41.1*
+    - c) Bloques de competencias de naturaleza homogénea, a través de Direcciones Generales.
+    - **Respuesta: c** · *ROGA art. 41.1*
 
-55. Por debajo de la Dirección General, el siguiente nivel de unidad administrativa suele ser:
-    - a) La Subdirección General.
-    - b) El Área de Gobierno.
-    - c) La Junta de Gobierno.
-    - **Respuesta: a** · *ROGA art. 41.2*
+55. Según el artículo 41.2 del ROGA, las Secretarías Generales Técnicas y las Direcciones Generales podrán organizarse en Subdirecciones Generales, Servicios, Departamentos, Secciones y otras unidades inferiores. ¿Cuál de las siguientes NO figura en esa enumeración?
+    - a) Servicios.
+    - b) Juntas Municipales de Distrito.
+    - c) Secciones.
+    - **Respuesta: b** · *ROGA art. 41.2*
 
 56. La superior dirección de los concejales de Coordinación corresponde:
     - a) Al titular del Área de Gobierno del que dependan.
@@ -367,10 +367,10 @@
 ### Bloque 5 — Órganos superiores de las Áreas de Gobierno (arts. 44-45)
 
 57. Las funciones de los concejales de Gobierno y consejeros-delegados de Gobierno se regulan en:
-    - a) El artículo 44 del ROGA.
-    - b) El artículo 61 del ROGA.
+    - a) El artículo 61 del ROGA.
+    - b) El artículo 44 del ROGA.
     - c) El artículo 140 de la Constitución.
-    - **Respuesta: a** · *ROGA art. 44*
+    - **Respuesta: b** · *ROGA art. 44*
 
 58. Entre las funciones del concejal de Gobierno está:
     - a) Ejercer la representación, dirección, gestión e inspección del Área del que sea titular.
@@ -379,16 +379,16 @@
     - **Respuesta: a** · *ROGA art. 44.a)*
 
 59. Corresponde al concejal de Gobierno, respecto del Pleno:
-    - a) Elevar las propuestas que les correspondan en el ámbito de las competencias de su Área.
+    - a) Disolverlo.
     - b) Presidir sus sesiones.
-    - c) Disolverlo.
-    - **Respuesta: a** · *ROGA art. 44.c)*
+    - c) Elevar las propuestas que les correspondan en el ámbito de las competencias de su Área.
+    - **Respuesta: c** · *ROGA art. 44.c)*
 
 60. Proponer a la Junta de Gobierno la aprobación de los proyectos de disposiciones de carácter general es función:
-    - a) Del concejal de Gobierno o consejero-delegado de Gobierno.
+    - a) Del coordinador de Distrito.
     - b) Del director general.
-    - c) Del gerente del distrito.
-    - **Respuesta: a** · *ROGA art. 44.d)*
+    - c) Del concejal de Gobierno o consejero-delegado de Gobierno.
+    - **Respuesta: c** · *ROGA art. 44.d)*
 
 61. Proponer al alcalde la aprobación de los proyectos de organización y estructura de su Área corresponde:
     - a) Al concejal de Gobierno o consejero-delegado de Gobierno.
@@ -397,16 +397,16 @@
     - **Respuesta: a** · *ROGA art. 44.e)*
 
 62. Proponer a la Junta de Gobierno el nombramiento de los titulares de los órganos directivos de su Área es función:
-    - a) Del concejal de Gobierno o consejero-delegado de Gobierno.
-    - b) Del coordinador general.
+    - a) Del coordinador general.
+    - b) Del concejal de Gobierno o consejero-delegado de Gobierno.
     - c) Del interventor general.
-    - **Respuesta: a** · *ROGA art. 44.j)*
+    - **Respuesta: b** · *ROGA art. 44.j)*
 
 63. El ejercicio de la superior autoridad sobre el personal del Área corresponde al concejal de Gobierno:
-    - a) Sin perjuicio de las competencias del alcalde respecto de todo el personal del Ayuntamiento.
-    - b) Con exclusión total del alcalde.
+    - a) Con exclusión total del alcalde.
+    - b) Sin perjuicio de las competencias del alcalde respecto de todo el personal del Ayuntamiento.
     - c) Solo respecto del personal directivo.
-    - **Respuesta: a** · *ROGA art. 44.h)*
+    - **Respuesta: b** · *ROGA art. 44.h)*
 
 64. Los concejales de Coordinación y concejales-delegados ejercen las funciones del artículo 44:
     - a) Con excepción de las señaladas en las letras b), c), d), e) y j).
@@ -415,10 +415,10 @@
     - **Respuesta: a** · *ROGA art. 45.1*
 
 65. Los concejales de Coordinación y los concejales-delegados responden:
-    - a) Ante el órgano superior inmediato del que dependan.
-    - b) Únicamente ante el Pleno.
+    - a) Únicamente ante el Pleno.
+    - b) Ante el órgano superior inmediato del que dependan.
     - c) Ante el Tribunal de Cuentas.
-    - **Respuesta: a** · *ROGA art. 45.2*
+    - **Respuesta: b** · *ROGA art. 45.2*
 
 66. La función de "fijar los objetivos del Área, aprobar los planes de actuación y asignar recursos" corresponde:
     - a) Al concejal de Gobierno (es una de las excluidas a los concejales-delegados).
@@ -439,42 +439,42 @@
     - **Respuesta: a** · *ROGA art. 44.g)*
 
 69. El concejal de Coordinación, a diferencia del concejal de Gobierno, NO puede:
-    - a) Elevar propuestas al Pleno.
+    - a) Ejercer la superior autoridad sobre el personal de su Área.
     - b) Dirigir e inspeccionar su Área.
-    - c) Ejercer la superior autoridad sobre el personal de su Área.
-    - **Respuesta: a** · *ROGA art. 45.1*
+    - c) Elevar propuestas al Pleno.
+    - **Respuesta: c** · *ROGA art. 45.1*
 
 70. Evaluar la ejecución de los planes de actuación por los órganos directivos (control de eficacia) es función:
-    - a) Del concejal de Gobierno o consejero-delegado de Gobierno.
-    - b) Del Pleno.
+    - a) Del Pleno.
+    - b) Del concejal de Gobierno o consejero-delegado de Gobierno.
     - c) Del Consejo Social de la Ciudad.
-    - **Respuesta: a** · *ROGA art. 44.f)*
+    - **Respuesta: b** · *ROGA art. 44.f)*
 
 ### Bloque 6 — Órganos centrales directivos (arts. 46-48)
 
 71. Las funciones de coordinación y dirección de las distintas Direcciones Generales dependientes corresponden:
-    - a) A los coordinadores generales.
+    - a) A los coordinadores de Distrito.
     - b) A los secretarios generales técnicos.
-    - c) A los gerentes de distrito.
-    - **Respuesta: a** · *ROGA art. 46.1*
+    - c) A los coordinadores generales.
+    - **Respuesta: c** · *ROGA art. 46.1*
 
-72. El artículo 46 del ROGA (coordinadores generales) fue modificado:
-    - a) El 30 de septiembre de 2015.
-    - b) El 31 de mayo de 2004.
-    - c) Nunca.
-    - **Respuesta: a** · *ROGA art. 46*
+72. Según el artículo 50.1 del ROGA, las decisiones administrativas que adopten los órganos directivos revestirán la forma de:
+    - a) Bando.
+    - b) Decreto.
+    - c) Resolución.
+    - **Respuesta: c** · *ROGA art. 50.1*
 
 73. Cuando se nombre más de un coordinador general en una misma Área de Gobierno:
-    - a) El acuerdo de la Junta de Gobierno de Organización Administrativa delimitará los sectores sobre los que actuará cada uno.
+    - a) Cesarán automáticamente los directores generales.
     - b) Se nombrará un único responsable por el Pleno.
-    - c) Cesarán automáticamente los directores generales.
-    - **Respuesta: a** · *ROGA art. 46.2*
+    - c) El acuerdo de la Junta de Gobierno de Organización Administrativa delimitará los sectores sobre los que actuará cada uno.
+    - **Respuesta: c** · *ROGA art. 46.2*
 
 74. El secretario general técnico tiene, según el artículo 47.1, rango de:
-    - a) Director general.
+    - a) Concejal-delegado.
     - b) Coordinador general.
-    - c) Concejal-delegado.
-    - **Respuesta: a** · *ROGA art. 47.1*
+    - c) Director general.
+    - **Respuesta: c** · *ROGA art. 47.1*
 
 75. Corresponde al secretario general técnico, entre otras funciones:
     - a) La gestión de los servicios comunes.
@@ -483,10 +483,10 @@
     - **Respuesta: a** · *ROGA art. 47.1.a)*
 
 76. La asistencia jurídica y técnica al titular del Área de Gobierno corresponde:
-    - a) Al secretario general técnico, sin perjuicio de las competencias de la Asesoría Jurídica.
-    - b) Al coordinador general en exclusiva.
+    - a) Al coordinador general en exclusiva.
+    - b) Al secretario general técnico, sin perjuicio de las competencias de la Asesoría Jurídica.
     - c) Al interventor general.
-    - **Respuesta: a** · *ROGA art. 47.1.c)*
+    - **Respuesta: b** · *ROGA art. 47.1.c)*
 
 77. El secretario general técnico depende, con carácter general:
     - a) Directamente del titular del Área de Gobierno correspondiente.
@@ -513,10 +513,10 @@
     - **Respuesta: a** · *ROGA art. 48.2.d)*
 
 81. La jefatura inmediata de las unidades orgánicas adscritas corresponde:
-    - a) Al director general.
+    - a) Al secretario general del Pleno.
     - b) Al alcalde.
-    - c) Al secretario general del Pleno.
-    - **Respuesta: a** · *ROGA art. 48.2.b)*
+    - c) Al director general.
+    - **Respuesta: c** · *ROGA art. 48.2.b)*
 
 82. La elaboración de proyectos de disposiciones, acuerdos y convenios en su ámbito corresponde:
     - a) Al director general.
@@ -525,34 +525,34 @@
     - **Respuesta: a** · *ROGA art. 48.2.c)*
 
 83. La coordinación de las Direcciones Generales en el ámbito de los servicios comunes corresponde:
-    - a) Al secretario general técnico.
+    - a) Al coordinador de Distrito.
     - b) Al director general.
-    - c) Al gerente.
-    - **Respuesta: a** · *ROGA art. 47.1.b)*
+    - c) Al secretario general técnico.
+    - **Respuesta: c** · *ROGA art. 47.1.b)*
 
 84. Para el ejercicio de sus funciones, el secretario general técnico podrá recabar informes, datos y documentos de:
-    - a) Los coordinadores generales, Direcciones Generales y organismos públicos de su Área.
+    - a) La Comunidad de Madrid.
     - b) Otros Ayuntamientos.
-    - c) La Comunidad de Madrid.
-    - **Respuesta: a** · *ROGA art. 47.2*
+    - c) Los coordinadores generales, Direcciones Generales y organismos públicos de su Área.
+    - **Respuesta: c** · *ROGA art. 47.2*
 
 85. La eficiente utilización de los medios y recursos materiales, económicos y personales del Área corresponde:
-    - a) Al secretario general técnico.
+    - a) Al Pleno.
     - b) Al coordinador general en exclusiva.
-    - c) Al Pleno.
-    - **Respuesta: a** · *ROGA art. 47.1.d)*
+    - c) Al secretario general técnico.
+    - **Respuesta: c** · *ROGA art. 47.1.d)*
 
 86. Los coordinadores generales ejercen, además, las funciones que:
-    - a) Les deleguen o desconcentren el alcalde o la Junta de Gobierno.
+    - a) Les transfiera la Comunidad de Madrid.
     - b) Les atribuya el Tribunal Constitucional.
-    - c) Les transfiera la Comunidad de Madrid.
-    - **Respuesta: a** · *ROGA art. 46.1*
+    - c) Les deleguen o desconcentren el alcalde o la Junta de Gobierno.
+    - **Respuesta: c** · *ROGA art. 46.1*
 
 87. La evaluación de los servicios de su competencia corresponde:
-    - a) Al director general.
-    - b) Al alcalde.
+    - a) Al alcalde.
+    - b) Al director general.
     - c) Al Consejo Social de la Ciudad.
-    - **Respuesta: a** · *ROGA art. 48.2.e)*
+    - **Respuesta: b** · *ROGA art. 48.2.e)*
 
 88. El órgano directivo encargado de los servicios comunes del Área de Gobierno es:
     - a) El secretario general técnico.
@@ -563,10 +563,10 @@
 ### Bloque 7 — Nombramiento de los órganos directivos (art. 49)
 
 89. Los coordinadores generales, secretarios generales técnicos y directores generales son nombrados y cesados por:
-    - a) La Junta de Gobierno.
-    - b) El Pleno.
+    - a) El Pleno.
+    - b) La Junta de Gobierno.
     - c) El alcalde directamente y en exclusiva.
-    - **Respuesta: a** · *ROGA art. 49.1*
+    - **Respuesta: b** · *ROGA art. 49.1*
 
 90. El nombramiento de los órganos directivos debe efectuarse, con carácter general, entre:
     - a) Funcionarios de carrera del Estado, las CCAA, las Entidades Locales o funcionarios con habilitación nacional.
@@ -575,58 +575,58 @@
     - **Respuesta: a** · *ROGA art. 49.2 · LBRL art. 130.3*
 
 91. La titulación exigida con carácter general a los órganos directivos es:
-    - a) Doctor, licenciado, ingeniero, arquitecto o equivalente.
+    - a) No se exige titulación.
     - b) Graduado escolar.
-    - c) No se exige titulación.
-    - **Respuesta: a** · *ROGA art. 49.2*
+    - c) Doctor, licenciado, ingeniero, arquitecto o equivalente.
+    - **Respuesta: c** · *ROGA art. 49.2*
 
 92. La excepción de no ser funcionario para ocupar un puesto directivo puede aplicarse:
-    - a) A los coordinadores generales.
+    - a) A todos los órganos directivos sin excepción.
     - b) A los secretarios generales técnicos.
-    - c) A todos los órganos directivos sin excepción.
-    - **Respuesta: a** · *ROGA art. 49.3*
+    - c) A los coordinadores generales.
+    - **Respuesta: c** · *ROGA art. 49.3*
 
-93. La excepción de no ostentar la condición de funcionario NO es aplicable a:
-    - a) Los secretarios generales técnicos.
-    - b) Los coordinadores generales.
-    - c) Los gerentes de organismos.
+93. Según el artículo 49.3 del ROGA, la excepción que permite proveer puestos directivos por personal que no ostente la condición de funcionario no será de aplicación a la provisión de los puestos de:
+    - a) Secretario general técnico.
+    - b) Coordinador general.
+    - c) Ninguno, pues la excepción se aplica a todos los puestos directivos.
     - **Respuesta: a** · *ROGA art. 49.3*
 
 94. El nombramiento de un directivo que no sea funcionario habrá de efectuarse:
-    - a) Motivadamente y de acuerdo con criterios de competencia profesional y experiencia.
+    - a) Por sorteo.
     - b) Libremente y sin motivación.
-    - c) Por sorteo.
-    - **Respuesta: a** · *ROGA art. 49.2*
+    - c) Motivadamente y de acuerdo con criterios de competencia profesional y experiencia.
+    - **Respuesta: c** · *ROGA art. 49.2*
 
 95. El precepto de la LBRL al que remite el ROGA para el nombramiento de directivos es:
-    - a) El artículo 130.3.
+    - a) El artículo 140.
     - b) El artículo 25.
-    - c) El artículo 140.
-    - **Respuesta: a** · *LBRL art. 130.3*
+    - c) El artículo 130.3.
+    - **Respuesta: c** · *LBRL art. 130.3*
 
 96. El cese de los órganos directivos corresponde a:
-    - a) La Junta de Gobierno.
-    - b) El Pleno.
+    - a) El Pleno.
+    - b) La Junta de Gobierno.
     - c) El secretario general del Pleno.
-    - **Respuesta: a** · *ROGA art. 49.1*
+    - **Respuesta: b** · *ROGA art. 49.1*
 
 97. El secretario general del Pleno, a diferencia de otros órganos directivos, se nombra entre:
-    - a) Funcionarios de Administración Local con habilitación de carácter nacional.
-    - b) Cargos de confianza del alcalde.
+    - a) Cargos de confianza del alcalde.
+    - b) Funcionarios de Administración Local con habilitación de carácter nacional.
     - c) Concejales del Pleno.
-    - **Respuesta: a** · *ROGA art. 7.6*
+    - **Respuesta: b** · *ROGA art. 7.6*
 
-98. La condición de funcionario de carrera exigida a los órganos directivos responde al principio de:
-    - a) Profesionalización de la dirección pública.
-    - b) Libre designación política sin requisitos.
-    - c) Representación territorial.
-    - **Respuesta: a** · *ROGA art. 49 · LBRL*
+98. Según el artículo 49.2 del ROGA, la posibilidad de que el titular de un puesto directivo no reúna la condición de funcionario debe preverla:
+    - a) Un acuerdo del Pleno por mayoría absoluta.
+    - b) El Reglamento Orgánico del Pleno.
+    - c) El decreto de estructura del Área correspondiente, en atención a las características específicas del puesto directivo.
+    - **Respuesta: c** · *ROGA art. 49.2*
 
-99. El nombramiento de los directivos se efectúa, por tanto, mediante:
-    - a) Acuerdo de la Junta de Gobierno.
-    - b) Ley de la Comunidad de Madrid.
-    - c) Acuerdo del Pleno por mayoría absoluta.
-    - **Respuesta: a** · *ROGA art. 49.1*
+99. Según el artículo 49.2 del ROGA, los nombramientos de titulares de órganos directivos que no reúnan la condición de funcionario habrán de efectuarse motivadamente y de acuerdo con criterios de:
+    - a) Representación proporcional de los grupos políticos municipales.
+    - b) Antigüedad en el servicio al Ayuntamiento de Madrid.
+    - c) Competencia profesional y experiencia en el desempeño de puestos de responsabilidad en la gestión pública o privada.
+    - **Respuesta: c** · *ROGA art. 49.2*
 
 100. La propuesta del nombramiento de los titulares de los órganos directivos de un Área corresponde:
      - a) Al concejal de Gobierno o consejero-delegado de Gobierno del Área.
@@ -637,22 +637,22 @@
 ### Bloque 8 — Número y denominación de las actuales Áreas de Gobierno
 
 101. El Ayuntamiento de Madrid se organiza actualmente en:
-     - a) Siete Áreas de Gobierno.
+     - a) Veintiuna Áreas de Gobierno.
      - b) Quince Áreas de Gobierno.
-     - c) Veintiuna Áreas de Gobierno.
-     - **Respuesta: a** · *Organigrama vigente*
+     - c) Siete Áreas de Gobierno.
+     - **Respuesta: c** · *Organigrama vigente*
 
 102. Es una de las Áreas de Gobierno vigentes del Ayuntamiento de Madrid:
-     - a) Área de Gobierno de Vicealcaldía, Portavoz, Seguridad y Emergencias.
-     - b) Área de Gobierno de Asuntos Exteriores.
+     - a) Área de Gobierno de Asuntos Exteriores.
+     - b) Área de Gobierno de Vicealcaldía, Portavoz, Seguridad y Emergencias.
      - c) Área de Gobierno de Defensa.
-     - **Respuesta: a** · *Organigrama vigente*
+     - **Respuesta: b** · *Organigrama vigente*
 
 103. Forma parte de las Áreas de Gobierno vigentes:
-     - a) Área de Gobierno de Urbanismo, Medio Ambiente y Movilidad.
+     - a) Área de Gobierno de Sanidad Nacional.
      - b) Área de Gobierno de Justicia.
-     - c) Área de Gobierno de Sanidad Nacional.
-     - **Respuesta: a** · *Organigrama vigente*
+     - c) Área de Gobierno de Urbanismo, Medio Ambiente y Movilidad.
+     - **Respuesta: c** · *Organigrama vigente*
 
 104. Pertenece a la estructura vigente de Áreas de Gobierno:
      - a) Área de Gobierno de Cultura, Turismo y Deporte.
@@ -661,16 +661,16 @@
      - **Respuesta: a** · *Organigrama vigente*
 
 105. Es, entre las siguientes, un Área de Gobierno actual:
-     - a) Área de Gobierno de Economía, Innovación y Hacienda.
-     - b) Área de Gobierno de Trabajo y Seguridad Social.
+     - a) Área de Gobierno de Trabajo y Seguridad Social.
+     - b) Área de Gobierno de Economía, Innovación y Hacienda.
      - c) Área de Gobierno de Exteriores.
-     - **Respuesta: a** · *Organigrama vigente*
+     - **Respuesta: b** · *Organigrama vigente*
 
 106. Constituye una de las Áreas de Gobierno en vigor:
-     - a) Área de Gobierno de Obras y Equipamientos.
-     - b) Área de Gobierno de Telecomunicaciones.
+     - a) Área de Gobierno de Telecomunicaciones.
+     - b) Área de Gobierno de Obras y Equipamientos.
      - c) Área de Gobierno de Pesca.
-     - **Respuesta: a** · *Organigrama vigente*
+     - **Respuesta: b** · *Organigrama vigente*
 
 107. Figura entre las Áreas de Gobierno actuales del Ayuntamiento:
      - a) Área de Gobierno de Políticas Sociales, Familia e Igualdad.
@@ -679,21 +679,21 @@
      - **Respuesta: a** · *Organigrama vigente*
 
 108. Se corresponde con un Área de Gobierno vigente:
-     - a) Área de Gobierno de Políticas de Vivienda.
+     - a) Área de Gobierno de Minas.
      - b) Área de Gobierno de Comercio Exterior.
-     - c) Área de Gobierno de Minas.
-     - **Respuesta: a** · *Organigrama vigente*
+     - c) Área de Gobierno de Políticas de Vivienda.
+     - **Respuesta: c** · *Organigrama vigente*
 
 109. Las Áreas Delegadas dependen:
-     - a) De un Área de Gobierno.
+     - a) De la Comunidad de Madrid.
      - b) Directamente del Pleno.
-     - c) De la Comunidad de Madrid.
-     - **Respuesta: a** · *ROGA art. 40.1 · organigrama*
+     - c) De un Área de Gobierno.
+     - **Respuesta: c** · *ROGA art. 40.1 · organigrama*
 
-110. El número y la denominación de las Áreas de Gobierno son un dato:
-     - a) Actualizable, que fija el alcalde en cada mandato (con el máximo de 15).
-     - b) Fijo e inmodificable desde 2004.
-     - c) Determinado por la Comunidad de Madrid.
+110. Según el artículo 40.2 del ROGA, el número y la denominación de las Áreas de Gobierno:
+     - a) Corresponde determinarlos al alcalde, sin que el número pueda exceder de 15.
+     - b) Son fijos e inmodificables desde 2004.
+     - c) Los determina la Comunidad de Madrid.
      - **Respuesta: a** · *ROGA art. 40.2*
 
 ### Bloque 9 — Alcalde, Junta de Gobierno y Pleno; repaso
@@ -705,10 +705,10 @@
      - **Respuesta: a** · *ROGA art. 9.1*
 
 112. El alcalde podrá delegar sus competencias, entre otros, en:
-     - a) La Junta de Gobierno Local, sus miembros, los concejales y las Juntas Municipales de Distrito.
+     - a) La Comunidad de Madrid.
      - b) El Tribunal de Cuentas.
-     - c) La Comunidad de Madrid.
-     - **Respuesta: a** · *ROGA art. 11*
+     - c) La Junta de Gobierno Local, sus miembros, los concejales y las Juntas Municipales de Distrito.
+     - **Respuesta: c** · *ROGA art. 11*
 
 113. El alcalde responde de su gestión política ante:
      - a) El Pleno.
@@ -716,10 +716,10 @@
      - c) El Delegado del Gobierno.
      - **Respuesta: a** · *ROGA art. 9.2*
 
-114. La aprobación de las disposiciones de carácter general propuestas por las Áreas corresponde:
-     - a) A la Junta de Gobierno.
-     - b) Al director general.
-     - c) Al secretario general técnico.
+114. Según el artículo 44.d) del ROGA, los concejales de Gobierno proponen a la Junta de Gobierno la aprobación de:
+     - a) Los proyectos de disposiciones de carácter general y las demás propuestas que correspondan en el ámbito de sus competencias.
+     - b) Los presupuestos generales del Estado.
+     - c) El nombramiento del alcalde.
      - **Respuesta: a** · *ROGA art. 44.d)*
 
 115. El órgano que nombra a los titulares de los órganos directivos es:
@@ -729,34 +729,34 @@
      - **Respuesta: a** · *ROGA art. 49.1*
 
 116. La división funcional del Ayuntamiento corresponde a las Áreas de Gobierno y la territorial a:
-     - a) Los distritos.
+     - a) Las Comunidades Autónomas.
      - b) Las Diputaciones.
-     - c) Las Comunidades Autónomas.
-     - **Respuesta: a** · *ROGA art. 5*
+     - c) Los distritos.
+     - **Respuesta: c** · *ROGA art. 5*
 
 117. El tratamiento que el ROGA reconoce al alcalde es el de:
-     - a) Excelencia.
+     - a) Ilustrísima.
      - b) Señoría.
-     - c) Ilustrísima.
-     - **Respuesta: a** · *ROGA art. 9.3*
+     - c) Excelencia.
+     - **Respuesta: c** · *ROGA art. 9.3*
 
 118. La superior dirección y representación de un Área de Gobierno corresponde:
      - a) Al concejal de Gobierno o consejero-delegado de Gobierno titular del Área.
      - b) Al secretario general técnico.
-     - c) Al gerente.
-     - **Respuesta: a** · *ROGA arts. 42 y 44*
+     - c) Al coordinador de Distrito.
+     - **Respuesta: a** · *ROGA art. 45.1*
 
-119. La relación de puestos de trabajo (RPT) es el instrumento para:
-     - a) La creación, modificación y supresión de unidades administrativas inferiores y puestos de trabajo.
-     - b) La aprobación de las ordenanzas fiscales.
-     - c) El nombramiento de los concejales.
-     - **Respuesta: a** · *ROGA art. 8*
+119. Según el artículo 8.2 del ROGA, una vez creados, modificados o suprimidos los órganos y unidades previstos en su apartado 1, procederá a las adaptaciones de la relación de puestos de trabajo y de la plantilla presupuestaria que resulten necesarias:
+     - a) El Pleno.
+     - b) La Junta de Gobierno.
+     - c) El concejal-presidente del distrito.
+     - **Respuesta: b** · *ROGA art. 8.2*
 
 120. El secretario general técnico, excepcionalmente, podrá depender funcionalmente:
-     - a) De un Área de Coordinación o Delegada, si así lo establece el acuerdo de Organización Administrativa del Área.
+     - a) De la Comunidad de Madrid.
      - b) Del Pleno.
-     - c) De la Comunidad de Madrid.
-     - **Respuesta: a** · *ROGA art. 47.3*
+     - c) De un Área de Coordinación o Delegada, si así lo establece el acuerdo de Organización Administrativa del Área.
+     - **Respuesta: c** · *ROGA art. 47.3*
 
 121. Las Áreas de Gobierno se incardinan dentro de los órganos:
      - a) Centrales.
@@ -766,63 +766,63 @@
 
 122. La coordinación de las distintas Direcciones Generales de un Área de Gobierno corresponde:
      - a) Al coordinador general.
-     - b) Al gerente del distrito.
+     - b) Al coordinador de Distrito.
      - c) Al interventor.
      - **Respuesta: a** · *ROGA art. 46.1*
 
 123. La gestión de los servicios comunes del Área de Gobierno corresponde:
-     - a) Al secretario general técnico.
-     - b) Al director general.
+     - a) Al director general.
+     - b) Al secretario general técnico.
      - c) Al concejal-presidente.
-     - **Respuesta: a** · *ROGA art. 47.1.a)*
+     - **Respuesta: b** · *ROGA art. 47.1.a)*
 
 124. La dirección y gestión de un ámbito homogéneo de competencias corresponde:
-     - a) Al director general.
+     - a) Al Pleno.
      - b) Al coordinador general.
-     - c) Al Pleno.
-     - **Respuesta: a** · *ROGA art. 48.1*
+     - c) Al director general.
+     - **Respuesta: c** · *ROGA art. 48.1*
 
 125. Los concejales de Gobierno proponen al alcalde:
-     - a) Los proyectos de organización y estructura de su Área.
+     - a) La aprobación de los presupuestos generales del Estado.
      - b) El nombramiento de los concejales-presidentes.
-     - c) La aprobación de los presupuestos generales del Estado.
-     - **Respuesta: a** · *ROGA art. 44.e)*
+     - c) Los proyectos de organización y estructura de su Área.
+     - **Respuesta: c** · *ROGA art. 44.e)*
 
 126. El control de eficacia respecto de la actuación de los órganos directivos lo ejerce:
-     - a) El concejal de Gobierno o consejero-delegado de Gobierno.
-     - b) El Tribunal de Cuentas.
+     - a) El Tribunal de Cuentas.
+     - b) El concejal de Gobierno o consejero-delegado de Gobierno.
      - c) El Pleno.
-     - **Respuesta: a** · *ROGA art. 44.f)*
+     - **Respuesta: b** · *ROGA art. 44.f)*
 
 127. La aprobación de los proyectos de organización del Área corresponde aprobarla a:
-     - a) El alcalde, a propuesta del concejal de Gobierno.
-     - b) El Pleno.
+     - a) El Pleno.
+     - b) El alcalde, a propuesta del concejal de Gobierno.
      - c) La Comunidad de Madrid.
-     - **Respuesta: a** · *ROGA art. 44.e)*
+     - **Respuesta: b** · *ROGA art. 44.e)*
 
 128. El órgano directivo con rango de director general que presta asistencia jurídica y técnica al titular del Área es:
-     - a) El secretario general técnico.
-     - b) El coordinador general.
+     - a) El coordinador general.
+     - b) El secretario general técnico.
      - c) El interventor general.
-     - **Respuesta: a** · *ROGA art. 47*
+     - **Respuesta: b** · *ROGA art. 47*
 
-129. La dependencia jerárquica habitual de un director general es:
-     - a) Un coordinador general o un concejal de Coordinación o delegado.
-     - b) El alcalde directamente y en todo caso.
-     - c) El Pleno.
-     - **Respuesta: a** · *ROGA art. 48.1*
+129. Según el artículo 48.2.a) del ROGA, corresponde a los directores generales, en sus respectivos ámbitos de responsabilidad:
+     - a) La asistencia jurídica y técnica al titular del Área de Gobierno.
+     - b) La gestión de los servicios comunes del Área.
+     - c) La dirección y gestión de los servicios de su competencia.
+     - **Respuesta: c** · *ROGA art. 48.2.a)*
 
 130. La existencia de más de un coordinador general en un Área exige delimitar sus sectores mediante:
-     - a) El acuerdo de la Junta de Gobierno de Organización Administrativa del Área.
-     - b) Una ley autonómica.
+     - a) Una ley autonómica.
+     - b) El acuerdo de la Junta de Gobierno de Organización Administrativa del Área.
      - c) Un acuerdo del Pleno.
-     - **Respuesta: a** · *ROGA art. 46.2*
+     - **Respuesta: b** · *ROGA art. 46.2*
 
 131. Las Áreas de Gobierno comprenden sectores funcionalmente:
-     - a) Homogéneos.
-     - b) Heterogéneos por definición.
+     - a) Heterogéneos por definición.
+     - b) Homogéneos.
      - c) Territoriales.
-     - **Respuesta: a** · *ROGA art. 40.1*
+     - **Respuesta: b** · *ROGA art. 40.1*
 
 132. La capacidad del alcalde para fijar el número de Áreas tiene como tope:
      - a) Quince Áreas de Gobierno.
@@ -831,22 +831,22 @@
      - **Respuesta: a** · *ROGA art. 40.2*
 
 133. El órgano de apoyo a la Junta de Gobierno Local es, a efectos del ROGA, un órgano:
-     - a) Directivo.
-     - b) Superior.
+     - a) Superior.
+     - b) Directivo.
      - c) De participación.
-     - **Respuesta: a** · *ROGA art. 7.3*
+     - **Respuesta: b** · *ROGA art. 7.3*
 
 134. El órgano de gestión tributaria del Ayuntamiento es, a efectos del ROGA, un órgano:
-     - a) Directivo.
+     - a) Colegiado de participación.
      - b) Superior.
-     - c) Colegiado de participación.
-     - **Respuesta: a** · *ROGA art. 7.3*
+     - c) Directivo.
+     - **Respuesta: c** · *ROGA art. 7.3*
 
 135. La condición común a coordinadores generales, secretarios generales técnicos y directores generales es que:
-     - a) Son órganos directivos nombrados por la Junta de Gobierno.
+     - a) Son elegidos por los vecinos.
      - b) Son órganos superiores de naturaleza política.
-     - c) Son elegidos por los vecinos.
-     - **Respuesta: a** · *ROGA arts. 7 y 49*
+     - c) Son órganos directivos nombrados por la Junta de Gobierno.
+     - **Respuesta: c** · *ROGA arts. 7 y 49*
 
 136. La diferencia entre concejal de Gobierno y director general es que:
      - a) El primero es órgano superior (dirección política) y el segundo órgano directivo (ejecución).
@@ -854,35 +854,35 @@
      - c) El director general es superior y el concejal directivo.
      - **Respuesta: a** · *ROGA art. 7*
 
-137. La denominación "consejero-delegado de Gobierno" se refiere a:
-     - a) Un órgano superior que puede ser titular de un Área de Gobierno.
-     - b) Un órgano directivo de ejecución.
-     - c) Un cargo de los organismos autónomos.
-     - **Respuesta: a** · *ROGA arts. 42 y 44*
+137. Según el artículo 44 del ROGA, a los concejales de Gobierno y consejeros-delegados de Gobierno corresponde:
+     - a) La ejecución de las decisiones adoptadas por los directores generales.
+     - b) La dirección de los ámbitos de la actividad administrativa integrados en su Área de Gobierno.
+     - c) La gestión de los servicios comunes del Área.
+     - **Respuesta: b** · *ROGA art. 44*
 
-138. El ROGA atribuye al alcalde la facultad de delegar competencias en las Juntas Municipales de Distrito, en sus concejales-presidentes y en:
-     - a) Sus gerentes.
-     - b) El Pleno.
+138. Según el artículo 11.1 del ROGA, el alcalde podrá delegar sus competencias en las Juntas Municipales de Distrito, en sus concejales-presidentes y en:
+     - a) El Pleno.
+     - b) Los coordinadores de Distrito.
      - c) El Tribunal de Cuentas.
-     - **Respuesta: a** · *ROGA art. 11*
+     - **Respuesta: b** · *ROGA art. 11.1*
 
-139. El principio de profesionalización de la función directiva se manifiesta en que los directivos:
-     - a) Se nombran, con carácter general, entre funcionarios de carrera.
-     - b) Se eligen por sufragio.
-     - c) Son cargos de confianza sin requisitos.
-     - **Respuesta: a** · *ROGA art. 49*
+139. Según el artículo 48.2.f) del ROGA, corresponden también a los directores generales las funciones:
+     - a) Que les encomiende la Comunidad de Madrid.
+     - b) Que les atribuya el Consejo Social de la Ciudad.
+     - c) Que les deleguen los demás órganos municipales.
+     - **Respuesta: c** · *ROGA art. 48.2.f)*
 
-140. La materia del Tema 4 del temario, complementaria de este tema, es:
-     - a) Los distritos, el concejal-presidente y la estructura administrativa territorial.
-     - b) La Constitución Española.
-     - c) Las Haciendas locales.
-     - **Respuesta: a** · *REFERENCIA CRUZADA Tema 4*
+140. Según el artículo 7.6 del ROGA, la regulación específica del secretario general del Pleno se establecerá en:
+     - a) La Ley 22/2006, de Capitalidad y de Régimen Especial de Madrid.
+     - b) El Reglamento Orgánico del Gobierno y de la Administración.
+     - c) El Reglamento Orgánico del Pleno.
+     - **Respuesta: c** · *ROGA art. 7.6*
 
 141. El instrumento normativo que regula la organización de las Áreas de Gobierno es:
-     - a) El Reglamento Orgánico del Gobierno y de la Administración del Ayuntamiento de Madrid.
+     - a) El Estatuto de Autonomía de Madrid.
      - b) La Ley 39/2015.
-     - c) El Estatuto de Autonomía de Madrid.
-     - **Respuesta: a** · *ROGA*
+     - c) El Reglamento Orgánico del Gobierno y de la Administración del Ayuntamiento de Madrid.
+     - **Respuesta: c** · *ROGA art. 1.1*
 
 142. La Secretaría General Técnica existe:
      - a) En cada Área de Gobierno.
@@ -903,10 +903,10 @@
      - **Respuesta: a** · *ROGA art. 43*
 
 145. La adscripción de un organismo autónomo se realiza a:
-     - a) Un Área de Gobierno competente por razón de la materia.
-     - b) Un distrito.
+     - a) Un distrito.
+     - b) Un Área de Gobierno competente por razón de la materia.
      - c) El Pleno.
-     - **Respuesta: a** · *ROGA arts. 6 y 78*
+     - **Respuesta: b** · *ROGA arts. 6 y 78*
 
 146. El régimen de incompatibilidades aplicable a los órganos superiores y directivos es el de:
      - a) La Ley 53/1984.
@@ -915,16 +915,16 @@
      - **Respuesta: a** · *ROGA art. 7.7*
 
 147. La afirmación correcta sobre el número máximo de Áreas de Gobierno es:
-     - a) No podrá exceder de 15, siendo el alcalde quien fija el número concreto.
+     - a) Lo fija el Pleno por ley.
      - b) Es siempre de 7.
-     - c) Lo fija el Pleno por ley.
-     - **Respuesta: a** · *ROGA art. 40.2*
+     - c) No podrá exceder de 15, siendo el alcalde quien fija el número concreto.
+     - **Respuesta: c** · *ROGA art. 40.2*
 
 148. La afirmación correcta sobre la jerarquía directiva es:
-     - a) Coordinador general, secretario general técnico y director general, por ese orden.
+     - a) Todos tienen el mismo rango.
      - b) Director general, coordinador general y secretario general técnico.
-     - c) Todos tienen el mismo rango.
-     - **Respuesta: a** · *ROGA art. 42.2*
+     - c) Coordinador general, secretario general técnico y director general, por ese orden.
+     - **Respuesta: c** · *ROGA art. 42.2*
 
 149. La afirmación correcta sobre el nombramiento de directivos es:
      - a) Los nombra la Junta de Gobierno, con carácter general entre funcionarios de carrera.
@@ -933,10 +933,10 @@
      - **Respuesta: a** · *ROGA art. 49*
 
 150. La afirmación correcta sobre los órganos del Ayuntamiento es:
-     - a) Los superiores ejercen dirección política y los directivos la ejecución.
+     - a) Los directivos ejercen la dirección política.
      - b) Todos los órganos son directivos.
-     - c) Los directivos ejercen la dirección política.
-     - **Respuesta: a** · *ROGA art. 7.4*
+     - c) Los superiores ejercen dirección política y los directivos la ejecución.
+     - **Respuesta: c** · *ROGA art. 7.4*
 
 ---
 
@@ -972,7 +972,7 @@ Con uno o más **coordinadores generales**, una **Secretaría General Técnica**
 
 ### Pregunta P6
 **¿Cuál es el orden jerárquico de los órganos directivos?**
-**Coordinador general → secretario general técnico → director general** u órgano asimilado (art. 42.2, modificado el 30/09/2015) [ROGA, art. 42.2].
+**Coordinador general → secretario general técnico → director general** u órgano asimilado [ROGA, art. 42.2].
 
 ### Pregunta P7
 **¿Quiénes son los jefes superiores de un Área de Gobierno?**
@@ -983,16 +983,16 @@ Los **concejales de Gobierno y consejeros-delegados de Gobierno**; los concejale
 Las letras **b) (objetivos y planes), c) (elevar al Pleno), d) (proponer disposiciones a la Junta), e) (proponer organización al alcalde) y j) (proponer nombramiento de directivos)** [ROGA, art. 45.1].
 
 ### Pregunta P9
-**¿Qué función esencial tiene el coordinador general?**
-La **coordinación y dirección** de las distintas Direcciones Generales dependientes, más las que le deleguen el alcalde o la Junta de Gobierno [ROGA, art. 46.1].
+**¿Qué funciones corresponden a los coordinadores generales según el artículo 46.1?**
+Las funciones de **coordinación y dirección** de las distintas Direcciones Generales u órganos asimilados dependientes de los mismos y las demás funciones que les **deleguen o desconcentren** el alcalde o la Junta de Gobierno [ROGA, art. 46.1].
 
 ### Pregunta P10
 **¿Qué rango y funciones tiene el secretario general técnico?**
 Rango de **director general**; gestiona los **servicios comunes** y presta **asistencia jurídica y técnica** al titular del Área, del que depende directamente [ROGA, art. 47].
 
 ### Pregunta P11
-**¿Qué hace un director general?**
-Dirige y gestiona uno o varios **ámbitos de competencias homogéneos**, bajo la dependencia de un coordinador general o de un concejal de Coordinación/delegado [ROGA, art. 48].
+**¿Qué corresponde a los directores generales según el artículo 48.1?**
+La **dirección y gestión** de uno o varios **ámbitos de competencias funcionalmente homogéneos**, bajo la dependencia directa de un coordinador general o de un concejal de Coordinación o delegado [ROGA, art. 48.1].
 
 ### Pregunta P12
 **¿Quién nombra a los órganos directivos y entre quién?**
@@ -1008,7 +1008,7 @@ Entre **funcionarios de Administración Local con habilitación de carácter nac
 
 ### Pregunta P15
 **¿Cuántas Áreas de Gobierno hay actualmente?**
-**Siete (7)** Áreas de Gobierno, por debajo del máximo legal de 15; el dato es actualizable cada mandato [Organigrama vigente · ROGA, art. 40.2].
+**Siete (7)** Áreas de Gobierno, por debajo del máximo de 15; su número, denominación y atribuciones los determina el alcalde [Organigrama vigente · ROGA, art. 40.2].
 
 ### Pregunta P16
 **¿Qué relación hay entre los concejales de Gobierno, el Pleno y la Junta de Gobierno?**
@@ -1019,13 +1019,13 @@ El concejal de Gobierno **eleva propuestas al Pleno** (44.c) y **propone a la Ju
 Áreas que dependen de un Área de Gobierno y dirigen un sector de su actividad administrativa [ROGA, art. 40.1].
 
 ### Pregunta P18
-**¿Cómo se crean las unidades administrativas inferiores?**
-Las de nivel inferior a Departamento, a través de la **relación de puestos de trabajo (RPT)**; los órganos directivos, por decreto del alcalde [ROGA, art. 8].
+**¿Cómo se crean los órganos directivos y las unidades administrativas inferiores?**
+Los órganos directivos y las Subdirecciones Generales, por la **Junta de Gobierno** a través de los acuerdos de organización administrativa; los servicios, departamentos y unidades de nivel inferior, así como los demás puestos de trabajo, a través de la **relación de puestos de trabajo (RPT)** [ROGA, art. 8.1].
 
 ### Pregunta P19
-**¿Cuál es la materia del Tema 4 respecto de este tema?**
-Los **distritos**, el **concejal-presidente** y la **estructura administrativa territorial** (parte II del ROGA) [REFERENCIA CRUZADA: Tema 4].
+**¿Qué forma revisten las decisiones administrativas de los órganos directivos?**
+La forma de **resolución**, que se publicará o notificará de acuerdo con lo dispuesto en la normativa vigente [ROGA, art. 50].
 
 ### Pregunta P20
 **¿En qué marco normativo se dicta el ROGA?**
-En el **régimen de los municipios de gran población** (Título X de la LBRL) y en el **régimen especial de capitalidad** de Madrid (Ley 22/2006) [LBRL; LCREM].
+En el **régimen de los municipios de gran población** del **Título X de la LBRL**, introducido por la **Ley 57/2003**, de 16 de diciembre, de medidas para la modernización del gobierno local [ROGA, exposición de motivos, I].

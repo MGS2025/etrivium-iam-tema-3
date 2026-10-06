@@ -14,13 +14,13 @@
 
 Este tema incluye cuatro tipos de **cajas callout** para facilitar el estudio:
 
-> **[DATO CLAVE EXAMEN]** Información de alta densidad memorística: números máximos, órdenes jerárquicos, órganos competentes. Alta probabilidad de aparecer en el test oficial.
+> **[DATO CLAVE]** Información de alta densidad memorística: números máximos, órdenes jerárquicos, órganos competentes.
 
 > **[CITA NORMATIVA]** Reproducción literal o paráfrasis cercana de un precepto del ROGA o de la LBRL, con referencia al artículo.
 
-> **[EJEMPLO AYTO MADRID]** Aplicación real al entorno del Ayuntamiento de Madrid (Áreas de Gobierno vigentes, organización interna).
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** Aplicación al Ayuntamiento de Madrid (Áreas de Gobierno vigentes, organización interna).
 
-> **[REFERENCIA CRUZADA]** Enlace conceptual a otros temas o a otros bloques del propio Tema 3.
+> **[RELACIÓN CON OTROS TEMAS]** Enlace conceptual a otros temas o a otros bloques del propio Tema 3.
 
 Las citas al articulado se expresan como `[ROGA, art. X]` o `[LBRL, art. X]`. El registro completo de fuentes está en `tema-3-fuentes.md`.
 
@@ -28,26 +28,26 @@ Las citas al articulado se expresan como `[ROGA, art. X]` o `[LBRL, art. X]`. El
 
 ## 1. Introducción: el ROGA 2004 y el régimen de gran ciudad
 
-El **Reglamento Orgánico del Gobierno y de la Administración del Ayuntamiento de Madrid**, aprobado por el Pleno el **31 de mayo de 2004** (en adelante, **ROGA**), regula la **estructura organizativa** y el funcionamiento del gobierno y la administración municipales.
+El **Reglamento Orgánico del Gobierno y de la Administración del Ayuntamiento de Madrid**, aprobado por el Pleno el **31 de mayo de 2004** (en adelante, **ROGA**), regula el **gobierno y la administración** del Ayuntamiento de Madrid [ROGA, art. 1.1].
 
-El ROGA se dicta en el marco del **régimen de los municipios de gran población** previsto en el **Título X de la Ley 7/1985 (LBRL)** —introducido por la Ley 57/2003 de Medidas para la Modernización del Gobierno Local— y del **régimen especial de capitalidad** de Madrid.
+El ROGA se dicta en el marco del **régimen de los municipios de gran población** previsto en el **Título X de la Ley 7/1985 (LBRL)**, introducido por la Ley 57/2003, de 16 de diciembre, de medidas para la modernización del gobierno local [ROGA, exposición de motivos, I].
 
-> **[REFERENCIA CRUZADA]** El **municipio de Madrid** es de **régimen especial** por su doble condición de capital del Estado y de gran ciudad, conforme a la **Ley 22/2006 de Capitalidad y de Régimen Especial de Madrid** (estudiada en el **Tema 2**). [LCREM]
+> **[RELACIÓN CON OTROS TEMAS]** La **Ley 22/2006, de 4 de julio, de Capitalidad y de Régimen Especial de Madrid** regula el **régimen especial** de la Villa de Madrid y sus peculiaridades en cuanto **capital del Estado** (art. 1.1 LCREM). Se estudia en el **Tema 2**.
 
 La organización del Ayuntamiento responde a dos principios:
 
 > **[CITA NORMATIVA]** *"La organización administrativa del Ayuntamiento de Madrid responde a los principios de división funcional en Áreas de Gobierno y de gestión territorial integrada en distritos"* [ROGA, art. 5]
 
 - **División funcional** → las **Áreas de Gobierno** (objeto de **este tema**, parte I).
-- **Gestión territorial** → los **Distritos** (objeto del **Tema 4**, parte II del ROGA). [REFERENCIA CRUZADA]
+- **Gestión territorial** → los **Distritos** (objeto del **Tema 4**, parte II del ROGA).
 
-> **[DATO CLAVE EXAMEN]** El ROGA es de **31 de mayo de 2004**. Sus dos principios organizativos son la **división funcional en Áreas de Gobierno** y la **gestión territorial integrada en distritos** [ROGA, art. 5].
+> **[DATO CLAVE]** El ROGA es de **31 de mayo de 2004**. Sus dos principios organizativos son la **división funcional en Áreas de Gobierno** y la **gestión territorial integrada en distritos** [ROGA, art. 5].
 
 ---
 
 ## 2. La organización del Ayuntamiento: órganos centrales, territoriales y organismos
 
-El art. 6 del ROGA clasifica la organización municipal en tres grandes bloques:
+El artículo 6 del ROGA clasifica la organización municipal en tres grandes bloques:
 
 > **[CITA NORMATIVA]** *"El Ayuntamiento de Madrid se organiza en órganos centrales, territoriales y organismos públicos"* [ROGA, art. 6.1]
 
@@ -55,13 +55,13 @@ El art. 6 del ROGA clasifica la organización municipal en tres grandes bloques:
 - **Órganos territoriales**: ejercen sus competencias **exclusivamente en el ámbito de un distrito** (Tema 4).
 - **Organismos públicos** (Título VII del ROGA): organismos autónomos y entidades públicas empresariales, para actividades de ejecución o gestión; dependen del Ayuntamiento y se **adscriben** al Área competente por razón de la materia.
 
-> **[DATO CLAVE EXAMEN]** Órganos **centrales** = todo el municipio; órganos **territoriales** = un distrito; **organismos públicos** = ejecución/gestión adscritos a un Área. [ROGA, art. 6]
+> **[DATO CLAVE]** Órganos **centrales** = todo el municipio; órganos **territoriales** = un distrito; **organismos públicos** = ejecución/gestión adscritos a un Área. [ROGA, art. 6]
 
 ---
 
 ## 3. Órganos superiores y órganos directivos (art. 7)
 
-Atendiendo a sus funciones, los órganos del Ayuntamiento se clasifican en **superiores** y **directivos** [ROGA, art. 7.1]. Es una de las distinciones más preguntadas del tema.
+Atendiendo a sus funciones, los órganos del Ayuntamiento se clasifican en **superiores** y **directivos** [ROGA, art. 7.1].
 
 ### 3.1. Órganos superiores
 
@@ -79,16 +79,16 @@ Son órganos directivos [ROGA, art. 7.3]:
 - El titular del **órgano de apoyo a la Junta de Gobierno Local**.
 - El **interventor general municipal**.
 - El titular del **órgano de gestión tributaria**.
-- En el ámbito de los **distritos**, los **gerentes**.
+- En el ámbito de los **distritos**, los **coordinadores de Distrito**.
 - En los organismos autónomos y entidades públicas empresariales, sus **gerentes**.
 
-El **secretario general del Pleno** tiene también carácter de órgano directivo y se nombra entre **funcionarios de Administración Local con habilitación de carácter nacional** [ROGA, art. 7.6].
+El **secretario general del Pleno** tiene también carácter de órgano directivo y se nombra entre **funcionarios de Administración Local con habilitación de carácter nacional**; su regulación específica se establecerá en el **Reglamento Orgánico del Pleno** [ROGA, art. 7.6].
 
 ### 3.3. El reparto de funciones
 
 > **[CITA NORMATIVA]** *"A los órganos superiores corresponde la dirección, planificación y coordinación política, y a los órganos directivos la ejecución de las decisiones adoptadas por aquellos"* [ROGA, art. 7.4]
 
-> **[DATO CLAVE EXAMEN]** **Órganos superiores** → dirección/planificación/coordinación **política** (alcalde + Junta de Gobierno Local). **Órganos directivos** → **ejecución** (coordinadores generales, secretarios generales técnicos, directores generales…). Los titulares de ambos quedan sometidos al **régimen de incompatibilidades** de la Ley 53/1984 [ROGA, art. 7.7].
+> **[DATO CLAVE]** **Órganos superiores** → dirección/planificación/coordinación **política** (alcalde + Junta de Gobierno Local). **Órganos directivos** → **ejecución** (coordinadores generales, secretarios generales técnicos, directores generales…). Los titulares de ambos quedan sometidos al **régimen de incompatibilidades** de la Ley 53/1984 [ROGA, art. 7.7].
 
 ---
 
@@ -102,9 +102,9 @@ De las Áreas de Gobierno podrán depender **Áreas de Coordinación** o **Área
 
 > **[CITA NORMATIVA]** *"El número de Áreas de Gobierno no podrá exceder de 15, correspondiendo al alcalde […] determinar el número, denominación y atribuciones de las Áreas"* [ROGA, art. 40.2]
 
-El alcalde actúa al amparo del **art. 123.1.c)** en relación con el **art. 124.4.k)** de la LBRL.
+El alcalde actúa al amparo de lo previsto en el **artículo 123.1.c)** en relación con las facultades que le atribuye el **artículo 124.4.k)** de la LBRL.
 
-> **[DATO CLAVE EXAMEN]** El número de Áreas de Gobierno **no podrá exceder de 15**. Es el **alcalde** quien determina, por decreto, su **número, denominación y atribuciones** [ROGA, art. 40.2].
+> **[DATO CLAVE]** El número de Áreas de Gobierno **no podrá exceder de 15**. Es el **alcalde** quien determina, por decreto, su **número, denominación y atribuciones** [ROGA, art. 40.2].
 
 ---
 
@@ -118,7 +118,7 @@ Para ejercer sus competencias, las Áreas de Gobierno [ROGA, art. 41.1]:
 
 A su vez, las Secretarías Generales Técnicas y las Direcciones Generales podrán organizarse en **Subdirecciones Generales, Servicios, Departamentos, Secciones** y otras unidades inferiores [ROGA, art. 41.2]. Estas unidades también podrán depender directamente de los coordinadores generales.
 
-> **[DATO CLAVE EXAMEN]** Toda Área de Gobierno cuenta con una **Secretaría General Técnica** y se estructura en **Direcciones Generales**; por debajo: Subdirecciones Generales, Servicios, Departamentos y Secciones [ROGA, art. 41].
+> **[DATO CLAVE]** Toda Área de Gobierno cuenta con una **Secretaría General Técnica** y se estructura en **Direcciones Generales**; por debajo: Subdirecciones Generales, Servicios, Departamentos y Secciones [ROGA, art. 41].
 
 ---
 
@@ -132,7 +132,7 @@ Los **concejales de Coordinación** y los **concejales-delegados** son los **jef
 
 > **[CITA NORMATIVA]** *"Los órganos directivos […] se ordenan jerárquicamente del siguiente modo: coordinador general, secretario general técnico, director general u órgano asimilado"* [ROGA, art. 42.2]
 
-> **[DATO CLAVE EXAMEN]** Orden jerárquico de los directivos: **1.º coordinador general → 2.º secretario general técnico → 3.º director general**. (El art. 42.2 fue **modificado el 30 de septiembre de 2015**.) [ROGA, art. 42.2]
+> **[DATO CLAVE]** Orden jerárquico de los directivos: **1.º coordinador general → 2.º secretario general técnico → 3.º director general**. [ROGA, art. 42.2]
 
 ---
 
@@ -163,15 +163,17 @@ A ellos corresponde la **dirección** de los ámbitos integrados en su Área. En
 
 Tienen las mismas competencias del art. 44, **salvo** las de las letras **b), c), d), e) y j)**, y sin perjuicio de la superior dirección del concejal de Gobierno o consejero-delegado de Gobierno del que dependan [ROGA, art. 45.1]. Responden ante el órgano superior inmediato del que dependan [ROGA, art. 45.2].
 
-> **[DATO CLAVE EXAMEN]** Los **concejales de Coordinación y concejales-delegados** ejercen las funciones del art. 44 **excepto** las letras **b, c, d, e y j** (objetivos/planes, elevar al Pleno, proponer disposiciones a la Junta, proponer organización al alcalde y proponer nombramiento de directivos). [ROGA, art. 45]
+> **[DATO CLAVE]** Los **concejales de Coordinación y concejales-delegados** ejercen las funciones del art. 44 **excepto** las letras **b, c, d, e y j** (objetivos/planes, elevar al Pleno, proponer disposiciones a la Junta, proponer organización al alcalde y proponer nombramiento de directivos). [ROGA, art. 45]
 
 ---
 
 ## 9. Órganos centrales directivos (arts. 46-49)
 
+Las decisiones administrativas que adopten los órganos directivos revestirán la forma de **resolución** [ROGA, art. 50.1].
+
 ### 9.1. Coordinadores generales (art. 46)
 
-Les corresponden las funciones de **coordinación y dirección** de las distintas Direcciones Generales dependientes, y las demás que les deleguen o desconcentren el alcalde o la Junta de Gobierno [ROGA, art. 46.1]. (Artículo **modificado el 30/09/2015**.)
+Les corresponden las funciones de **coordinación y dirección** de las distintas Direcciones Generales dependientes, y las demás que les deleguen o desconcentren el alcalde o la Junta de Gobierno [ROGA, art. 46.1].
 
 ### 9.2. Secretarios generales técnicos (art. 47)
 
@@ -184,7 +186,7 @@ Con **rango de director general**, les corresponden [ROGA, art. 47.1]:
 
 Dependen **directamente del titular del Área de Gobierno** [ROGA, art. 47.3].
 
-> **[DATO CLAVE EXAMEN]** El **secretario general técnico** tiene **rango de director general**, gestiona los **servicios comunes** y presta **asistencia jurídica y técnica** al titular del Área; depende directamente de éste. [ROGA, art. 47]
+> **[DATO CLAVE]** El **secretario general técnico** tiene **rango de director general**, gestiona los **servicios comunes** y presta **asistencia jurídica y técnica** al titular del Área; depende directamente de éste. [ROGA, art. 47]
 
 ### 9.3. Directores generales (art. 48)
 
@@ -194,28 +196,28 @@ Son los titulares de los órganos directivos a los que corresponde, bajo la depe
 
 > **[CITA NORMATIVA]** *"Los coordinadores generales, los secretarios generales técnicos y los directores generales serán nombrados y cesados por la Junta de Gobierno"* [ROGA, art. 49.1]
 
-Su nombramiento debe efectuarse, conforme al **art. 130.3 LBRL**, entre **funcionarios de carrera** del Estado, las CCAA, las Entidades Locales o funcionarios de Administración Local con habilitación nacional, con titulación de doctor, licenciado, ingeniero, arquitecto o equivalente, **salvo** que el decreto de estructura del Área prevea, motivadamente, que su titular no reúna la condición de funcionario [ROGA, art. 49.2].
+Su nombramiento debe efectuarse, de conformidad con lo previsto en el **artículo 130.3 LBRL**, entre **funcionarios de carrera** del Estado, las CCAA, las Entidades Locales o funcionarios de Administración Local con habilitación nacional, con titulación de doctor, licenciado, ingeniero, arquitecto o equivalente, **salvo** que el decreto de estructura del Área prevea, motivadamente, que su titular no reúna la condición de funcionario [ROGA, art. 49.2].
 
-> **[DATO CLAVE EXAMEN]** Los órganos directivos los **nombra y cesa la Junta de Gobierno** (art. 49.1), con carácter general **entre funcionarios de carrera** (art. 130.3 LBRL). La excepción de no ser funcionario puede aplicarse a los **coordinadores generales**, pero **no** a los **secretarios generales técnicos**. [ROGA, art. 49]
+> **[DATO CLAVE]** Los órganos directivos los **nombra y cesa la Junta de Gobierno** (art. 49.1), con carácter general **entre funcionarios de carrera** (art. 130.3 LBRL). La excepción de no ser funcionario puede aplicarse a los **coordinadores generales**, pero **no** a los **secretarios generales técnicos**. [ROGA, art. 49]
 
-> **[REFERENCIA CRUZADA]** El régimen del personal funcionario y los requisitos de titulación se desarrollan en el **Tema 5** (EBEP). [REFERENCIA CRUZADA]
+> **[RELACIÓN CON OTROS TEMAS]** El régimen del personal funcionario y los requisitos de titulación se desarrollan en el **Tema 5** (EBEP).
 
 ---
 
 ## 10. Unidades administrativas inferiores
 
-Por debajo de las Direcciones Generales y Secretarías Generales Técnicas, la organización se completa con **Subdirecciones Generales, Servicios, Departamentos, Secciones** y demás unidades [ROGA, art. 41.2]. Su creación, modificación y supresión se realiza por decreto del alcalde o a través de la **relación de puestos de trabajo (RPT)**, según el nivel [ROGA, art. 8].
+Por debajo de las Direcciones Generales y Secretarías Generales Técnicas, la organización se completa con **Subdirecciones Generales, Servicios, Departamentos, Secciones** y demás unidades [ROGA, art. 41.2]. Los órganos directivos y las **Subdirecciones Generales** se crean, modifican o suprimen por la **Junta de Gobierno**, a través de los acuerdos de organización administrativa; los **servicios, departamentos** y las unidades de nivel inferior a éstos, así como los demás puestos de trabajo, a través de la **relación de puestos de trabajo (RPT)** [ROGA, art. 8.1].
 
-> **[EJEMPLO AYTO MADRID]** Un Técnico Auxiliar TIC desarrolla su trabajo, normalmente, dentro de una **unidad administrativa** (Servicio, Departamento o Sección) dependiente de una **Dirección General** o **Secretaría General Técnica** de un Área de Gobierno, o de la **Gerencia** de un distrito (Tema 4).
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** Un Técnico Auxiliar TIC desarrolla su trabajo, normalmente, dentro de una **unidad administrativa** (Servicio, Departamento o Sección) dependiente de una **Dirección General** o **Secretaría General Técnica** de un Área de Gobierno, o de la estructura administrativa de un distrito (Tema 4).
 
 ---
 
 ## 11. Relación con el Alcalde y el Pleno
 
-- El **alcalde** ostenta la máxima representación del municipio, dirige la política y la Administración municipal y **delega** competencias en la Junta de Gobierno, sus miembros, los concejales y, en su caso, en los órganos directivos, así como en las Juntas Municipales de Distrito [ROGA, arts. 9-11].
+- El **alcalde** ostenta la máxima representación del municipio, dirige la política, el gobierno y la Administración Municipal y puede **delegar** mediante decreto sus competencias en la Junta de Gobierno Local, en sus miembros, en los demás concejales y, en su caso, en los coordinadores generales, directores generales u órganos similares, así como en las Juntas Municipales de Distrito, en sus concejales-presidentes y en los coordinadores de Distrito [ROGA, arts. 9 y 11].
 - Los **concejales de Gobierno** elevan al **Pleno** las propuestas de su competencia y proponen a la **Junta de Gobierno** las disposiciones de carácter general [ROGA, art. 44.c) y d)].
 
-> **[DATO CLAVE EXAMEN]** Cadena de decisión: el **alcalde** dirige y delega; la **Junta de Gobierno** nombra a los directivos y aprueba disposiciones; el **Pleno** ejerce las funciones normativas y de control. Los concejales de Gobierno son la bisagra entre la dirección política y la ejecución administrativa.
+> **[DATO CLAVE]** Cadena de decisión: el **alcalde** dirige y delega; la **Junta de Gobierno** nombra a los directivos y aprueba los proyectos de disposiciones de carácter general; el **Pleno** ejerce las funciones normativas y de control. Los concejales de Gobierno son la bisagra entre la dirección política y la ejecución administrativa.
 
 ---
 
@@ -233,9 +235,9 @@ El Ayuntamiento de Madrid se organiza **actualmente en siete (7) Áreas de Gobie
 
 De ellas dependen, además, diversas **Áreas Delegadas**, entre las vigentes: **Limpieza y Zonas Verdes** (de Urbanismo, Medio Ambiente y Movilidad), **Turismo** y **Deporte** (de Cultura, Turismo y Deporte) e **Innovación y Emprendimiento** (de Economía, Innovación y Hacienda). Junto a las Áreas se sitúan la **Alcaldía** y la **Coordinación General de la Alcaldía**.
 
-> **[DATO CLAVE EXAMEN]** Actualmente hay **7 Áreas de Gobierno** (máximo legal: 15). Memorizar sus denominaciones. Existen además **Áreas Delegadas** dependientes de algunas de ellas.
+> **[DATO CLAVE]** Actualmente hay **7 Áreas de Gobierno** (máximo legal: 15). Memorizar sus denominaciones. Existen además **Áreas Delegadas** dependientes de algunas de ellas.
 
-> **[EJEMPLO AYTO MADRID]** Este apartado es **cambiante**: el número y la denominación de las Áreas los fija el alcalde por decreto en cada mandato. Verificar siempre el **organigrama vigente** en *transparencia.madrid.es* antes del examen.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** Este apartado es **cambiante**: el número y la denominación de las Áreas los fija el alcalde por decreto en cada mandato. Verificar siempre el **organigrama vigente** en *transparencia.madrid.es* antes del examen.
 
 ---
 

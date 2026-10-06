@@ -25,17 +25,17 @@
 
 1. **(2,5 pts)** ¿Cómo clasifica el artículo 7 del ROGA los órganos del Ayuntamiento según sus funciones? Cite dos ejemplos de cada tipo.
 2. **(2,5 pts)** ¿Qué función corresponde a los órganos superiores y cuál a los directivos?
-3. **(2,5 pts)** ¿Qué consideración tienen, en el ámbito de los distritos, los concejales-presidentes y los gerentes?
+3. **(2,5 pts)** ¿Qué consideración tienen, en el ámbito de los distritos, los concejales-presidentes y los coordinadores de Distrito?
 4. **(2,5 pts)** ¿A qué régimen de incompatibilidades quedan sometidos unos y otros?
 
 **Solución orientativa**:
 
 1. En **órganos superiores** y **órganos directivos** [ROGA, art. 7.1]. Superiores: el **alcalde** y los **miembros de la Junta de Gobierno Local**. Directivos: **coordinadores generales**, **directores generales** (también secretarios generales técnicos, interventor general, etc.) [ROGA, art. 7.2 y 7.3].
 2. A los superiores, la **dirección, planificación y coordinación política**; a los directivos, la **ejecución** de las decisiones de aquéllos [ROGA, art. 7.4].
-3. Los **concejales-presidentes** son **órganos superiores**; los **gerentes** de distrito son **órganos directivos** [ROGA, art. 7.2 y 7.3].
+3. Los **concejales-presidentes** son **órganos superiores**; los **coordinadores de Distrito** son **órganos directivos** [ROGA, art. 7.2 y 7.3].
 4. Al régimen de incompatibilidades de la **Ley 53/1984** [ROGA, art. 7.7].
 
-**Criterios de evaluación**: distinción correcta superiores/directivos; función política vs ejecución; encuadre de concejal-presidente (superior) y gerente (directivo); cita de la Ley 53/1984.
+**Criterios de evaluación**: distinción correcta superiores/directivos; función política vs ejecución; encuadre de concejal-presidente (superior) y coordinador de Distrito (directivo); cita de la Ley 53/1984.
 
 ---
 
@@ -52,7 +52,7 @@
 
 **Solución orientativa**:
 
-1. El **alcalde**, mediante **decreto**, al amparo de los arts. 123.1.c) y 124.4.k) de la LBRL [ROGA, art. 40.2].
+1. El **alcalde**, mediante **decreto**, al amparo de lo previsto en los artículos 123.1.c) y 124.4.k) de la LBRL [ROGA, arts. 14.2 y 40.2].
 2. Sí: el número de Áreas de Gobierno **no podrá exceder de 15** [ROGA, art. 40.2].
 3. Son **órganos centrales** (ejercen competencias sobre todo el municipio) y constituyen los **niveles esenciales** de la organización, comprendiendo uno o varios **sectores funcionalmente homogéneos** [ROGA, arts. 6 y 40.1].
 4. Sí: pueden depender **Áreas de Coordinación** o **Áreas Delegadas**, que dirigen un sector de la actividad del Área de la que dependen [ROGA, art. 40.1].
@@ -142,7 +142,7 @@
 
 1. En **siete (7)** Áreas de Gobierno (organigrama vigente). Por ejemplo: Vicealcaldía, Portavoz, Seguridad y Emergencias; Urbanismo, Medio Ambiente y Movilidad; Economía, Innovación y Hacienda (entre otras) [Organigrama vigente].
 2. **No** es fijo: el **alcalde**, por **decreto**, fija el número (máximo 15), la denominación y las atribuciones en cada mandato [ROGA, art. 40.2].
-3. El **alcalde** dirige y delega y determina las Áreas; la **Junta de Gobierno** nombra a los directivos y aprueba las disposiciones que proponen las Áreas; el **Pleno** ejerce las funciones normativas y de control, recibiendo las propuestas que elevan los concejales de Gobierno [ROGA, arts. 9-11, 44, 49].
+3. El **alcalde** dirige y delega y determina las Áreas; la **Junta de Gobierno** nombra a los directivos y aprueba los proyectos de disposiciones de carácter general que proponen los concejales de Gobierno; el **Pleno** ejerce las funciones normativas y de control, recibiendo las propuestas que elevan los concejales de Gobierno [ROGA, arts. 9-11, 44, 49].
 4. Son Áreas que **dependen de un Área de Gobierno** y dirigen un sector de su actividad administrativa [ROGA, art. 40.1].
 
 **Criterios de evaluación**: número (7) y ejemplos correctos de Áreas; carácter actualizable y competencia del alcalde; papel diferenciado de alcalde/Junta/Pleno; concepto de Área Delegada.
