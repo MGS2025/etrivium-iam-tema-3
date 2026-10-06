@@ -4,6 +4,16 @@
 
 ---
 
+## v1.3 — 2026-10-06 — Revisión de diagramas
+
+**Motivo**: barrido de los diagramas de los 40 temas tras la revisión jurídica y de normas.
+
+### Cambios
+
+- Revisión visual de todos los diagramas, captura a captura (la medición automática no detecta contraste, flechas mal dirigidas ni textos pegados al borde): corregidos textos que se salían de su caja o del lienzo, cajas que se tocaban, flechas que no llegaban a su destino y textos con poco contraste. Sin cambios de contenido.
+
+---
+
 ## v1.2 — 2026-10-01 — Revisión jurídica
 
 **Estado**: aplicada la revisión jurídica de los temas 1-10 y contrastado el articulado con el **texto consolidado vigente del ROGA** (Código «Normativa del Ayuntamiento de Madrid» del BOE, última modificación del ROGA: 15-02-2023), la LBRL y la Ley 22/2006 en el BOE consolidado.

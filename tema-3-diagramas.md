@@ -204,17 +204,17 @@
   <line x1="350" y1="96" x2="350" y2="78" class="e-l"/>
   <line x1="540" y1="96" x2="540" y2="78" class="e-l"/>
   <line x1="160" y1="78" x2="540" y2="78" class="e-l"/>
-  <rect x="60" y="96" width="200" height="52" rx="8" class="e-box"/>
+  <rect x="70" y="96" width="180" height="52" rx="8" class="e-box"/>
   <text x="160" y="118" class="e-h">Coordinador/es</text>
   <text x="160" y="135" class="e-h">general/es</text>
-  <rect x="260" y="96" width="180" height="52" rx="8" class="e-box"/>
+  <rect x="265" y="96" width="170" height="52" rx="8" class="e-box"/>
   <text x="350" y="118" class="e-h">Secretaría</text>
   <text x="350" y="135" class="e-h">General Técnica</text>
-  <rect x="450" y="96" width="200" height="52" rx="8" class="e-box"/>
-  <text x="550" y="118" class="e-h">Direcciones</text>
-  <text x="550" y="135" class="e-h">Generales</text>
-  <line x1="450" y1="180" x2="450" y2="148" class="e-l"/>
-  <line x1="450" y1="148" x2="350" y2="148" class="e-l" style="stroke-dasharray:3"/>
+  <rect x="450" y="96" width="180" height="52" rx="8" class="e-box"/>
+  <text x="540" y="118" class="e-h">Direcciones</text>
+  <text x="540" y="135" class="e-h">Generales</text>
+  <line x1="540" y1="148" x2="540" y2="180" class="e-l" style="stroke-dasharray:3"/>
+  <line x1="540" y1="180" x2="350" y2="180" class="e-l" style="stroke-dasharray:3"/>
   <rect x="190" y="210" width="320" height="120" rx="8" class="e-low"/>
   <text x="350" y="236" class="e-h">Unidades inferiores</text>
   <text x="350" y="262" class="e-s">Subdirecciones Generales</text>
@@ -260,13 +260,13 @@
 **Propósito**: Distinguir las funciones de unos y otros.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" role="img" aria-label="Comparación entre concejales de Gobierno y concejales de Coordinación: estos últimos ejercen las funciones del artículo 44 salvo las letras b, c, d, e y j">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 330" role="img" aria-label="Comparación entre concejales de Gobierno y concejales de Coordinación: estos últimos ejercen las funciones del artículo 44 salvo las letras b, c, d, e y j">
   <style>
     .g-hb{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
     .g-s{font:11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}
     .g-x{font:700 11px system-ui,sans-serif;fill:#a3271c;text-anchor:start}
   </style>
-  <rect x="30" y="20" width="310" height="280" rx="10" fill="#fff" stroke="#0055a0" stroke-width="1.5"/>
+  <rect x="30" y="20" width="310" height="292" rx="10" fill="#fff" stroke="#0055a0" stroke-width="1.5"/>
   <rect x="30" y="20" width="310" height="58" rx="10" fill="#0055a0"/>
   <text x="185" y="44" class="g-hb">Concejales de GOBIERNO</text>
   <text x="185" y="64" class="g-hb" style="font-weight:400;font-size:11px">y consejeros-delegados de Gobierno</text>
@@ -278,8 +278,8 @@
   <text x="50" y="218" class="g-s">e) Proponer organización al alcalde</text>
   <text x="50" y="240" class="g-s">f-i) Control, personal, conflictos…</text>
   <text x="50" y="262" class="g-s">j) Proponer nombramiento directivos</text>
-  <text x="50" y="288" class="g-s" style="font-style:italic;fill:#777">ejercen TODAS las funciones</text>
-  <rect x="360" y="20" width="310" height="280" rx="10" fill="#fff" stroke="#e89822" stroke-width="1.5"/>
+  <text x="50" y="298" class="g-s" style="font-style:italic;fill:#777">ejercen TODAS las funciones</text>
+  <rect x="360" y="20" width="310" height="292" rx="10" fill="#fff" stroke="#e89822" stroke-width="1.5"/>
   <rect x="360" y="20" width="310" height="58" rx="10" fill="#e89822"/>
   <text x="515" y="44" class="g-hb">Concejales de COORDINACIÓN</text>
   <text x="515" y="64" class="g-hb" style="font-weight:400;font-size:11px">y concejales-delegados</text>
@@ -291,7 +291,7 @@
   <text x="380" y="228" class="g-x">d) proponer disposiciones a la Junta</text>
   <text x="380" y="250" class="g-x">e) proponer organización al alcalde</text>
   <text x="380" y="272" class="g-x">j) proponer nombramiento directivos</text>
-  <text x="380" y="294" class="g-s" style="font-style:italic;fill:#777">dependen del concejal de Gobierno</text>
+  <text x="380" y="298" class="g-s" style="font-style:italic;fill:#777">dependen del concejal de Gobierno</text>
 </svg>
 ```
 
@@ -349,7 +349,7 @@
 **Propósito**: Quién nombra y entre quién.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 280" role="img" aria-label="Nombramiento de los órganos directivos por la Junta de Gobierno, con carácter general entre funcionarios de carrera, según el artículo 49">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 290" role="img" aria-label="Nombramiento de los órganos directivos por la Junta de Gobierno, con carácter general entre funcionarios de carrera, según el artículo 49">
   <style>
     .i-c{fill:#0055a0;stroke:#003d75;stroke-width:2}
     .i-b{fill:#fff;stroke:#0055a0;stroke-width:1.5}
@@ -365,19 +365,20 @@
   <rect x="200" y="92" width="300" height="50" rx="8" class="i-b"/>
   <text x="350" y="113" class="i-h">Coordinadores grales. · Secretarios grales.</text>
   <text x="350" y="131" class="i-h">técnicos · Directores generales</text>
-  <line x1="350" y1="142" x2="350" y2="166" class="i-l"/>
-  <rect x="90" y="166" width="240" height="86" rx="8" fill="#e8f5ee" stroke="#2d8659" stroke-width="1.5"/>
-  <text x="210" y="190" class="i-h" style="fill:#1f5e3f">REGLA GENERAL</text>
-  <text x="210" y="214" class="i-s">entre funcionarios de carrera</text>
-  <text x="210" y="232" class="i-s">(art. 130.3 LBRL) · titulación</text>
-  <text x="210" y="248" class="i-s">superior</text>
-  <rect x="370" y="166" width="240" height="86" rx="8" fill="#fdf4e4" stroke="#e89822" stroke-width="1.5"/>
-  <text x="490" y="190" class="i-h" style="fill:#a8650f">EXCEPCIÓN</text>
-  <text x="490" y="214" class="i-s">puede no ser funcionario:</text>
-  <text x="490" y="232" class="i-s">coordinador general SÍ</text>
-  <text x="490" y="248" class="i-s">secretario gral. técnico NO</text>
-  <line x1="350" y1="166" x2="210" y2="166" class="i-l"/>
-  <line x1="350" y1="166" x2="490" y2="166" class="i-l"/>
+  <line x1="350" y1="142" x2="350" y2="156" class="i-l"/>
+  <rect x="90" y="176" width="240" height="96" rx="8" fill="#e8f5ee" stroke="#2d8659" stroke-width="1.5"/>
+  <text x="210" y="200" class="i-h" style="fill:#1f5e3f">REGLA GENERAL</text>
+  <text x="210" y="224" class="i-s">entre funcionarios de carrera</text>
+  <text x="210" y="242" class="i-s">(art. 130.3 LBRL) · titulación</text>
+  <text x="210" y="260" class="i-s">superior</text>
+  <rect x="370" y="176" width="240" height="96" rx="8" fill="#fdf4e4" stroke="#e89822" stroke-width="1.5"/>
+  <text x="490" y="200" class="i-h" style="fill:#a8650f">EXCEPCIÓN</text>
+  <text x="490" y="224" class="i-s">puede no ser funcionario:</text>
+  <text x="490" y="242" class="i-s">coordinador general SÍ</text>
+  <text x="490" y="260" class="i-s">secretario gral. técnico NO</text>
+  <line x1="210" y1="156" x2="490" y2="156" class="i-l"/>
+  <line x1="210" y1="156" x2="210" y2="176" class="i-l"/>
+  <line x1="490" y1="156" x2="490" y2="176" class="i-l"/>
 </svg>
 ```
 
