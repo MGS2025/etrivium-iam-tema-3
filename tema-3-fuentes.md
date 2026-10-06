@@ -31,8 +31,8 @@ El Tema 3 trabaja con **corpus normativo cerrado**: el texto del Reglamento Org�
 
 ### Esquema de referencia para el contenido
 
-- **Articulado ROGA**: `[ROGA, art. X]` o `[ROGA, art. X.Y]` — p. ej. `[ROGA, art. 40.2]`
-- **Ley de bases**: `[LBRL, art. 123]`, `[LBRL, art. 130.3]`
+- **Articulado ROGA**: `(art. X ROGA)` o `(art. X.Y ROGA)` — p. ej. `(art. 40.2 ROGA)`
+- **Ley de bases**: `(art. 123 LBRL)`, `(art. 130.3 LBRL)`
 - **Régimen especial**: `[LCREM]`
 - **Versión del articulado**: se cita el **texto consolidado vigente** del ROGA (última modificación: 15 de febrero de 2023).
 
@@ -48,8 +48,8 @@ El Tema 3 trabaja con **corpus normativo cerrado**: el texto del Reglamento Org�
 
 ## Normas de citación en el contenido
 
-1. Toda afirmación que reproduzca el articulado del ROGA va acompañada de `[ROGA, art. X]`.
-2. Las remisiones a la ley de bases se identifican con `[LBRL, art. X]`.
+1. Toda afirmación que reproduzca el articulado del ROGA va acompañada de `(art. X ROGA)`.
+2. Las remisiones a la ley de bases se identifican con `(art. X LBRL)`.
 3. Los datos memorísticos (número máximo de Áreas, orden jerárquico, órgano que nombra) se marcan con `[DATO CLAVE]`.
 4. La distinción entre **órganos superiores** y **órganos directivos** se recuerda en `[RELACIÓN CON OTROS TEMAS]` cuando reaparece.
 5. Las menciones a las Áreas de Gobierno vigentes y a la aplicación al puesto se marcan con `[EJEMPLO DE APLICACIÓN EN EL AYTO]`.

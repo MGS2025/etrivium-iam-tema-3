@@ -30,10 +30,10 @@
 
 **Solución orientativa**:
 
-1. En **órganos superiores** y **órganos directivos** [ROGA, art. 7.1]. Superiores: el **alcalde** y los **miembros de la Junta de Gobierno Local**. Directivos: **coordinadores generales**, **directores generales** (también secretarios generales técnicos, interventor general, etc.) [ROGA, art. 7.2 y 7.3].
-2. A los superiores, la **dirección, planificación y coordinación política**; a los directivos, la **ejecución** de las decisiones de aquéllos [ROGA, art. 7.4].
-3. Los **concejales-presidentes** son **órganos superiores**; los **coordinadores de Distrito** son **órganos directivos** [ROGA, art. 7.2 y 7.3].
-4. Al régimen de incompatibilidades de la **Ley 53/1984** [ROGA, art. 7.7].
+1. En **órganos superiores** y **órganos directivos** (art. 7.1 ROGA). Superiores: el **alcalde** y los **miembros de la Junta de Gobierno Local**. Directivos: **coordinadores generales**, **directores generales** (también secretarios generales técnicos, interventor general, etc.) (art. 7.2 y 7.3 ROGA).
+2. A los superiores, la **dirección, planificación y coordinación política**; a los directivos, la **ejecución** de las decisiones de aquéllos (art. 7.4 ROGA).
+3. Los **concejales-presidentes** son **órganos superiores**; los **coordinadores de Distrito** son **órganos directivos** (art. 7.2 y 7.3 ROGA).
+4. Al régimen de incompatibilidades de la **Ley 53/1984** (art. 7.7 ROGA).
 
 **Criterios de evaluación**: distinción correcta superiores/directivos; función política vs ejecución; encuadre de concejal-presidente (superior) y coordinador de Distrito (directivo); cita de la Ley 53/1984.
 
@@ -52,10 +52,10 @@
 
 **Solución orientativa**:
 
-1. El **alcalde**, mediante **decreto**, al amparo de lo previsto en los artículos 123.1.c) y 124.4.k) de la LBRL [ROGA, arts. 14.2 y 40.2].
-2. Sí: el número de Áreas de Gobierno **no podrá exceder de 15** [ROGA, art. 40.2].
-3. Son **órganos centrales** (ejercen competencias sobre todo el municipio) y constituyen los **niveles esenciales** de la organización, comprendiendo uno o varios **sectores funcionalmente homogéneos** [ROGA, arts. 6 y 40.1].
-4. Sí: pueden depender **Áreas de Coordinación** o **Áreas Delegadas**, que dirigen un sector de la actividad del Área de la que dependen [ROGA, art. 40.1].
+1. El **alcalde**, mediante **decreto**, al amparo de lo previsto en los artículos 123.1.c) y 124.4.k) de la LBRL (arts. 14.2 y 40.2 ROGA).
+2. Sí: el número de Áreas de Gobierno **no podrá exceder de 15** (art. 40.2 ROGA).
+3. Son **órganos centrales** (ejercen competencias sobre todo el municipio) y constituyen los **niveles esenciales** de la organización, comprendiendo uno o varios **sectores funcionalmente homogéneos** (arts. 6 y 40.1 ROGA).
+4. Sí: pueden depender **Áreas de Coordinación** o **Áreas Delegadas**, que dirigen un sector de la actividad del Área de la que dependen (art. 40.1 ROGA).
 
 **Criterios de evaluación**: identificar al alcalde y el decreto; el tope de 15; naturaleza de órgano central y sectores homogéneos; Áreas de Coordinación/Delegadas.
 
@@ -74,10 +74,10 @@
 
 **Solución orientativa**:
 
-1. Con uno o más **coordinadores generales**, una **Secretaría General Técnica** y **Direcciones Generales** u órganos similares [ROGA, art. 41.1].
-2. **1.º coordinador general → 2.º secretario general técnico → 3.º director general** u órgano asimilado [ROGA, art. 42.2].
-3. En **Subdirecciones Generales, Servicios, Departamentos, Secciones** y otras unidades inferiores [ROGA, art. 41.2].
-4. **Jefes superiores**: los concejales de Gobierno y consejeros-delegados de Gobierno. **Jefes directos**: los concejales de Coordinación y concejales-delegados [ROGA, art. 42.1].
+1. Con uno o más **coordinadores generales**, una **Secretaría General Técnica** y **Direcciones Generales** u órganos similares (art. 41.1 ROGA).
+2. **1.º coordinador general → 2.º secretario general técnico → 3.º director general** u órgano asimilado (art. 42.2 ROGA).
+3. En **Subdirecciones Generales, Servicios, Departamentos, Secciones** y otras unidades inferiores (art. 41.2 ROGA).
+4. **Jefes superiores**: los concejales de Gobierno y consejeros-delegados de Gobierno. **Jefes directos**: los concejales de Coordinación y concejales-delegados (art. 42.1 ROGA).
 
 **Criterios de evaluación**: estructura del art. 41; orden jerárquico exacto; unidades inferiores; distinción jefes superiores/directos.
 
@@ -96,10 +96,10 @@
 
 **Solución orientativa**:
 
-1. Por ejemplo: **a)** representación, dirección, gestión e inspección del Área; **b)** fijar objetivos y aprobar planes de actuación; **c)** elevar propuestas al Pleno; **d)** proponer disposiciones a la Junta de Gobierno; **e)** proponer al alcalde la organización del Área (basta citar tres) [ROGA, art. 44].
-2. Las de las letras **b), c), d), e) y j)** [ROGA, art. 45.1].
-3. Ante el **órgano superior inmediato** del que dependan [ROGA, art. 45.2].
-4. El **concejal de Gobierno o consejero-delegado de Gobierno** del Área [ROGA, art. 44.j)].
+1. Por ejemplo: **a)** representación, dirección, gestión e inspección del Área; **b)** fijar objetivos y aprobar planes de actuación; **c)** elevar propuestas al Pleno; **d)** proponer disposiciones a la Junta de Gobierno; **e)** proponer al alcalde la organización del Área (basta citar tres) (art. 44 ROGA).
+2. Las de las letras **b), c), d), e) y j)** (art. 45.1 ROGA).
+3. Ante el **órgano superior inmediato** del que dependan (art. 45.2 ROGA).
+4. El **concejal de Gobierno o consejero-delegado de Gobierno** del Área (art. 44.j) ROGA).
 
 **Criterios de evaluación**: tres funciones correctas del art. 44; identificación exacta de las letras excluidas (b, c, d, e, j); responsabilidad ante el superior inmediato; propuesta de nombramiento por el concejal de Gobierno.
 
@@ -118,10 +118,10 @@
 
 **Solución orientativa**:
 
-1. La **Junta de Gobierno** [ROGA, art. 49.1].
-2. Con carácter general, entre **funcionarios de carrera** del Estado, las CCAA, las Entidades Locales o funcionarios de Administración Local con habilitación nacional, con titulación de **doctor, licenciado, ingeniero, arquitecto o equivalente** (art. 130.3 LBRL) [ROGA, art. 49.2].
-3. Puede aplicarse a los **coordinadores generales**; **no** a los **secretarios generales técnicos** [ROGA, art. 49.3].
-4. Tiene **rango de director general** y depende directamente del **titular del Área de Gobierno** [ROGA, art. 47].
+1. La **Junta de Gobierno** (art. 49.1 ROGA).
+2. Con carácter general, entre **funcionarios de carrera** del Estado, las CCAA, las Entidades Locales o funcionarios de Administración Local con habilitación nacional, con titulación de **doctor, licenciado, ingeniero, arquitecto o equivalente** (art. 130.3 LBRL) (art. 49.2 ROGA).
+3. Puede aplicarse a los **coordinadores generales**; **no** a los **secretarios generales técnicos** (art. 49.3 ROGA).
+4. Tiene **rango de director general** y depende directamente del **titular del Área de Gobierno** (art. 47 ROGA).
 
 **Criterios de evaluación**: la Junta de Gobierno como órgano competente; requisito de funcionario y titulación (art. 130.3 LBRL); excepción aplicable solo a coordinador general; rango y dependencia del secretario general técnico.
 
@@ -141,9 +141,9 @@
 **Solución orientativa**:
 
 1. En **siete (7)** Áreas de Gobierno (organigrama vigente). Por ejemplo: Vicealcaldía, Portavoz, Seguridad y Emergencias; Urbanismo, Medio Ambiente y Movilidad; Economía, Innovación y Hacienda (entre otras) [Organigrama vigente].
-2. **No** es fijo: el **alcalde**, por **decreto**, fija el número (máximo 15), la denominación y las atribuciones en cada mandato [ROGA, art. 40.2].
-3. El **alcalde** dirige y delega y determina las Áreas; la **Junta de Gobierno** nombra a los directivos y aprueba los proyectos de disposiciones de carácter general que proponen los concejales de Gobierno; el **Pleno** ejerce las funciones normativas y de control, recibiendo las propuestas que elevan los concejales de Gobierno [ROGA, arts. 9-11, 44, 49].
-4. Son Áreas que **dependen de un Área de Gobierno** y dirigen un sector de su actividad administrativa [ROGA, art. 40.1].
+2. **No** es fijo: el **alcalde**, por **decreto**, fija el número (máximo 15), la denominación y las atribuciones en cada mandato (art. 40.2 ROGA).
+3. El **alcalde** dirige y delega y determina las Áreas; la **Junta de Gobierno** nombra a los directivos y aprueba los proyectos de disposiciones de carácter general que proponen los concejales de Gobierno; el **Pleno** ejerce las funciones normativas y de control, recibiendo las propuestas que elevan los concejales de Gobierno (arts. 9-11, 44, 49 ROGA).
+4. Son Áreas que **dependen de un Área de Gobierno** y dirigen un sector de su actividad administrativa (art. 40.1 ROGA).
 
 **Criterios de evaluación**: número (7) y ejemplos correctos de Áreas; carácter actualizable y competencia del alcalde; papel diferenciado de alcalde/Junta/Pleno; concepto de Área Delegada.
 

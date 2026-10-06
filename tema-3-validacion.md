@@ -19,7 +19,7 @@
 
 - [ ] La fuente nuclear es el **ROGA 2004** (arts. 5-11 y 40-49), en su texto oficial consolidado.
 - [ ] El epígrafe "número y denominación de las **actuales** Áreas de Gobierno" se ha actualizado con el **organigrama vigente** (transparencia.madrid.es).
-- [ ] Cada afirmación que reproduce el articulado está referenciada con `[ROGA, art. X]` o `[LBRL, art. X]`.
+- [ ] Cada afirmación que reproduce el articulado está referenciada con `(art. X ROGA)` o `(art. X LBRL)`.
 - [ ] Cada pregunta del banco y de los casos puede reconducirse a un artículo del ROGA, a la LBRL o al organigrama vigente.
 
 ## 2. Estructura del contenido
@@ -34,15 +34,15 @@
 ## 3. Rigor jurídico
 
 - [ ] El ROGA es de **31 de mayo de 2004**.
-- [ ] Los dos principios de organización (división funcional / gestión territorial) son correctos [art. 5].
-- [ ] La clasificación órganos centrales/territoriales/organismos es correcta [art. 6].
-- [ ] La distinción órganos superiores (política) / directivos (ejecución) es correcta [art. 7].
-- [ ] El número máximo de Áreas de Gobierno (**15**) y la competencia del alcalde son correctos [art. 40.2].
-- [ ] La estructura interna (Secretaría General Técnica + Direcciones Generales) es correcta [art. 41].
-- [ ] El orden jerárquico (coordinador general → secretario general técnico → director general) es correcto [art. 42.2].
-- [ ] Las funciones excluidas a los concejales de Coordinación (b, c, d, e, j) son correctas [art. 45.1].
-- [ ] El rango de director general del secretario general técnico es correcto [art. 47.1].
-- [ ] El nombramiento por la Junta de Gobierno entre funcionarios (art. 130.3 LBRL) y la excepción (coordinador general sí, secretario general técnico no) son correctos [art. 49].
+- [ ] Los dos principios de organización (división funcional / gestión territorial) son correctos (art. 5).
+- [ ] La clasificación órganos centrales/territoriales/organismos es correcta (art. 6).
+- [ ] La distinción órganos superiores (política) / directivos (ejecución) es correcta (art. 7).
+- [ ] El número máximo de Áreas de Gobierno (**15**) y la competencia del alcalde son correctos (art. 40.2).
+- [ ] La estructura interna (Secretaría General Técnica + Direcciones Generales) es correcta (art. 41).
+- [ ] El orden jerárquico (coordinador general → secretario general técnico → director general) es correcto (art. 42.2).
+- [ ] Las funciones excluidas a los concejales de Coordinación (b, c, d, e, j) son correctas (art. 45.1).
+- [ ] El rango de director general del secretario general técnico es correcto (art. 47.1).
+- [ ] El nombramiento por la Junta de Gobierno entre funcionarios (art. 130.3 LBRL) y la excepción (coordinador general sí, secretario general técnico no) son correctos (art. 49).
 
 ## 4. Diagramas SVG
 
